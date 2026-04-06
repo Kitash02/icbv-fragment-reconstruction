@@ -1,0 +1,174 @@
+{
+  "source_image": "shard_02_cord_marked.jpg",
+  "source_size": {
+    "width": 600,
+    "height": 440
+  },
+  "n_fragments_requested": 7,
+  "n_fragments_saved": 6,
+  "n_fragments_dropped": 1,
+  "dropped_fragment_ids": [
+    3
+  ],
+  "n_fragments_skipped_sliver": 0,
+  "displacement_pixels": 31.7,
+  "noise_seed": 1436676935,
+  "seeds": [
+    [
+      451.0,
+      150.0
+    ],
+    [
+      485.0,
+      281.0
+    ],
+    [
+      351.0,
+      241.0
+    ],
+    [
+      175.0,
+      125.0
+    ],
+    [
+      257.0,
+      214.0
+    ],
+    [
+      245.0,
+      263.0
+    ],
+    [
+      512.0,
+      300.0
+    ]
+  ],
+  "fragments": [
+    {
+      "fragment_id": 0,
+      "origin": {
+        "x": 311,
+        "y": 0
+      },
+      "size": {
+        "width": 289,
+        "height": 235
+      },
+      "pixel_count": 50196,
+      "coverage_pct": 19.01,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.9587,
+        "isoperimetric": 2.244,
+        "perimeter": 1770.8,
+        "area_px": 49552
+      },
+      "surface_damaged": false,
+      "filename": "shard_02_cord_marked_frag_00.png"
+    },
+    {
+      "fragment_id": 1,
+      "origin": {
+        "x": 333,
+        "y": 164
+      },
+      "size": {
+        "width": 255,
+        "height": 276
+      },
+      "pixel_count": 16895,
+      "coverage_pct": 6.4,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.5154,
+        "isoperimetric": 3.8592,
+        "perimeter": 1750.0,
+        "area_px": 16362
+      },
+      "surface_damaged": false,
+      "filename": "shard_02_cord_marked_frag_01.png"
+    },
+    {
+      "fragment_id": 2,
+      "origin": {
+        "x": 289,
+        "y": 120
+      },
+      "size": {
+        "width": 158,
+        "height": 320
+      },
+      "pixel_count": 21929,
+      "coverage_pct": 8.31,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.6935,
+        "isoperimetric": 3.9265,
+        "perimeter": 1993.1,
+        "area_px": 20503
+      },
+      "surface_damaged": false,
+      "filename": "shard_02_cord_marked_frag_02.png"
+    },
+    {
+      "fragment_id": 4,
+      "origin": {
+        "x": 159,
+        "y": 70
+      },
+      "size": {
+        "width": 207,
+        "height": 194
+      },
+      "pixel_count": 13605,
+      "coverage_pct": 5.15,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.3685,
+        "isoperimetric": 3.0901,
+        "perimeter": 1262.7,
+        "area_px": 13287
+      },
+      "surface_damaged": false,
+      "filename": "shard_02_cord_marked_frag_04.png"
+    },
+    {
+      "fragment_id": 5,
+      "origin": {
+        "x": 0,
+        "y": 194
+      },
+      "size": {
+        "width": 366,
+        "height": 246
+      },
+      "pixel_count": 62358,
+      "coverage_pct": 23.62,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.8555,
+        "isoperimetric": 2.2117,
+        "perimeter": 1944.5,
+        "area_px": 61509
+      },
+      "surface_damaged": false,
+      "filename": "shard_02_cord_marked_frag_05.png"
+    },
+    {
+      "fragment_id": 6,
+      "origin": {
+        "x": 411,
+        "y": 175
+      },
+      "size": {
+        "width": 189,
+        "height": 265
+      },
+      "pixel_count": 32121,
+      "coverage_pct": 12.17,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.5146,
+        "isoperimetric": 2.2527,
+        "perimeter": 1158.9,
+        "area_px": 21059
+      },
+      "surface_damaged": true,
+      "filename": "shard_02_cord_marked_frag_06.png"
+    }
+  ]
+}

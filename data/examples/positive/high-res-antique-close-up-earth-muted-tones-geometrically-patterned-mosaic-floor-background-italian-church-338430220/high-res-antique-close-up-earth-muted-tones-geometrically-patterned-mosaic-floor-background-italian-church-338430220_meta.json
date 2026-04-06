@@ -1,0 +1,174 @@
+{
+  "source_image": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220.webp",
+  "source_size": {
+    "width": 576,
+    "height": 626
+  },
+  "n_fragments_requested": 7,
+  "n_fragments_saved": 6,
+  "n_fragments_dropped": 1,
+  "dropped_fragment_ids": [
+    3
+  ],
+  "n_fragments_skipped_sliver": 0,
+  "displacement_pixels": 41.5,
+  "noise_seed": 921670887,
+  "seeds": [
+    [
+      433.0,
+      87.0
+    ],
+    [
+      117.0,
+      149.0
+    ],
+    [
+      497.0,
+      525.0
+    ],
+    [
+      49.0,
+      410.0
+    ],
+    [
+      181.0,
+      248.0
+    ],
+    [
+      443.0,
+      248.0
+    ],
+    [
+      516.0,
+      167.0
+    ]
+  ],
+  "fragments": [
+    {
+      "fragment_id": 0,
+      "origin": {
+        "x": 263,
+        "y": 0
+      },
+      "size": {
+        "width": 260,
+        "height": 155
+      },
+      "pixel_count": 38718,
+      "coverage_pct": 10.74,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.3166,
+        "isoperimetric": 1.6132,
+        "perimeter": 553.7,
+        "area_px": 9374
+      },
+      "surface_damaged": true,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png"
+    },
+    {
+      "fragment_id": 1,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 305,
+        "height": 292
+      },
+      "pixel_count": 54014,
+      "coverage_pct": 14.98,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.7087,
+        "isoperimetric": 2.0852,
+        "perimeter": 1703.1,
+        "area_px": 53085
+      },
+      "surface_damaged": false,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png"
+    },
+    {
+      "fragment_id": 2,
+      "origin": {
+        "x": 212,
+        "y": 339
+      },
+      "size": {
+        "width": 364,
+        "height": 287
+      },
+      "pixel_count": 74674,
+      "coverage_pct": 20.71,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.7497,
+        "isoperimetric": 2.0468,
+        "perimeter": 1967.8,
+        "area_px": 73552
+      },
+      "surface_damaged": false,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png"
+    },
+    {
+      "fragment_id": 4,
+      "origin": {
+        "x": 71,
+        "y": 145
+      },
+      "size": {
+        "width": 242,
+        "height": 289
+      },
+      "pixel_count": 50570,
+      "coverage_pct": 14.02,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.9926,
+        "isoperimetric": 2.5613,
+        "perimeter": 1598.7,
+        "area_px": 31001
+      },
+      "surface_damaged": true,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_04.png"
+    },
+    {
+      "fragment_id": 5,
+      "origin": {
+        "x": 277,
+        "y": 125
+      },
+      "size": {
+        "width": 299,
+        "height": 314
+      },
+      "pixel_count": 51777,
+      "coverage_pct": 14.36,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.427,
+        "isoperimetric": 2.8772,
+        "perimeter": 2308.9,
+        "area_px": 51248
+      },
+      "surface_damaged": false,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_05.png"
+    },
+    {
+      "fragment_id": 6,
+      "origin": {
+        "x": 404,
+        "y": 34
+      },
+      "size": {
+        "width": 172,
+        "height": 286
+      },
+      "pixel_count": 17149,
+      "coverage_pct": 4.76,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.2566,
+        "isoperimetric": 2.9783,
+        "perimeter": 1331.8,
+        "area_px": 15913
+      },
+      "surface_damaged": false,
+      "filename": "high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_06.png"
+    }
+  ]
+}

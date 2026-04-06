@@ -1,0 +1,174 @@
+{
+  "source_image": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale.jfif",
+  "source_size": {
+    "width": 1018,
+    "height": 1024
+  },
+  "n_fragments_requested": 7,
+  "n_fragments_saved": 6,
+  "n_fragments_dropped": 1,
+  "dropped_fragment_ids": [
+    3
+  ],
+  "n_fragments_skipped_sliver": 0,
+  "displacement_pixels": 73.3,
+  "noise_seed": 478163327,
+  "seeds": [
+    [
+      106.0,
+      840.0
+    ],
+    [
+      362.0,
+      331.0
+    ],
+    [
+      309.0,
+      223.0
+    ],
+    [
+      835.0,
+      185.0
+    ],
+    [
+      773.0,
+      839.0
+    ],
+    [
+      639.0,
+      170.0
+    ],
+    [
+      685.0,
+      513.0
+    ]
+  ],
+  "fragments": [
+    {
+      "fragment_id": 0,
+      "origin": {
+        "x": 0,
+        "y": 398
+      },
+      "size": {
+        "width": 481,
+        "height": 626
+      },
+      "pixel_count": 187146,
+      "coverage_pct": 17.95,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.3002,
+        "isoperimetric": 2.7963,
+        "perimeter": 4260.2,
+        "area_px": 184704
+      },
+      "surface_damaged": false,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png"
+    },
+    {
+      "fragment_id": 1,
+      "origin": {
+        "x": 63,
+        "y": 250
+      },
+      "size": {
+        "width": 438,
+        "height": 361
+      },
+      "pixel_count": 141748,
+      "coverage_pct": 13.6,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.8421,
+        "isoperimetric": 2.4015,
+        "perimeter": 1990.7,
+        "area_px": 54680
+      },
+      "surface_damaged": true,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png"
+    },
+    {
+      "fragment_id": 2,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 371,
+        "height": 269
+      },
+      "pixel_count": 138491,
+      "coverage_pct": 13.29,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.6111,
+        "isoperimetric": 2.353,
+        "perimeter": 1817.8,
+        "area_px": 47493
+      },
+      "surface_damaged": true,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png"
+    },
+    {
+      "fragment_id": 4,
+      "origin": {
+        "x": 418,
+        "y": 647
+      },
+      "size": {
+        "width": 600,
+        "height": 377
+      },
+      "pixel_count": 211053,
+      "coverage_pct": 20.25,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.374,
+        "isoperimetric": 1.6385,
+        "perimeter": 1717.9,
+        "area_px": 87476
+      },
+      "surface_damaged": true,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04.png"
+    },
+    {
+      "fragment_id": 5,
+      "origin": {
+        "x": 399,
+        "y": 0
+      },
+      "size": {
+        "width": 417,
+        "height": 446
+      },
+      "pixel_count": 82623,
+      "coverage_pct": 7.93,
+      "edge_metrics": {
+        "jaggedness_ratio": 3.1886,
+        "isoperimetric": 3.8662,
+        "perimeter": 3885.3,
+        "area_px": 80368
+      },
+      "surface_damaged": false,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05.png"
+    },
+    {
+      "fragment_id": 6,
+      "origin": {
+        "x": 457,
+        "y": 361
+      },
+      "size": {
+        "width": 561,
+        "height": 313
+      },
+      "pixel_count": 167155,
+      "coverage_pct": 16.04,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.877,
+        "isoperimetric": 2.6123,
+        "perimeter": 2212.3,
+        "area_px": 57072
+      },
+      "surface_damaged": true,
+      "filename": "Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06.png"
+    }
+  ]
+}

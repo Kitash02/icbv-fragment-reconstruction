@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated outputs — large binary results, regenerate with: python src/main.py ...
+outputs/logs/
+outputs/results/
+outputs/test_logs/
+outputs/test_results/
+
+# Benchmark data — included in repo (88MB, regeneratable via: python setup_examples.py)
+# data/examples/   ← intentionally included
+
+# Source (raw) images — large, add selectively if small enough
+# data/raw/      ← keep commented if you want to include raw images
+
+# Sample data — small, keep in repo for quick-start demo
+# data/sample/   ← keep in repo
+
+# Temp build scripts (not part of submission)
+make_presentation.py
+make_report.py
+
+# macOS / system files
+.DS_Store
+Thumbs.db

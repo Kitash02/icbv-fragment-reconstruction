@@ -1,0 +1,174 @@
+{
+  "source_image": "gettyimages-170096524-1024x1024.jpg",
+  "source_size": {
+    "width": 1024,
+    "height": 683
+  },
+  "n_fragments_requested": 7,
+  "n_fragments_saved": 6,
+  "n_fragments_dropped": 1,
+  "dropped_fragment_ids": [
+    6
+  ],
+  "n_fragments_skipped_sliver": 0,
+  "displacement_pixels": 49.2,
+  "noise_seed": 1440462684,
+  "seeds": [
+    [
+      671.0,
+      293.0
+    ],
+    [
+      571.0,
+      208.0
+    ],
+    [
+      368.0,
+      157.0
+    ],
+    [
+      904.0,
+      485.0
+    ],
+    [
+      61.0,
+      139.0
+    ],
+    [
+      307.0,
+      556.0
+    ],
+    [
+      840.0,
+      514.0
+    ]
+  ],
+  "fragments": [
+    {
+      "fragment_id": 0,
+      "origin": {
+        "x": 464,
+        "y": 0
+      },
+      "size": {
+        "width": 560,
+        "height": 548
+      },
+      "pixel_count": 121120,
+      "coverage_pct": 17.32,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.7807,
+        "isoperimetric": 3.7786,
+        "perimeter": 4621.4,
+        "area_px": 119037
+      },
+      "surface_damaged": false,
+      "filename": "gettyimages-170096524-1024x1024_frag_00.png"
+    },
+    {
+      "fragment_id": 1,
+      "origin": {
+        "x": 403,
+        "y": 0
+      },
+      "size": {
+        "width": 483,
+        "height": 431
+      },
+      "pixel_count": 83434,
+      "coverage_pct": 11.93,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.3549,
+        "isoperimetric": 3.0456,
+        "perimeter": 3085.4,
+        "area_px": 81674
+      },
+      "surface_damaged": false,
+      "filename": "gettyimages-170096524-1024x1024_frag_01.png"
+    },
+    {
+      "fragment_id": 2,
+      "origin": {
+        "x": 195,
+        "y": 0
+      },
+      "size": {
+        "width": 292,
+        "height": 349
+      },
+      "pixel_count": 94088,
+      "coverage_pct": 13.45,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.8089,
+        "isoperimetric": 2.688,
+        "perimeter": 1890.1,
+        "area_px": 39345
+      },
+      "surface_damaged": true,
+      "filename": "gettyimages-170096524-1024x1024_frag_02.png"
+    },
+    {
+      "fragment_id": 3,
+      "origin": {
+        "x": 772,
+        "y": 83
+      },
+      "size": {
+        "width": 252,
+        "height": 600
+      },
+      "pixel_count": 74818,
+      "coverage_pct": 10.7,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.0536,
+        "isoperimetric": 2.7928,
+        "perimeter": 2680.6,
+        "area_px": 73307
+      },
+      "surface_damaged": false,
+      "filename": "gettyimages-170096524-1024x1024_frag_03.png"
+    },
+    {
+      "fragment_id": 4,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 246,
+        "height": 505
+      },
+      "pixel_count": 80133,
+      "coverage_pct": 11.46,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.984,
+        "isoperimetric": 2.5014,
+        "perimeter": 2471.4,
+        "area_px": 77679
+      },
+      "surface_damaged": false,
+      "filename": "gettyimages-170096524-1024x1024_frag_04.png"
+    },
+    {
+      "fragment_id": 5,
+      "origin": {
+        "x": 0,
+        "y": 346
+      },
+      "size": {
+        "width": 589,
+        "height": 337
+      },
+      "pixel_count": 174546,
+      "coverage_pct": 24.96,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.3925,
+        "isoperimetric": 1.7272,
+        "perimeter": 2202.8,
+        "area_px": 129441
+      },
+      "surface_damaged": true,
+      "filename": "gettyimages-170096524-1024x1024_frag_05.png"
+    }
+  ]
+}

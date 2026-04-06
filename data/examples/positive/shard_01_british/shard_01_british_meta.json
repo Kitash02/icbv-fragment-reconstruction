@@ -1,0 +1,174 @@
+{
+  "source_image": "shard_01_british.jpg",
+  "source_size": {
+    "width": 600,
+    "height": 440
+  },
+  "n_fragments_requested": 7,
+  "n_fragments_saved": 6,
+  "n_fragments_dropped": 1,
+  "dropped_fragment_ids": [
+    5
+  ],
+  "n_fragments_skipped_sliver": 0,
+  "displacement_pixels": 31.7,
+  "noise_seed": 151192869,
+  "seeds": [
+    [
+      383.0,
+      147.0
+    ],
+    [
+      55.0,
+      391.0
+    ],
+    [
+      306.0,
+      200.0
+    ],
+    [
+      510.0,
+      204.0
+    ],
+    [
+      195.0,
+      99.0
+    ],
+    [
+      185.0,
+      193.0
+    ],
+    [
+      222.0,
+      207.0
+    ]
+  ],
+  "fragments": [
+    {
+      "fragment_id": 0,
+      "origin": {
+        "x": 273,
+        "y": 0
+      },
+      "size": {
+        "width": 270,
+        "height": 281
+      },
+      "pixel_count": 33502,
+      "coverage_pct": 12.69,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.1963,
+        "isoperimetric": 2.6766,
+        "perimeter": 1708.4,
+        "area_px": 32421
+      },
+      "surface_damaged": false,
+      "filename": "shard_01_british_frag_00.png"
+    },
+    {
+      "fragment_id": 1,
+      "origin": {
+        "x": 0,
+        "y": 248
+      },
+      "size": {
+        "width": 286,
+        "height": 192
+      },
+      "pixel_count": 38769,
+      "coverage_pct": 14.69,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.7322,
+        "isoperimetric": 2.5221,
+        "perimeter": 1400.8,
+        "area_px": 24547
+      },
+      "surface_damaged": true,
+      "filename": "shard_01_british_frag_01.png"
+    },
+    {
+      "fragment_id": 2,
+      "origin": {
+        "x": 237,
+        "y": 87
+      },
+      "size": {
+        "width": 194,
+        "height": 353
+      },
+      "pixel_count": 32628,
+      "coverage_pct": 12.36,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.2539,
+        "isoperimetric": 3.1409,
+        "perimeter": 1977.7,
+        "area_px": 31549
+      },
+      "surface_damaged": false,
+      "filename": "shard_01_british_frag_02.png"
+    },
+    {
+      "fragment_id": 3,
+      "origin": {
+        "x": 371,
+        "y": 0
+      },
+      "size": {
+        "width": 229,
+        "height": 440
+      },
+      "pixel_count": 73240,
+      "coverage_pct": 27.74,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.5392,
+        "isoperimetric": 1.9128,
+        "perimeter": 1826.9,
+        "area_px": 72590
+      },
+      "surface_damaged": false,
+      "filename": "shard_01_british_frag_03.png"
+    },
+    {
+      "fragment_id": 4,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 308,
+        "height": 162
+      },
+      "pixel_count": 40604,
+      "coverage_pct": 15.38,
+      "edge_metrics": {
+        "jaggedness_ratio": 1.7565,
+        "isoperimetric": 2.4193,
+        "perimeter": 1402.9,
+        "area_px": 26756
+      },
+      "surface_damaged": true,
+      "filename": "shard_01_british_frag_04.png"
+    },
+    {
+      "fragment_id": 6,
+      "origin": {
+        "x": 146,
+        "y": 117
+      },
+      "size": {
+        "width": 159,
+        "height": 319
+      },
+      "pixel_count": 18821,
+      "coverage_pct": 7.13,
+      "edge_metrics": {
+        "jaggedness_ratio": 2.2907,
+        "isoperimetric": 3.2555,
+        "perimeter": 1559.0,
+        "area_px": 18250
+      },
+      "surface_damaged": false,
+      "filename": "shard_01_british_frag_06.png"
+    }
+  ]
+}
