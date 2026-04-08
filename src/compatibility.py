@@ -19,12 +19,10 @@ Secondary signal — Fourier Descriptor distance (Lecture 72):
 Bonus — Good Continuation (Lecture 52):
   Gestalt principle: smooth joins (low curvature change at junction) scored higher.
 
-Penalty — Color Histogram Dissimilarity (Lecture 71):
-  Fragments from the same archaeological artifact share the same pigment palette.
-  This signal uses the Bhattacharyya coefficient between HSV color histograms
-  to penalize pairs of fragments whose global color distributions are incompatible.
-  Fragments from different source images receive a strong penalty that overrides
-  any incidental geometric similarity.
+Penalty — Multiplicative Appearance Dissimilarity (Stage 1.6):
+  Fragments from the same archaeological artifact share the same appearance.
+  Multi-modal fusion: color^4 × texture^2 × gabor^2 × haralick^2
+  This multiplicative penalty heavily penalizes cross-source matches.
 
 Anti-parallel matching (physics of fragment joins):
   When two fragments meet, their edges are traversed in opposite directions.
@@ -38,6 +36,7 @@ import logging
 from typing import List, Optional
 
 from chain_code import compute_curvature_profile
+from hard_discriminators import hard_reject_check
 
 logger = logging.getLogger(__name__)
 
@@ -46,11 +45,13 @@ GOOD_CONTINUATION_WEIGHT = 0.10
 FOURIER_WEIGHT = 0.25          # global shape complement to local curvature
 FOURIER_SEGMENT_ORDER = 8      # number of Fourier coefficients per segment
 
-# Color histogram penalty (Lecture 71 — appearance-based recognition)
-# A fragment pair whose color distributions differ significantly is penalized.
-# Weight 0.8 means: a completely mismatched pair (BC≈0.1) loses 0.72 from its score,
-# reliably placing it below both the WEAK_MATCH threshold (0.35) and MATCH (0.55).
-COLOR_PENALTY_WEIGHT = 0.80
+# Appearance-based multiplicative penalty weights (Stage 1.6)
+# These powers compound dissimilarities for cross-source discrimination
+POWER_COLOR = 4.0      # Primary discriminator (pigment chemistry)
+POWER_TEXTURE = 2.0    # Secondary discriminator (material texture)
+POWER_GABOR = 2.0      # Tertiary discriminator (oriented patterns)
+POWER_HARALICK = 2.0   # Quaternary discriminator (second-order texture)
+
 COLOR_HIST_BINS_HUE = 16       # hue bins in HSV histogram
 COLOR_HIST_BINS_SAT = 4        # saturation bins in HSV histogram
 
@@ -225,6 +226,137 @@ def color_bhattacharyya(sig_a: np.ndarray, sig_b: np.ndarray) -> float:
     return float(np.clip(bc, 0.0, 1.0))
 
 
+def compute_lbp_texture_signature(image: np.ndarray, radius: int = 3, n_points: int = 24) -> np.ndarray:
+    """
+    Compute rotation-invariant uniform Local Binary Pattern (LBP) texture signature.
+
+    LBP captures micro-texture patterns robust to illumination changes.
+    Returns a 26-bin histogram (rotation-invariant uniform patterns + non-uniform).
+    """
+    try:
+        from skimage.feature import local_binary_pattern
+    except ImportError:
+        logger.warning("scikit-image not available, LBP texture unavailable")
+        return np.array([])
+
+    if len(image.shape) == 3:
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    else:
+        gray = image
+
+    lbp = local_binary_pattern(gray, n_points, radius, method='uniform')
+    n_bins = n_points + 2  # uniform patterns + non-uniform bin
+    hist, _ = np.histogram(lbp.ravel(), bins=n_bins, range=(0, n_bins), density=True)
+    return hist.astype(np.float32)
+
+
+def compute_gabor_signature(image: np.ndarray, n_scales: int = 5, n_orientations: int = 8) -> np.ndarray:
+    """
+    Compute Gabor filter bank response signature for oriented texture analysis.
+
+    Gabor filters detect edges and textures at multiple scales and orientations.
+    Returns mean and std of responses: 2 × n_scales × n_orientations × 3 channels = 240 features.
+    """
+    if len(image.shape) == 3:
+        image_float = image.astype(np.float32) / 255.0
+    else:
+        image_float = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR).astype(np.float32) / 255.0
+
+    features = []
+    for scale in range(1, n_scales + 1):
+        wavelength = 2 ** (scale + 1)
+        for theta in np.linspace(0, np.pi, n_orientations, endpoint=False):
+            kernel = cv2.getGaborKernel(
+                ksize=(31, 31),
+                sigma=wavelength * 0.56,
+                theta=theta,
+                lambd=wavelength,
+                gamma=0.5,
+                psi=0,
+            )
+            for channel in range(3):
+                filtered = cv2.filter2D(image_float[:, :, channel], cv2.CV_32F, kernel)
+                features.append(float(filtered.mean()))
+                features.append(float(filtered.std()))
+
+    return np.array(features, dtype=np.float32)
+
+
+def compute_haralick_signature(image: np.ndarray, distances: list = [1, 3, 5]) -> np.ndarray:
+    """
+    Compute Haralick GLCM (Gray-Level Co-occurrence Matrix) texture features.
+
+    GLCM captures second-order texture statistics (contrast, correlation, energy, homogeneity).
+    Returns 4 features × len(distances) × 5 orientations = 60 features.
+    """
+    try:
+        from skimage.feature import graycomatrix, graycoprops
+    except ImportError:
+        logger.warning("scikit-image not available, Haralick features unavailable")
+        return np.array([])
+
+    if len(image.shape) == 3:
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    else:
+        gray = image
+
+    # Quantize to 64 levels for efficiency
+    gray_quantized = (gray // 4).astype(np.uint8)
+
+    angles = [0, np.pi/4, np.pi/2, 3*np.pi/4, np.pi]
+    glcm = graycomatrix(
+        gray_quantized,
+        distances=distances,
+        angles=angles,
+        levels=64,
+        symmetric=True,
+        normed=True,
+    )
+
+    features = []
+    for prop in ['contrast', 'correlation', 'energy', 'homogeneity']:
+        features.extend(graycoprops(glcm, prop).ravel())
+
+    return np.array(features, dtype=np.float32)
+
+
+def compute_lab_color_signature(image: np.ndarray, bins_l: int = 8, bins_ab: int = 8) -> np.ndarray:
+    """
+    Compute perceptually uniform Lab color histogram.
+
+    Lab color space is perceptually uniform (Euclidean distance ≈ perceived difference).
+    Returns bins_l × bins_ab × bins_ab = 512 features (8×8×8).
+    """
+    lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+    hist = cv2.calcHist(
+        [lab], [0, 1, 2], None,
+        [bins_l, bins_ab, bins_ab],
+        [0, 256, 0, 256, 0, 256],
+    )
+    hist = hist.flatten().astype(np.float32)
+    total = hist.sum()
+    return hist / total if total > 1e-8 else hist
+
+
+def appearance_bhattacharyya(sig_a: np.ndarray, sig_b: np.ndarray) -> float:
+    """
+    Bhattacharyya coefficient between two feature signatures (color, texture, etc).
+
+    BC = Σ sqrt(p_i · q_i) ∈ [0, 1].
+    BC = 1.0 : identical features (perfect match).
+    BC ≈ 0.0 : non-overlapping features (completely different).
+    """
+    if len(sig_a) == 0 or len(sig_b) == 0:
+        return 1.0   # uninformative — no penalty
+
+    # Normalize to probability distributions
+    sig_a_norm = sig_a / (sig_a.sum() + 1e-8)
+    sig_b_norm = sig_b / (sig_b.sum() + 1e-8)
+
+    bc = float(np.sum(np.sqrt(np.clip(sig_a_norm * sig_b_norm, 0, None))))
+    return float(np.clip(bc, 0.0, 1.0))
+
+
 def segment_fourier_score(
     seg_pixels_a: np.ndarray,
     seg_pixels_b: np.ndarray,
@@ -253,24 +385,68 @@ def segment_fourier_score(
     return float(1.0 / (1.0 + dist))
 
 
-def _build_color_sim_matrix(
+def _build_appearance_similarity_matrices(
     all_images: List[np.ndarray],
-) -> np.ndarray:
+) -> dict:
     """
-    Build a symmetric (n_frags × n_frags) matrix of Bhattacharyya color similarity.
+    Build symmetric (n_frags × n_frags) matrices for ALL appearance features.
 
-    Entry [i, j] is the Bhattacharyya coefficient between the HSV color
-    histograms of fragment i and fragment j. Used to penalize cross-image pairs.
+    Returns dict with keys: 'color', 'texture', 'gabor', 'haralick'
+    Each matrix[i, j] = Bhattacharyya coefficient for that feature modality.
+
+    Stage 1.6: Multi-modal fusion with multiplicative penalty.
     """
     n = len(all_images)
-    sigs = [compute_color_signature(img) for img in all_images]
-    mat = np.ones((n, n), dtype=float)
+
+    # Extract all feature signatures
+    logger.info("Extracting appearance features from %d fragments...", n)
+
+    color_sigs = []
+    texture_sigs = []
+    gabor_sigs = []
+    haralick_sigs = []
+
+    for i, img in enumerate(all_images):
+        color_sigs.append(compute_lab_color_signature(img))
+        texture_sigs.append(compute_lbp_texture_signature(img))
+        gabor_sigs.append(compute_gabor_signature(img))
+        haralick_sigs.append(compute_haralick_signature(img))
+
+        logger.info(
+            "Fragment %d features: color=%d, texture=%d, gabor=%d, haralick=%d",
+            i, len(color_sigs[-1]), len(texture_sigs[-1]),
+            len(gabor_sigs[-1]), len(haralick_sigs[-1])
+        )
+
+    # Build similarity matrices
+    matrices = {
+        'color': np.ones((n, n), dtype=float),
+        'texture': np.ones((n, n), dtype=float),
+        'gabor': np.ones((n, n), dtype=float),
+        'haralick': np.ones((n, n), dtype=float),
+    }
+
     for i in range(n):
         for j in range(i + 1, n):
-            bc = color_bhattacharyya(sigs[i], sigs[j])
-            mat[i, j] = bc
-            mat[j, i] = bc
-    return mat
+            bc_color = appearance_bhattacharyya(color_sigs[i], color_sigs[j])
+            bc_texture = appearance_bhattacharyya(texture_sigs[i], texture_sigs[j])
+            bc_gabor = appearance_bhattacharyya(gabor_sigs[i], gabor_sigs[j])
+            bc_haralick = appearance_bhattacharyya(haralick_sigs[i], haralick_sigs[j])
+
+            matrices['color'][i, j] = matrices['color'][j, i] = bc_color
+            matrices['texture'][i, j] = matrices['texture'][j, i] = bc_texture
+            matrices['gabor'][i, j] = matrices['gabor'][j, i] = bc_gabor
+            matrices['haralick'][i, j] = matrices['haralick'][j, i] = bc_haralick
+
+    # Log statistics
+    for key, mat in matrices.items():
+        off_diag = mat[~np.eye(n, dtype=bool)]
+        logger.info(
+            "Appearance similarity (%s): min=%.3f  mean=%.3f  max=%.3f",
+            key, float(off_diag.min()), float(off_diag.mean()), float(off_diag.max())
+        )
+
+    return matrices
 
 
 def build_compatibility_matrix(
@@ -283,7 +459,7 @@ def build_compatibility_matrix(
 
     all_segments[i][a]       — chain code segment (retained for good-continuation)
     all_pixel_segments[i][a] — pixel coordinate segment (required for curvature)
-    all_images[i]            — BGR image of fragment i (required for color penalty)
+    all_images[i]            — BGR image of fragment i (required for appearance penalty)
 
     Returns a 4D array C of shape (n_frags, n_segs, n_frags, n_segs) where
     C[i, a, j, b] combines four signals (Lectures 23, 52, 71, 72):
@@ -297,10 +473,9 @@ def build_compatibility_matrix(
       3. Fourier descriptor score (Lecture 72)
          Global segment shape via FFT magnitude spectrum.
 
-      4. Color histogram penalty (Lecture 71)
-         Fragments from the same artifact share the same pigment palette.
-         Pairs from different source images are penalized proportionally to
-         their Bhattacharyya histogram distance.
+      4. Multiplicative appearance penalty (Stage 1.6)
+         Multi-modal fusion: color^4 × texture^2 × gabor^2 × haralick^2
+         Fragments from the same artifact share the same appearance.
 
     Diagonal blocks (i == j) are zeroed out (no self-matching).
     Falls back to chain edit-distance if pixel segments are unavailable.
@@ -319,22 +494,29 @@ def build_compatibility_matrix(
                 compute_curvature_profile(ps) for ps in pixel_segs
             ])
 
-    # Pre-compute fragment-level color similarity matrix (Lecture 71)
-    color_sim_mat: Optional[np.ndarray] = None
+    # Pre-compute fragment-level appearance similarity matrices (Stage 1.6)
+    appearance_mats: Optional[dict] = None
     if all_images is not None:
-        color_sim_mat = _build_color_sim_matrix(all_images)
-        logger.info(
-            "Color similarity matrix (Bhattacharyya): min=%.3f  mean=%.3f  max=%.3f",
-            float(color_sim_mat[color_sim_mat < 1.0].min()) if (color_sim_mat < 1.0).any() else 1.0,
-            float(color_sim_mat[color_sim_mat < 1.0].mean()) if (color_sim_mat < 1.0).any() else 1.0,
-            float(color_sim_mat[color_sim_mat < 1.0].max()) if (color_sim_mat < 1.0).any() else 1.0,
-        )
+        appearance_mats = _build_appearance_similarity_matrices(all_images)
 
     for frag_i, segs_i in enumerate(all_segments):
         for seg_a, chain_a in enumerate(segs_i):
             for frag_j, segs_j in enumerate(all_segments):
                 if frag_i == frag_j:
                     continue
+
+                # Track 2: Early rejection with hard discriminators
+                # Check BEFORE expensive curvature computation
+                if appearance_mats is not None and all_images is not None:
+                    bc_color = appearance_mats['color'][frag_i, frag_j]
+                    bc_texture = appearance_mats['texture'][frag_i, frag_j]
+
+                    # Apply hard rejection check
+                    if hard_reject_check(all_images[frag_i], all_images[frag_j],
+                                       bc_color, bc_texture):
+                        # Skip this pair - early rejection
+                        continue
+
                 for seg_b, chain_b in enumerate(segs_j):
 
                     if use_pixels:
@@ -358,14 +540,35 @@ def build_compatibility_matrix(
                     cont = good_continuation_bonus(chain_a, chain_b)
                     score += GOOD_CONTINUATION_WEIGHT * cont
 
-                    # TERTIARY: color histogram penalty (Lecture 71)
-                    # Penalizes pairs whose color distributions are incompatible.
-                    # Same-image pairs: BC≈0.8→penalty≈0.16 (minor reduction).
-                    # Cross-image pairs: BC≈0.1→penalty≈0.72 (score collapses).
-                    if color_sim_mat is not None:
-                        bc = color_sim_mat[frag_i, frag_j]
-                        color_penalty = (1.0 - bc) * COLOR_PENALTY_WEIGHT
-                        score = max(0.0, score - color_penalty)
+                    # TERTIARY: Multiplicative appearance penalty (Stage 1.6)
+                    # Multi-modal fusion: color^4 × texture^2 × gabor^2 × haralick^2
+                    # BC=1.0 (perfect match) → multiplier=1.0 (no penalty)
+                    # BC=0.80 (different sources) → multiplier≈0.33 (67% reduction)
+                    if appearance_mats is not None:
+                        bc_color = appearance_mats['color'][frag_i, frag_j]
+                        bc_texture = appearance_mats['texture'][frag_i, frag_j]
+                        bc_gabor = appearance_mats['gabor'][frag_i, frag_j]
+                        bc_haralick = appearance_mats['haralick'][frag_i, frag_j]
+
+                        # Stage 1.6 formula: multiplicative penalty with feature powers
+                        if len(appearance_mats['haralick']) > 0:
+                            # All 4 features available
+                            appearance_multiplier = (bc_color ** POWER_COLOR) * \
+                                                   (bc_texture ** POWER_TEXTURE) * \
+                                                   (bc_gabor ** POWER_GABOR) * \
+                                                   (bc_haralick ** POWER_HARALICK)
+                        elif len(appearance_mats['gabor']) > 0:
+                            # 3 features (no Haralick)
+                            appearance_multiplier = (bc_color ** POWER_COLOR) * \
+                                                   (bc_texture ** POWER_TEXTURE) * \
+                                                   (bc_gabor ** POWER_GABOR)
+                        else:
+                            # Fallback: color + texture only
+                            bc_appearance = np.sqrt(bc_color * bc_texture)
+                            appearance_multiplier = bc_appearance ** POWER_COLOR
+
+                        # Apply multiplicative penalty
+                        score = score * appearance_multiplier
 
                     compat[frag_i, seg_a, frag_j, seg_b] = score
 
@@ -373,4 +576,6 @@ def build_compatibility_matrix(
         "Compatibility matrix built: shape=%s, mean=%.4f, max=%.4f",
         compat.shape, float(compat.mean()), float(compat.max())
     )
-    return compat
+
+    # Return both compatibility matrix and appearance matrices (for Track 3)
+    return compat, appearance_mats

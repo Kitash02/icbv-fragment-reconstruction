@@ -47,6 +47,7 @@ from visualize import (
 from assembly_renderer import render_assembly_sheet
 from chain_code import contour_to_pixel_segments
 from shape_descriptors import pca_normalize_contour, log_shape_summary
+from ensemble_postprocess import reclassify_borderline_cases
 
 IMAGE_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.bmp'}
 N_SEGMENTS = 4
@@ -298,7 +299,7 @@ def run_pipeline(args: argparse.Namespace) -> None:
         )
         return
 
-    compat_matrix = build_compatibility_matrix(all_segments, all_pixel_segs, images)
+    compat_matrix, appearance_mats = build_compatibility_matrix(all_segments, all_pixel_segs, images)
     log_compatibility_matrix(compat_matrix, names, run_logger)
 
     probs, trace = run_relaxation(compat_matrix)
@@ -311,6 +312,15 @@ def run_pipeline(args: argparse.Namespace) -> None:
     assemblies = extract_top_assemblies(
         probs, n_top=N_TOP_ASSEMBLIES, compat_matrix=compat_matrix
     )
+
+    # Track 3: Ensemble voting post-processing filter
+    # Re-classify borderline cases (WEAK_MATCH) using 5-way voting ensemble
+    if appearance_mats is not None:
+        run_logger.info("Applying Track 3 (Ensemble Voting) post-processing...")
+        assemblies = reclassify_borderline_cases(
+            assemblies, compat_matrix, appearance_mats, images
+        )
+
     log_assembly_report(assemblies, run_logger)
 
     render_fragment_grid(

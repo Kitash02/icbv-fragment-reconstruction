@@ -44,9 +44,9 @@ CONVERGENCE_THRESHOLD = 1e-4
 # Thresholds on raw compatibility scores (before relaxation)
 # These are calibrated for the combined score (edit + good-continuation + Fourier)
 # Maximum possible raw score = 1.0 + 0.10 + 0.15 = 1.25
-MATCH_SCORE_THRESHOLD = 0.55        # pair is a confident match
-WEAK_MATCH_SCORE_THRESHOLD = 0.35   # pair is a possible but uncertain match
-ASSEMBLY_CONFIDENCE_THRESHOLD = 0.45  # assembly overall is accepted as a match
+MATCH_SCORE_THRESHOLD = 0.75        # pair is a confident match (Stage 1.6)
+WEAK_MATCH_SCORE_THRESHOLD = 0.60   # pair is a possible but uncertain match (Stage 1.6)
+ASSEMBLY_CONFIDENCE_THRESHOLD = 0.65  # assembly overall is accepted as a match (Stage 1.6)
 
 
 def initialize_probabilities(compat_matrix: np.ndarray) -> np.ndarray:
