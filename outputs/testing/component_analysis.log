@@ -1,0 +1,145 @@
+2026-04-08 11:24:30,048 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:30,048 - __main__ - INFO - ALGORITHM COMPONENT ANALYSIS
+2026-04-08 11:24:30,048 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:30,048 - __main__ - INFO - 
+Loading fragments from: data/examples/positive/gettyimages-1311604917-1024x1024
+2026-04-08 11:24:30,062 - preprocessing - INFO - RGBA fragment detected -- using alpha channel as silhouette mask
+2026-04-08 11:24:30,069 - preprocessing - INFO - Extracted contour with 1038 boundary points
+2026-04-08 11:24:30,079 - chain_code - INFO - Chain code: length=1037, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2026-04-08 11:24:30,079 - __main__ - INFO - Loaded: gettyimages-1311604917-1024x1024_frag_01.png, chain length=1037
+2026-04-08 11:24:30,094 - preprocessing - INFO - RGBA fragment detected -- using alpha channel as silhouette mask
+2026-04-08 11:24:30,100 - preprocessing - INFO - Extracted contour with 2587 boundary points
+2026-04-08 11:24:30,139 - chain_code - INFO - Chain code: length=2586, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2026-04-08 11:24:30,140 - __main__ - INFO - Loaded: gettyimages-1311604917-1024x1024_frag_02.png, chain length=2586
+2026-04-08 11:24:30,157 - preprocessing - INFO - RGBA fragment detected -- using alpha channel as silhouette mask
+2026-04-08 11:24:30,158 - preprocessing - INFO - Extracted contour with 2400 boundary points
+2026-04-08 11:24:30,194 - chain_code - INFO - Chain code: length=2399, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2026-04-08 11:24:30,194 - __main__ - INFO - Loaded: gettyimages-1311604917-1024x1024_frag_03.png, chain length=2399
+2026-04-08 11:24:30,212 - preprocessing - INFO - RGBA fragment detected -- using alpha channel as silhouette mask
+2026-04-08 11:24:30,216 - preprocessing - INFO - Extracted contour with 2401 boundary points
+2026-04-08 11:24:30,252 - chain_code - INFO - Chain code: length=2400, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2026-04-08 11:24:30,252 - __main__ - INFO - Loaded: gettyimages-1311604917-1024x1024_frag_04.png, chain length=2400
+2026-04-08 11:24:30,256 - preprocessing - INFO - RGBA fragment detected -- using alpha channel as silhouette mask
+2026-04-08 11:24:30,262 - preprocessing - INFO - Extracted contour with 988 boundary points
+2026-04-08 11:24:30,270 - chain_code - INFO - Chain code: length=987, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 0, 0, 7, 0, 7, 0, 7, 1, 7, 0, 1, 7, 1, 7, 1, 0, 0, 1, 7, 1, 7, 1, 0, 0, 0, 0]
+2026-04-08 11:24:30,270 - __main__ - INFO - Loaded: gettyimages-1311604917-1024x1024_frag_06.png, chain length=987
+2026-04-08 11:24:30,270 - __main__ - INFO - Loaded 5 fragments successfully
+2026-04-08 11:24:30,270 - __main__ - INFO - 
+================================================================================
+2026-04-08 11:24:30,270 - __main__ - INFO - TASK 1: CHAIN CODE ANALYSIS
+2026-04-08 11:24:30,270 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:30,270 - __main__ - INFO - Chain code length stats: mean=1881.8, std=713.6
+2026-04-08 11:24:31,485 - __main__ - INFO - Rotation invariance test: mean similarity=0.683
+2026-04-08 11:24:31,485 - __main__ - INFO - 
+================================================================================
+2026-04-08 11:24:31,485 - __main__ - INFO - TASK 2: CURVATURE MATCHING ANALYSIS
+2026-04-08 11:24:31,485 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:31,487 - __main__ - INFO - Extracted curvature profiles: mean length=468.7
+2026-04-08 11:24:31,742 - __main__ - INFO - Curvature matching - Same source: 0.598, Cross source: 0.557, Discrimination: 1.07x
+2026-04-08 11:24:31,742 - __main__ - INFO - 
+================================================================================
+2026-04-08 11:24:31,742 - __main__ - INFO - TASK 3: FOURIER DESCRIPTOR ANALYSIS
+2026-04-08 11:24:31,742 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:31,743 - shape_descriptors - INFO - Fourier descriptors: 32 coefficients, energy ratio=0.0868
+2026-04-08 11:24:31,743 - shape_descriptors - INFO - Fourier descriptors: 32 coefficients, energy ratio=0.0230
+2026-04-08 11:24:31,743 - shape_descriptors - INFO - Fourier descriptors: 32 coefficients, energy ratio=0.0285
+2026-04-08 11:24:31,744 - shape_descriptors - INFO - Fourier descriptors: 32 coefficients, energy ratio=0.0808
+2026-04-08 11:24:31,744 - shape_descriptors - INFO - Fourier descriptors: 32 coefficients, energy ratio=0.3079
+2026-04-08 11:24:31,763 - __main__ - INFO - Fourier descriptors - Same fragment: 0.708, Different fragments: 0.692
+2026-04-08 11:24:31,763 - __main__ - INFO - 
+================================================================================
+2026-04-08 11:24:31,763 - __main__ - INFO - TASK 4: COLOR HISTOGRAM ANALYSIS
+2026-04-08 11:24:31,763 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:31,771 - __main__ - INFO - Color histogram BC - Mean: 0.868, Range: [0.547, 0.995]
+2026-04-08 11:24:31,771 - __main__ - INFO - 
+================================================================================
+2026-04-08 11:24:31,771 - __main__ - INFO - TASK 5: RELAXATION LABELING ANALYSIS
+2026-04-08 11:24:31,771 - __main__ - INFO - ================================================================================
+2026-04-08 11:24:31,780 - compatibility - INFO - Color similarity matrix (Bhattacharyya): min=0.547  mean=0.868  max=0.995
+2026-04-08 11:24:32,010 - compatibility - INFO - Compatibility matrix built: shape=(5, 4, 5, 4), mean=0.5279, max=0.8638
+2026-04-08 11:24:32,010 - relaxation - INFO - Relaxation iteration 01 -- max Delta: 0.003775
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 02 -- max Delta: 0.003579
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 03 -- max Delta: 0.003393
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 04 -- max Delta: 0.003218
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 05 -- max Delta: 0.003055
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 06 -- max Delta: 0.002904
+2026-04-08 11:24:32,018 - relaxation - INFO - Relaxation iteration 07 -- max Delta: 0.002764
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 08 -- max Delta: 0.002635
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 09 -- max Delta: 0.002517
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 10 -- max Delta: 0.002409
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 11 -- max Delta: 0.002349
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 12 -- max Delta: 0.002321
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 13 -- max Delta: 0.002297
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 14 -- max Delta: 0.002277
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 15 -- max Delta: 0.002260
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 16 -- max Delta: 0.002246
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 17 -- max Delta: 0.002234
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 18 -- max Delta: 0.002225
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 19 -- max Delta: 0.002218
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 20 -- max Delta: 0.002212
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 21 -- max Delta: 0.002207
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 22 -- max Delta: 0.002204
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 23 -- max Delta: 0.002202
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 24 -- max Delta: 0.002201
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 25 -- max Delta: 0.002200
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 26 -- max Delta: 0.002199
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 27 -- max Delta: 0.002200
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 28 -- max Delta: 0.002201
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 29 -- max Delta: 0.002202
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 30 -- max Delta: 0.002202
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 31 -- max Delta: 0.002203
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 32 -- max Delta: 0.002203
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 33 -- max Delta: 0.002202
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 34 -- max Delta: 0.002201
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 35 -- max Delta: 0.002200
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 36 -- max Delta: 0.002198
+2026-04-08 11:24:32,019 - relaxation - INFO - Relaxation iteration 37 -- max Delta: 0.002196
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 38 -- max Delta: 0.002193
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 39 -- max Delta: 0.002190
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 40 -- max Delta: 0.002185
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 41 -- max Delta: 0.002181
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 42 -- max Delta: 0.002177
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 43 -- max Delta: 0.002171
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 44 -- max Delta: 0.002166
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 45 -- max Delta: 0.002159
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 46 -- max Delta: 0.002152
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 47 -- max Delta: 0.002144
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 48 -- max Delta: 0.002135
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 49 -- max Delta: 0.002126
+2026-04-08 11:24:32,021 - relaxation - INFO - Relaxation iteration 50 -- max Delta: 0.002116
+2026-04-08 11:24:32,021 - relaxation - INFO - Reached maximum of 50 iterations without convergence.
+2026-04-08 11:24:32,021 - __main__ - INFO - Relaxation labeling - Iterations: 50, Converged: False, Final delta: 0.002116
+2026-04-08 11:24:32,021 - __main__ - INFO - 
+Generating visualization plots...
+2026-04-08 11:24:34,509 - __main__ - INFO - Plots saved to outputs\testing
+2026-04-08 11:24:34,509 - __main__ - INFO - 
+Generating analysis report...
+Traceback (most recent call last):
+  File "C:\Users\I763940\icbv-fragment-reconstruction\analyze_algorithm_components.py", line 863, in <module>
+    main()
+  File "C:\Users\I763940\icbv-fragment-reconstruction\analyze_algorithm_components.py", line 853, in main
+    report_path = analyzer.generate_report()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\I763940\icbv-fragment-reconstruction\analyze_algorithm_components.py", line 802, in generate_report
+    json.dumps(self.results, indent=2),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable

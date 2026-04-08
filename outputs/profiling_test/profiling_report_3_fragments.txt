@@ -1,0 +1,51 @@
+================================================================================
+PERFORMANCE PROFILING REPORT
+================================================================================
+Timestamp: 2026-04-08 10:11:10
+Fragments processed: 3
+Total pipeline time: 5.288 seconds
+Fragments per second: 0.57
+
+BOTTLENECK: visualization (97.1% of total time)
+
+--------------------------------------------------------------------------------
+STAGE BREAKDOWN
+--------------------------------------------------------------------------------
+Stage                     Total (s)    Mean (s)     Count    % Total   
+--------------------------------------------------------------------------------
+preprocessing             0.053        0.053        1        1.0       
+encoding                  0.005        0.005        1        0.1       
+compatibility             0.036        0.036        1        0.7       
+relaxation                0.059        0.059        1        1.1       
+visualization             5.135        5.135        1        97.1      
+
+--------------------------------------------------------------------------------
+SUB-STAGE DETAILS
+--------------------------------------------------------------------------------
+
+PREPROCESSING (0.053s total):
+  load_image                        0.000s  (0.0000s avg,   0.0%)
+  blur_threshold                    0.052s  (0.0173s avg,  97.4%)
+  contour_extract                   0.001s  (0.0005s avg,   2.6%)
+
+ENCODING (0.005s total):
+  chain_code                        0.001s  (0.0002s avg,  11.2%)
+  normalization                     0.005s  (0.0016s avg,  88.3%)
+  segmentation                      0.000s  (0.0000s avg,   0.3%)
+
+COMPATIBILITY (0.036s total):
+  curvature_profiles                0.036s  (0.0358s avg, 100.0%)
+
+RELAXATION (0.059s total):
+  initialization                    0.000s  (0.0000s avg,   0.0%)
+  support_computation               0.041s  (0.0405s avg,  68.8%)
+  probability_update                0.018s  (0.0183s avg,  31.2%)
+  convergence_check                 0.000s  (0.0000s avg,   0.0%)
+
+VISUALIZATION (5.135s total):
+  fragment_grid                     0.500s  (0.4998s avg,   9.7%)
+  heatmap                           0.297s  (0.2973s avg,   5.8%)
+  assemblies                        2.430s  (2.4300s avg,  47.3%)
+  geometric_render                  1.907s  (1.9072s avg,  37.1%)
+
+================================================================================

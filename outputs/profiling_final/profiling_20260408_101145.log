@@ -1,0 +1,80 @@
+2026-04-08 10:11:45,149 [INFO] profiler: Profiling log: outputs/profiling_final\profiling_20260408_101145.log
+2026-04-08 10:11:45,150 [INFO] profiler: ================================================================================
+2026-04-08 10:11:45,151 [INFO] profiler: FRAGMENT RECONSTRUCTION PERFORMANCE PROFILER
+2026-04-08 10:11:45,151 [INFO] profiler: ================================================================================
+2026-04-08 10:11:45,151 [INFO] profiler: Input directory: data/sample
+2026-04-08 10:11:45,151 [INFO] profiler: Output directory: outputs/profiling_final
+2026-04-08 10:11:45,151 [WARNING] profiler: psutil not installed; memory profiling disabled.
+2026-04-08 10:11:45,151 [WARNING] profiler: Install with: pip install psutil
+2026-04-08 10:11:45,153 [INFO] __main__: Processing 5 fragments from data/sample
+2026-04-08 10:11:45,159 [INFO] preprocessing: Loaded image data\sample\fragment_01.png — shape (500, 500, 3)
+2026-04-08 10:11:45,176 [INFO] preprocessing: Sobel gradient — mean=3.1, max=255.0
+2026-04-08 10:11:45,179 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 10:11:45,182 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 10:11:45,183 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 10:11:45,186 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 10:11:45,187 [INFO] preprocessing: Extracted contour with 630 boundary points
+2026-04-08 10:11:45,189 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4°)
+2026-04-08 10:11:45,193 [INFO] preprocessing: Loaded image data\sample\fragment_02.png — shape (500, 500, 3)
+2026-04-08 10:11:45,203 [INFO] preprocessing: Sobel gradient — mean=2.2, max=255.0
+2026-04-08 10:11:45,204 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 10:11:45,207 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 10:11:45,208 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 10:11:45,211 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 10:11:45,213 [INFO] preprocessing: Extracted contour with 464 boundary points
+2026-04-08 10:11:45,214 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0°)
+2026-04-08 10:11:45,217 [INFO] preprocessing: Loaded image data\sample\fragment_03.png — shape (500, 500, 3)
+2026-04-08 10:11:45,225 [INFO] preprocessing: Sobel gradient — mean=2.0, max=254.0
+2026-04-08 10:11:45,227 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 10:11:45,230 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 10:11:45,230 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 10:11:45,232 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 10:11:45,234 [INFO] preprocessing: Extracted contour with 430 boundary points
+2026-04-08 10:11:45,235 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5°)
+2026-04-08 10:11:45,239 [INFO] preprocessing: Loaded image data\sample\fragment_04.png — shape (500, 500, 3)
+2026-04-08 10:11:45,249 [INFO] preprocessing: Sobel gradient — mean=1.8, max=255.0
+2026-04-08 10:11:45,251 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 10:11:45,253 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 10:11:45,253 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 10:11:45,256 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 10:11:45,259 [INFO] preprocessing: Extracted contour with 356 boundary points
+2026-04-08 10:11:45,260 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2°)
+2026-04-08 10:11:45,261 [INFO] preprocessing: Loaded image data\sample\fragment_05.png — shape (500, 500, 3)
+2026-04-08 10:11:45,276 [INFO] preprocessing: Sobel gradient — mean=1.7, max=255.0
+2026-04-08 10:11:45,278 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 10:11:45,280 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 10:11:45,281 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 10:11:45,284 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 10:11:45,287 [INFO] preprocessing: Extracted contour with 339 boundary points
+2026-04-08 10:11:45,288 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6°)
+2026-04-08 10:11:45,289 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4°)
+2026-04-08 10:11:45,293 [INFO] chain_code: Chain code: length=528, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 0, 7, 0, 6, 1, 1, 0, 1, 7, 7, 1, 0, 6, 2, 6, 0, 0, 1, 0, 0, 2, 7, 0, 7, 1, 1, 0, 2, 6, 1, 7, 0, 1, 0, 7, 2, 6, 1, 5, 2, 6, 0, 0, 7, 1, 2, 7, 0, 1, 1, 7, 7, 1, 7, 0, 1, 2, 4, 2, 6, 2, 7, 0, 0, 1, 6, 0, 0, 0]
+2026-04-08 10:11:45,293 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0°)
+2026-04-08 10:11:45,297 [INFO] chain_code: Chain code: length=347, segments=4, preview=[0, 0, 0, 0, 0, 1, 7, 0, 1, 1, 7, 1, 7, 1, 0, 1, 7, 1, 0, 0, 1, 7, 7, 2, 7, 7, 1, 1, 6, 6, 0, 0, 0, 1, 7, 1, 1, 0, 7, 1, 7, 1, 0, 6, 0, 1, 1, 7, 1, 7, 1, 6, 2, 0, 7, 1, 7, 0, 7, 0, 0, 1, 1, 7, 1, 7, 1, 7, 1, 7, 7, 1, 6, 1, 7, 1, 6, 1, 7, 2]
+2026-04-08 10:11:45,297 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5°)
+2026-04-08 10:11:45,301 [INFO] chain_code: Chain code: length=410, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 0, 0, 6, 2, 7, 1, 0, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 7, 1, 7, 7, 0, 0, 0, 7, 7, 1, 7]
+2026-04-08 10:11:45,301 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2°)
+2026-04-08 10:11:45,304 [INFO] chain_code: Chain code: length=294, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 1, 1, 0, 7, 1, 0, 7, 2, 7, 7, 1, 6, 0, 0, 0, 0, 0, 0, 1, 6, 0, 1, 6, 2, 7, 1, 6, 2, 7, 2, 7, 1, 7, 2, 7, 7, 1, 7, 0, 7, 0, 7, 0, 0, 1, 6, 2, 6, 2, 1, 6, 0, 2, 0, 0, 1, 7, 1, 7]
+2026-04-08 10:11:45,304 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6°)
+2026-04-08 10:11:45,307 [INFO] chain_code: Chain code: length=262, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 7, 2, 7, 7, 1, 7, 2, 7, 7, 1, 1, 7, 7, 2, 7, 7, 0, 2, 7, 0, 0, 7, 1, 7, 0, 0, 1, 7, 1, 7, 1, 7, 0, 1, 7, 1, 0, 0, 7, 1, 7, 0, 7, 0, 1, 6, 1, 0, 0, 1, 7, 0, 7, 7, 1, 0, 0, 0, 0, 1, 1, 7, 1, 7, 7, 0, 0, 7]
+2026-04-08 10:11:45,317 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.985  mean=0.995  max=1.000
+2026-04-08 10:11:45,527 [INFO] compatibility: Compatibility matrix built: shape=(5, 4, 5, 4), mean=0.6616, max=0.9614
+2026-04-08 10:11:45,566 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-08 10:11:46,593 [INFO] visualize: Saved fragment grid -> outputs/profiling_final\temp_viz\fragments.png
+2026-04-08 10:11:47,069 [INFO] visualize: Saved compatibility heatmap -> outputs/profiling_final\temp_viz\heatmap.png
+2026-04-08 10:11:47,621 [INFO] visualize: Saved convergence plot -> outputs/profiling_final\temp_viz\convergence.png
+2026-04-08 10:11:48,315 [INFO] visualize: Saved assembly proposal #1 -> outputs/profiling_final\temp_viz\assembly_01.png
+2026-04-08 10:11:49,000 [INFO] visualize: Saved assembly proposal #2 -> outputs/profiling_final\temp_viz\assembly_02.png
+2026-04-08 10:11:49,804 [INFO] visualize: Saved assembly proposal #3 -> outputs/profiling_final\temp_viz\assembly_03.png
+2026-04-08 10:11:50,225 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling_final\temp_viz\assembly_01_geometric.png
+2026-04-08 10:11:50,737 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling_final\temp_viz\assembly_02_geometric.png
+2026-04-08 10:11:51,227 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling_final\temp_viz\assembly_03_geometric.png
+2026-04-08 10:11:51,230 [INFO] profiler: Saved report -> outputs/profiling_final\profiling_report.txt
+2026-04-08 10:11:51,563 [INFO] __main__: Saved timing bar chart -> outputs/profiling_final\timing_breakdown_bar_iter1.png
+2026-04-08 10:11:51,866 [INFO] __main__: Saved timing pie chart -> outputs/profiling_final\timing_breakdown_pie_iter1.png
+2026-04-08 10:11:51,867 [WARNING] __main__: No memory data available; skipping memory plot.
+2026-04-08 10:11:51,867 [INFO] profiler: 
+================================================================================
+2026-04-08 10:11:51,867 [INFO] profiler: PROFILING COMPLETE
+2026-04-08 10:11:51,867 [INFO] profiler: ================================================================================
+2026-04-08 10:11:51,867 [INFO] profiler: All reports saved to: outputs/profiling_final

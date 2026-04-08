@@ -1,0 +1,51 @@
+
+====================================================================
+  RUNNING 45 TEST CASES  (WITH rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    OK MATCH       9.5s  PASS
+  > [P] gettyimages-170096524-1024x1024                     OK MATCH       9.4s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    OK MATCH       8.7s  PASS
+  > [P] gettyimages-470816328-2048x2048                     OK MATCH       10.0s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom  C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  OK MATCH       7.9s  PASS
+  > [P] scroll                                              OK MATCH       8.0s  PASS
+  > [P] shard_01_british                                    OK MATCH       7.2s  PASS
+  > [P] shard_02_cord_marked                                OK MATCH       6.9s  PASS
+  > [P] Wall painting from Room H of the Villa of P. Fan    OK MATCH       9.9s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-17009652     OK MATCH       10.2s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-21778090     OK MATCH       10.9s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-47081632     OK MATCH       10.0s  FAIL
+  > [N] mixed_gettyimages-13116049_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  OK MATCH       10.5s  FAIL
+  > [N] mixed_gettyimages-13116049_scroll                   OK MATCH       10.1s  FAIL
+  > [N] mixed_gettyimages-13116049_shard_01_british         OK MATCH       9.2s  FAIL
+  > [N] mixed_gettyimages-13116049_shard_02_cord_marked     OK MATCH       8.8s  FAIL
+  > [N] mixed_gettyimages-17009652_gettyimages-21778090     OK MATCH       10.0s  FAIL
+  > [N] mixed_gettyimages-17009652_gettyimages-47081632     OK MATCH       9.5s  FAIL
+  > [N] mixed_gettyimages-17009652_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  OK MATCH       8.9s  FAIL
+  > [N] mixed_gettyimages-17009652_scroll                   OK MATCH       9.1s  FAIL
+  > [N] mixed_gettyimages-17009652_shard_01_british         OK MATCH       8.6s  FAIL
+  > [N] mixed_gettyimages-17009652_shard_02_cord_marked     OK MATCH       9.3s  FAIL
+  > [N] mixed_gettyimages-21778090_gettyimages-47081632     OK MATCH       9.7s  FAIL
+  > [N] mixed_gettyimages-21778090_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  OK MATCH       8.5s  FAIL
+  > [N] mixed_gettyimages-21778090_scroll                   OK MATCH       8.8s  FAIL
+  > [N] mixed_gettyimages-21778090_shard_01_british         OK MATCH       8.1s  FAIL
+  > [N] mixed_gettyimages-21778090_shard_02_cord_marked     OK MATCH       9.5s  FAIL
+  > [N] mixed_gettyimages-47081632_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  OK MATCH       9.7s  FAIL
+  > [N] mixed_gettyimages-47081632_scroll                   OK MATCH       8.3s  FAIL
+  > [N] mixed_gettyimages-47081632_shard_01_british         OK MATCH       8.7s  FAIL
+  > [N] mixed_gettyimages-47081632_shard_02_cord_marked     OK MATCH       8.8s  FAIL
+  > [N] mixed_high-res-antique-clo_scroll                 C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()

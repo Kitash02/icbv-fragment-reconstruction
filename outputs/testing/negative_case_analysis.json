@@ -1,0 +1,610 @@
+{
+  "timestamp": "2026-04-08T11:25:14.099992",
+  "test_type": "negative_case_cross_source_rejection",
+  "summary": {
+    "n_sources": 2,
+    "n_fragments_total": 27,
+    "n_fragments_processed": 27,
+    "n_preprocessing_failed": 0,
+    "n_negative_pairs_tested": 26,
+    "n_true_negatives": 0,
+    "n_false_positives": 26,
+    "true_negative_rate": 0.0,
+    "false_positive_rate": 1.0,
+    "avg_confidence": 0.25672007854730167,
+    "median_confidence": 0.256043792521108,
+    "avg_color_bc": 0.8559593306137965,
+    "median_color_bc": 0.8630267679691315
+  },
+  "fragments_by_source": {
+    "british_museum": {
+      "n_total": 1,
+      "n_preprocessed": 1,
+      "fragments": [
+        "fragment_001_File020240849Identifyingpotterysherdsjpg"
+      ]
+    },
+    "wikimedia_processed": {
+      "n_total": 26,
+      "n_preprocessed": 26,
+      "fragments": [
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025",
+        "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026"
+      ]
+    }
+  },
+  "false_positives": [
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "WEAK_MATCH",
+      "confidence": 0.259412540039153,
+      "color_bc": 0.7343480587005615,
+      "execution_time_ms": 81.39586448669434
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2545099809578972,
+      "color_bc": 0.8509308695793152,
+      "execution_time_ms": 56.73027038574219
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.256439777234027,
+      "color_bc": 0.8121678829193115,
+      "execution_time_ms": 25.731325149536133
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2538865599428262,
+      "color_bc": 0.8334046006202698,
+      "execution_time_ms": 42.10233688354492
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25542991837510587,
+      "color_bc": 0.8442984819412231,
+      "execution_time_ms": 46.42486572265625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25457810376675766,
+      "color_bc": 0.8249300718307495,
+      "execution_time_ms": 52.63638496398926
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25314755531803784,
+      "color_bc": 0.9367143511772156,
+      "execution_time_ms": 59.20910835266113
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2528546188447461,
+      "color_bc": 0.7506248354911804,
+      "execution_time_ms": 49.361228942871094
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25535638470385835,
+      "color_bc": 0.7996430993080139,
+      "execution_time_ms": 52.865028381347656
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2545614510380701,
+      "color_bc": 0.8018267750740051,
+      "execution_time_ms": 41.96000099182129
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2555600465525116,
+      "color_bc": 0.8619091510772705,
+      "execution_time_ms": 48.02536964416504
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2569678075905196,
+      "color_bc": 0.8641443848609924,
+      "execution_time_ms": 51.58853530883789
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25250247368606415,
+      "color_bc": 0.9131556153297424,
+      "execution_time_ms": 48.506736755371094
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2574940813737516,
+      "color_bc": 0.9576482772827148,
+      "execution_time_ms": 50.01688003540039
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25632285546566275,
+      "color_bc": 0.9118010997772217,
+      "execution_time_ms": 37.30130195617676
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25736927499892875,
+      "color_bc": 0.8862564563751221,
+      "execution_time_ms": 36.13448143005371
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.259342805842446,
+      "color_bc": 0.9089413285255432,
+      "execution_time_ms": 38.26117515563965
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26151171261776374,
+      "color_bc": 0.9164747595787048,
+      "execution_time_ms": 45.08209228515625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.253563038309809,
+      "color_bc": 0.9028924703598022,
+      "execution_time_ms": 24.387359619140625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25702806499339875,
+      "color_bc": 0.8846839666366577,
+      "execution_time_ms": 33.66804122924805
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25576472957655316,
+      "color_bc": 0.8833726644515991,
+      "execution_time_ms": 28.368234634399414
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26655595062725546,
+      "color_bc": 0.8745768070220947,
+      "execution_time_ms": 33.61773490905762
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26106354087092326,
+      "color_bc": 0.8700511455535889,
+      "execution_time_ms": 27.657747268676758
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2577485676789353,
+      "color_bc": 0.8450946807861328,
+      "execution_time_ms": 29.315471649169922
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2549482178029142,
+      "color_bc": 0.8369588255882263,
+      "execution_time_ms": 40.667057037353516
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2608019840219261,
+      "color_bc": 0.7480919361114502,
+      "execution_time_ms": 35.09235382080078
+    }
+  ],
+  "all_results": [
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "WEAK_MATCH",
+      "confidence": 0.259412540039153,
+      "color_bc": 0.7343480587005615,
+      "is_false_positive": true,
+      "execution_time_ms": 81.39586448669434
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2545099809578972,
+      "color_bc": 0.8509308695793152,
+      "is_false_positive": true,
+      "execution_time_ms": 56.73027038574219
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.256439777234027,
+      "color_bc": 0.8121678829193115,
+      "is_false_positive": true,
+      "execution_time_ms": 25.731325149536133
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2538865599428262,
+      "color_bc": 0.8334046006202698,
+      "is_false_positive": true,
+      "execution_time_ms": 42.10233688354492
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25542991837510587,
+      "color_bc": 0.8442984819412231,
+      "is_false_positive": true,
+      "execution_time_ms": 46.42486572265625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25457810376675766,
+      "color_bc": 0.8249300718307495,
+      "is_false_positive": true,
+      "execution_time_ms": 52.63638496398926
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25314755531803784,
+      "color_bc": 0.9367143511772156,
+      "is_false_positive": true,
+      "execution_time_ms": 59.20910835266113
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2528546188447461,
+      "color_bc": 0.7506248354911804,
+      "is_false_positive": true,
+      "execution_time_ms": 49.361228942871094
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25535638470385835,
+      "color_bc": 0.7996430993080139,
+      "is_false_positive": true,
+      "execution_time_ms": 52.865028381347656
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2545614510380701,
+      "color_bc": 0.8018267750740051,
+      "is_false_positive": true,
+      "execution_time_ms": 41.96000099182129
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2555600465525116,
+      "color_bc": 0.8619091510772705,
+      "is_false_positive": true,
+      "execution_time_ms": 48.02536964416504
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2569678075905196,
+      "color_bc": 0.8641443848609924,
+      "is_false_positive": true,
+      "execution_time_ms": 51.58853530883789
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25250247368606415,
+      "color_bc": 0.9131556153297424,
+      "is_false_positive": true,
+      "execution_time_ms": 48.506736755371094
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2574940813737516,
+      "color_bc": 0.9576482772827148,
+      "is_false_positive": true,
+      "execution_time_ms": 50.01688003540039
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25632285546566275,
+      "color_bc": 0.9118010997772217,
+      "is_false_positive": true,
+      "execution_time_ms": 37.30130195617676
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25736927499892875,
+      "color_bc": 0.8862564563751221,
+      "is_false_positive": true,
+      "execution_time_ms": 36.13448143005371
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.259342805842446,
+      "color_bc": 0.9089413285255432,
+      "is_false_positive": true,
+      "execution_time_ms": 38.26117515563965
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26151171261776374,
+      "color_bc": 0.9164747595787048,
+      "is_false_positive": true,
+      "execution_time_ms": 45.08209228515625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.253563038309809,
+      "color_bc": 0.9028924703598022,
+      "is_false_positive": true,
+      "execution_time_ms": 24.387359619140625
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25702806499339875,
+      "color_bc": 0.8846839666366577,
+      "is_false_positive": true,
+      "execution_time_ms": 33.66804122924805
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.25576472957655316,
+      "color_bc": 0.8833726644515991,
+      "is_false_positive": true,
+      "execution_time_ms": 28.368234634399414
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26655595062725546,
+      "color_bc": 0.8745768070220947,
+      "is_false_positive": true,
+      "execution_time_ms": 33.61773490905762
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.26106354087092326,
+      "color_bc": 0.8700511455535889,
+      "is_false_positive": true,
+      "execution_time_ms": 27.657747268676758
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2577485676789353,
+      "color_bc": 0.8450946807861328,
+      "is_false_positive": true,
+      "execution_time_ms": 29.315471649169922
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2549482178029142,
+      "color_bc": 0.8369588255882263,
+      "is_false_positive": true,
+      "execution_time_ms": 40.667057037353516
+    },
+    {
+      "frag_a": "fragment_001_File020240849Identifyingpotterysherdsjpg",
+      "frag_b": "14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026",
+      "source_a": "british_museum",
+      "source_b": "wikimedia_processed",
+      "verdict": "MATCH",
+      "confidence": 0.2608019840219261,
+      "color_bc": 0.7480919361114502,
+      "is_false_positive": true,
+      "execution_time_ms": 35.09235382080078
+    }
+  ]
+}

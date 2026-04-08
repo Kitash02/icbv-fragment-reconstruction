@@ -1,0 +1,47 @@
+2026-04-08 10:46:50,588 - __main__ - INFO - Logging to C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments_validated\wikimedia_processed\example1_auto\preprocess_20260408_104650.log
+2026-04-08 10:46:50,588 - __main__ - INFO - Found 1 images to process
+2026-04-08 10:46:50,589 - __main__ - INFO - Mode: AUTO
+2026-04-08 10:46:50,589 - __main__ - INFO - Output directory: C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments_validated\wikimedia_processed\example1_auto
+2026-04-08 10:46:50,589 - __main__ - INFO - 
+Processing: 14_scherven_-_O36ZFL_-_60015859_-_RCE.jpg
+2026-04-08 10:46:50,589 - __main__ - INFO - ============================================================
+2026-04-08 10:46:50,695 - __main__ - INFO - Loaded 14_scherven_-_O36ZFL_-_60015859_-_RCE.jpg — shape (3744, 5616, 3)
+2026-04-08 10:46:50,712 - __main__ - DEBUG - Detected background color: BGR=[234.5757 236.9777 231.9065]
+2026-04-08 10:46:50,794 - __main__ - DEBUG - Preprocessing: background=light
+2026-04-08 10:46:50,809 - __main__ - INFO - Detected 26 fragments above size threshold
+2026-04-08 10:46:50,821 - __main__ - INFO -   Extracted fragment 1: 1067x927 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001.jpg
+2026-04-08 10:46:50,833 - __main__ - INFO -   Extracted fragment 2: 897x762 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg
+2026-04-08 10:46:50,841 - __main__ - INFO -   Extracted fragment 3: 851x747 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg
+2026-04-08 10:46:50,848 - __main__ - INFO -   Extracted fragment 4: 880x699 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004.jpg
+2026-04-08 10:46:50,855 - __main__ - INFO -   Extracted fragment 5: 941x633 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005.jpg
+2026-04-08 10:46:50,861 - __main__ - INFO -   Extracted fragment 6: 815x564 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006.jpg
+2026-04-08 10:46:50,866 - __main__ - INFO -   Extracted fragment 7: 569x701 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007.jpg
+2026-04-08 10:46:50,872 - __main__ - INFO -   Extracted fragment 8: 561x673 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008.jpg
+2026-04-08 10:46:50,877 - __main__ - INFO -   Extracted fragment 9: 646x577 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009.jpg
+2026-04-08 10:46:50,882 - __main__ - INFO -   Extracted fragment 10: 748x432 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010.jpg
+2026-04-08 10:46:50,886 - __main__ - INFO -   Extracted fragment 11: 583x475 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011.jpg
+2026-04-08 10:46:50,889 - __main__ - INFO -   Extracted fragment 12: 496x290 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012.jpg
+2026-04-08 10:46:50,894 - __main__ - INFO -   Extracted fragment 13: 511x261 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013.jpg
+2026-04-08 10:46:50,896 - __main__ - INFO -   Extracted fragment 14: 353x133 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014.jpg
+2026-04-08 10:46:50,898 - __main__ - INFO -   Extracted fragment 15: 128x167 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015.jpg
+2026-04-08 10:46:50,900 - __main__ - INFO -   Extracted fragment 16: 133x135 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016.jpg
+2026-04-08 10:46:50,901 - __main__ - INFO -   Extracted fragment 17: 113x96 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017.jpg
+2026-04-08 10:46:50,904 - __main__ - INFO -   Extracted fragment 18: 106x92 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018.jpg
+2026-04-08 10:46:50,905 - __main__ - INFO -   Extracted fragment 19: 105x81 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019.jpg
+2026-04-08 10:46:50,907 - __main__ - INFO -   Extracted fragment 20: 113x65 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020.jpg
+2026-04-08 10:46:50,908 - __main__ - INFO -   Extracted fragment 21: 75x67 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021.jpg
+2026-04-08 10:46:50,910 - __main__ - INFO -   Extracted fragment 22: 79x58 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022.jpg
+2026-04-08 10:46:50,912 - __main__ - INFO -   Extracted fragment 23: 73x59 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023.jpg
+2026-04-08 10:46:50,913 - __main__ - INFO -   Extracted fragment 24: 65x58 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024.jpg
+2026-04-08 10:46:50,914 - __main__ - INFO -   Extracted fragment 25: 54x52 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025.jpg
+2026-04-08 10:46:50,915 - __main__ - INFO -   Extracted fragment 26: 42x59 pixels -> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026.jpg
+2026-04-08 10:46:50,919 - __main__ - INFO - Successfully processed: 26 fragments extracted
+2026-04-08 10:46:50,924 - __main__ - INFO - 
+============================================================
+2026-04-08 10:46:50,924 - __main__ - INFO - PROCESSING COMPLETE
+2026-04-08 10:46:50,924 - __main__ - INFO - ============================================================
+2026-04-08 10:46:50,924 - __main__ - INFO - Processed: 1 images
+2026-04-08 10:46:50,924 - __main__ - INFO - Skipped: 0 images
+2026-04-08 10:46:50,924 - __main__ - INFO - Total fragments extracted: 26
+2026-04-08 10:46:50,924 - __main__ - INFO - Manifest saved to: C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments_validated\wikimedia_processed\example1_auto\manifest.json
+2026-04-08 10:46:50,924 - __main__ - INFO - ============================================================

@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-04-08T11:24:45.868104",
+  "optimal_config": {
+    "name": "MT_0.55",
+    "color_penalty_weight": 0.8,
+    "match_threshold": 0.55,
+    "n_segments": 4
+  },
+  "optimal_performance": {
+    "positive_accuracy": 0.0,
+    "negative_accuracy": 0.0,
+    "overall_accuracy": 0.0,
+    "avg_positive_confidence": 0.0,
+    "avg_negative_confidence": 0.2594345417956925,
+    "avg_pair_runtime_ms": 365.3064966201782
+  },
+  "all_results": {
+    "color_penalty_weight": [
+      {
+        "config_name": "CPW_0.70",
+        "color_penalty_weight": 0.7,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2592204169295974,
+        "avg_pair_runtime_ms": 524.2773294448853
+      },
+      {
+        "config_name": "CPW_0.80",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 491.56153202056885
+      },
+      {
+        "config_name": "CPW_0.90",
+        "color_penalty_weight": 0.9,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.25965886647115577,
+        "avg_pair_runtime_ms": 402.93121337890625
+      }
+    ],
+    "match_threshold": [
+      {
+        "config_name": "MT_0.45",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.45,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 379.46248054504395
+      },
+      {
+        "config_name": "MT_0.55",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 365.3064966201782
+      },
+      {
+        "config_name": "MT_0.65",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.65,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 387.2309923171997
+      }
+    ],
+    "n_segments": [
+      {
+        "config_name": "NS_3",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 3,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.3402078753870072,
+        "avg_pair_runtime_ms": 398.215651512146
+      },
+      {
+        "config_name": "NS_4",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 413.8026237487793
+      },
+      {
+        "config_name": "NS_8",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 8,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.12966508375058772,
+        "avg_pair_runtime_ms": 479.8779487609863
+      }
+    ],
+    "baseline": [
+      {
+        "config_name": "Baseline",
+        "color_penalty_weight": 0.8,
+        "match_threshold": 0.55,
+        "n_segments": 4,
+        "positive_accuracy": 0.0,
+        "negative_accuracy": 0.0,
+        "overall_accuracy": 0.0,
+        "avg_positive_confidence": 0.0,
+        "avg_negative_confidence": 0.2594345417956925,
+        "avg_pair_runtime_ms": 424.13854598999023
+      }
+    ]
+  }
+}

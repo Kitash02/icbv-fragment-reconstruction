@@ -1,0 +1,324 @@
+2026-04-08 11:15:41,688 [INFO] test_real_fragments: Log file: outputs/real_test\test_real_fragments_20260408_111541.log
+2026-04-08 11:15:41,688 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:41,688 [INFO] test_real_fragments: Real Fragment Test Harness
+2026-04-08 11:15:41,689 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:41,689 [INFO] test_real_fragments: Input directory: data/raw/real_fragments_validated/wikimedia_processed
+2026-04-08 11:15:41,689 [INFO] test_real_fragments: Output directory: outputs/real_test
+2026-04-08 11:15:41,690 [INFO] test_real_fragments: Found 26 fragments in flat structure
+2026-04-08 11:15:41,691 [INFO] test_real_fragments: Total fragments to test: 26 from 1 sources
+2026-04-08 11:15:41,691 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:41,691 [INFO] test_real_fragments: Phase 1: Testing Preprocessing Pipeline
+2026-04-08 11:15:41,691 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:41,691 [INFO] test_real_fragments: Testing source 'unknown_source' (26 fragments)...
+2026-04-08 11:15:41,696 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001.jpg -- shape (947, 1087, 3)
+2026-04-08 11:15:41,719 [INFO] preprocessing: Sobel gradient -- mean=18.3, max=254.0
+2026-04-08 11:15:41,725 [INFO] preprocessing: Canny thresholds: low=72, high=143
+2026-04-08 11:15:41,736 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,736 [INFO] preprocessing: Background brightness: 247.8 -> light background
+2026-04-08 11:15:41,754 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,758 [INFO] preprocessing: Extracted contour with 3296 boundary points
+2026-04-08 11:15:41,760 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001 - 3296 contour points, 1087x947 px, 68.3 ms
+2026-04-08 11:15:41,765 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:15:41,777 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:15:41,783 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:15:41,790 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,790 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:15:41,798 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,798 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:15:41,798 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002 - 2545 contour points, 917x782 px, 38.9 ms
+2026-04-08 11:15:41,810 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg -- shape (767, 871, 3)
+2026-04-08 11:15:41,826 [INFO] preprocessing: Sobel gradient -- mean=14.4, max=255.0
+2026-04-08 11:15:41,829 [INFO] preprocessing: Canny thresholds: low=129, high=255
+2026-04-08 11:15:41,833 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,834 [INFO] preprocessing: Background brightness: 231.1 -> light background
+2026-04-08 11:15:41,844 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,845 [INFO] preprocessing: Extracted contour with 3200 boundary points
+2026-04-08 11:15:41,845 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003 - 3200 contour points, 871x767 px, 46.7 ms
+2026-04-08 11:15:41,850 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004.jpg -- shape (719, 900, 3)
+2026-04-08 11:15:41,865 [INFO] preprocessing: Sobel gradient -- mean=23.6, max=255.0
+2026-04-08 11:15:41,870 [INFO] preprocessing: Canny thresholds: low=75, high=148
+2026-04-08 11:15:41,878 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,878 [INFO] preprocessing: Background brightness: 243.7 -> light background
+2026-04-08 11:15:41,891 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,894 [INFO] preprocessing: Extracted contour with 2562 boundary points
+2026-04-08 11:15:41,894 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004 - 2562 contour points, 900x719 px, 49.1 ms
+2026-04-08 11:15:41,896 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005.jpg -- shape (653, 961, 3)
+2026-04-08 11:15:41,912 [INFO] preprocessing: Sobel gradient -- mean=22.5, max=255.0
+2026-04-08 11:15:41,915 [INFO] preprocessing: Canny thresholds: low=124, high=247
+2026-04-08 11:15:41,919 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,919 [INFO] preprocessing: Background brightness: 245.6 -> light background
+2026-04-08 11:15:41,930 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,932 [INFO] preprocessing: Extracted contour with 2383 boundary points
+2026-04-08 11:15:41,932 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005 - 2383 contour points, 961x653 px, 38.2 ms
+2026-04-08 11:15:41,937 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006.jpg -- shape (584, 835, 3)
+2026-04-08 11:15:41,946 [INFO] preprocessing: Sobel gradient -- mean=24.2, max=255.0
+2026-04-08 11:15:41,951 [INFO] preprocessing: Canny thresholds: low=97, high=192
+2026-04-08 11:15:41,955 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,955 [INFO] preprocessing: Background brightness: 243.5 -> light background
+2026-04-08 11:15:41,966 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,967 [INFO] preprocessing: Extracted contour with 2622 boundary points
+2026-04-08 11:15:41,968 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006 - 2622 contour points, 835x584 px, 35.2 ms
+2026-04-08 11:15:41,971 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007.jpg -- shape (721, 589, 3)
+2026-04-08 11:15:41,980 [INFO] preprocessing: Sobel gradient -- mean=26.7, max=255.0
+2026-04-08 11:15:41,982 [INFO] preprocessing: Canny thresholds: low=120, high=239
+2026-04-08 11:15:41,986 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:41,986 [INFO] preprocessing: Background brightness: 233.5 -> light background
+2026-04-08 11:15:41,995 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:41,995 [INFO] preprocessing: Extracted contour with 2274 boundary points
+2026-04-08 11:15:41,998 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007 - 2274 contour points, 589x721 px, 30.0 ms
+2026-04-08 11:15:42,000 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008.jpg -- shape (693, 581, 3)
+2026-04-08 11:15:42,010 [INFO] preprocessing: Sobel gradient -- mean=24.3, max=255.0
+2026-04-08 11:15:42,012 [INFO] preprocessing: Canny thresholds: low=115, high=228
+2026-04-08 11:15:42,014 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,014 [INFO] preprocessing: Background brightness: 248.8 -> light background
+2026-04-08 11:15:42,023 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,025 [INFO] preprocessing: Extracted contour with 1809 boundary points
+2026-04-08 11:15:42,025 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008 - 1809 contour points, 581x693 px, 27.0 ms
+2026-04-08 11:15:42,030 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009.jpg -- shape (597, 666, 3)
+2026-04-08 11:15:42,039 [INFO] preprocessing: Sobel gradient -- mean=20.2, max=255.0
+2026-04-08 11:15:42,041 [INFO] preprocessing: Canny thresholds: low=81, high=160
+2026-04-08 11:15:42,044 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,045 [INFO] preprocessing: Background brightness: 246.6 -> light background
+2026-04-08 11:15:42,049 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,053 [INFO] preprocessing: Extracted contour with 1649 boundary points
+2026-04-08 11:15:42,053 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009 - 1649 contour points, 666x597 px, 27.3 ms
+2026-04-08 11:15:42,056 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010.jpg -- shape (452, 768, 3)
+2026-04-08 11:15:42,065 [INFO] preprocessing: Sobel gradient -- mean=35.3, max=255.0
+2026-04-08 11:15:42,066 [INFO] preprocessing: Canny thresholds: low=121, high=242
+2026-04-08 11:15:42,068 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,069 [INFO] preprocessing: Background brightness: 243.4 -> light background
+2026-04-08 11:15:42,074 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,075 [INFO] preprocessing: Extracted contour with 1703 boundary points
+2026-04-08 11:15:42,075 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010 - 1703 contour points, 768x452 px, 20.5 ms
+2026-04-08 11:15:42,078 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011.jpg -- shape (495, 603, 3)
+2026-04-08 11:15:42,085 [INFO] preprocessing: Sobel gradient -- mean=27.4, max=255.0
+2026-04-08 11:15:42,088 [INFO] preprocessing: Canny thresholds: low=123, high=244
+2026-04-08 11:15:42,089 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,090 [INFO] preprocessing: Background brightness: 235.6 -> light background
+2026-04-08 11:15:42,094 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,095 [INFO] preprocessing: Extracted contour with 1707 boundary points
+2026-04-08 11:15:42,095 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011 - 1707 contour points, 603x495 px, 19.2 ms
+2026-04-08 11:15:42,098 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012.jpg -- shape (310, 516, 3)
+2026-04-08 11:15:42,100 [INFO] preprocessing: Sobel gradient -- mean=32.9, max=255.0
+2026-04-08 11:15:42,100 [INFO] preprocessing: Canny thresholds: low=119, high=236
+2026-04-08 11:15:42,100 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,100 [INFO] preprocessing: Background brightness: 236.1 -> light background
+2026-04-08 11:15:42,106 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,106 [INFO] preprocessing: Extracted contour with 1265 boundary points
+2026-04-08 11:15:42,106 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012 - 1265 contour points, 516x310 px, 11.4 ms
+2026-04-08 11:15:42,109 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013.jpg -- shape (281, 531, 3)
+2026-04-08 11:15:42,113 [INFO] preprocessing: Sobel gradient -- mean=31.2, max=255.0
+2026-04-08 11:15:42,115 [INFO] preprocessing: Canny thresholds: low=105, high=210
+2026-04-08 11:15:42,116 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,116 [INFO] preprocessing: Background brightness: 241.1 -> light background
+2026-04-08 11:15:42,119 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,120 [INFO] preprocessing: Extracted contour with 1230 boundary points
+2026-04-08 11:15:42,120 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013 - 1230 contour points, 531x281 px, 14.0 ms
+2026-04-08 11:15:42,121 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014.jpg -- shape (153, 373, 3)
+2026-04-08 11:15:42,121 [INFO] preprocessing: Sobel gradient -- mean=34.2, max=255.0
+2026-04-08 11:15:42,121 [INFO] preprocessing: Canny thresholds: low=130, high=255
+2026-04-08 11:15:42,121 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,121 [INFO] preprocessing: Background brightness: 229.5 -> light background
+2026-04-08 11:15:42,121 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,121 [INFO] preprocessing: Extracted contour with 1267 boundary points
+2026-04-08 11:15:42,121 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014 - 1267 contour points, 373x153 px, 0.7 ms
+2026-04-08 11:15:42,128 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015.jpg -- shape (187, 148, 3)
+2026-04-08 11:15:42,129 [INFO] preprocessing: Sobel gradient -- mean=30.1, max=254.0
+2026-04-08 11:15:42,129 [INFO] preprocessing: Canny thresholds: low=126, high=251
+2026-04-08 11:15:42,130 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,130 [INFO] preprocessing: Background brightness: 223.3 -> light background
+2026-04-08 11:15:42,131 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,131 [INFO] preprocessing: Extracted contour with 568 boundary points
+2026-04-08 11:15:42,131 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015 - 568 contour points, 148x187 px, 10.2 ms
+2026-04-08 11:15:42,132 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016.jpg -- shape (155, 153, 3)
+2026-04-08 11:15:42,132 [INFO] preprocessing: Sobel gradient -- mean=46.4, max=255.0
+2026-04-08 11:15:42,133 [INFO] preprocessing: Canny thresholds: low=131, high=255
+2026-04-08 11:15:42,134 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,134 [INFO] preprocessing: Background brightness: 229.5 -> light background
+2026-04-08 11:15:42,134 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,135 [INFO] preprocessing: Extracted contour with 500 boundary points
+2026-04-08 11:15:42,135 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016 - 500 contour points, 153x155 px, 4.0 ms
+2026-04-08 11:15:42,136 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017.jpg -- shape (116, 133, 3)
+2026-04-08 11:15:42,137 [INFO] preprocessing: Sobel gradient -- mean=36.0, max=255.0
+2026-04-08 11:15:42,137 [INFO] preprocessing: Canny thresholds: low=125, high=250
+2026-04-08 11:15:42,138 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,138 [INFO] preprocessing: Background brightness: 229.6 -> light background
+2026-04-08 11:15:42,138 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,139 [INFO] preprocessing: Extracted contour with 352 boundary points
+2026-04-08 11:15:42,139 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017 - 352 contour points, 133x116 px, 3.7 ms
+2026-04-08 11:15:42,139 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018.jpg -- shape (112, 126, 3)
+2026-04-08 11:15:42,139 [INFO] preprocessing: Sobel gradient -- mean=40.0, max=254.0
+2026-04-08 11:15:42,140 [INFO] preprocessing: Canny thresholds: low=125, high=248
+2026-04-08 11:15:42,140 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,140 [INFO] preprocessing: Background brightness: 224.7 -> light background
+2026-04-08 11:15:42,141 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,141 [INFO] preprocessing: Extracted contour with 365 boundary points
+2026-04-08 11:15:42,141 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018 - 365 contour points, 126x112 px, 2.5 ms
+2026-04-08 11:15:42,142 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019.jpg -- shape (101, 125, 3)
+2026-04-08 11:15:42,142 [INFO] preprocessing: Sobel gradient -- mean=41.9, max=255.0
+2026-04-08 11:15:42,142 [INFO] preprocessing: Canny thresholds: low=126, high=251
+2026-04-08 11:15:42,143 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,143 [INFO] preprocessing: Background brightness: 222.8 -> light background
+2026-04-08 11:15:42,143 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,143 [INFO] preprocessing: Extracted contour with 357 boundary points
+2026-04-08 11:15:42,144 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019 - 357 contour points, 125x101 px, 3.0 ms
+2026-04-08 11:15:42,144 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020.jpg -- shape (85, 133, 3)
+2026-04-08 11:15:42,144 [INFO] preprocessing: Sobel gradient -- mean=42.6, max=255.0
+2026-04-08 11:15:42,144 [INFO] preprocessing: Canny thresholds: low=126, high=251
+2026-04-08 11:15:42,144 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,146 [INFO] preprocessing: Background brightness: 220.5 -> light background
+2026-04-08 11:15:42,147 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,147 [INFO] preprocessing: Extracted contour with 342 boundary points
+2026-04-08 11:15:42,147 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020 - 342 contour points, 133x85 px, 2.6 ms
+2026-04-08 11:15:42,147 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021.jpg -- shape (87, 95, 3)
+2026-04-08 11:15:42,147 [INFO] preprocessing: Sobel gradient -- mean=48.0, max=255.0
+2026-04-08 11:15:42,148 [INFO] preprocessing: Canny thresholds: low=130, high=255
+2026-04-08 11:15:42,148 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,148 [INFO] preprocessing: Background brightness: 221.7 -> light background
+2026-04-08 11:15:42,148 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,148 [INFO] preprocessing: Extracted contour with 270 boundary points
+2026-04-08 11:15:42,148 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021 - 270 contour points, 95x87 px, 1.1 ms
+2026-04-08 11:15:42,149 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022.jpg -- shape (78, 99, 3)
+2026-04-08 11:15:42,150 [INFO] preprocessing: Sobel gradient -- mean=49.3, max=255.0
+2026-04-08 11:15:42,150 [INFO] preprocessing: Canny thresholds: low=131, high=255
+2026-04-08 11:15:42,151 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,151 [INFO] preprocessing: Background brightness: 221.8 -> light background
+2026-04-08 11:15:42,151 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,151 [INFO] preprocessing: Extracted contour with 246 boundary points
+2026-04-08 11:15:42,151 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022 - 246 contour points, 99x78 px, 3.5 ms
+2026-04-08 11:15:42,152 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023.jpg -- shape (79, 93, 3)
+2026-04-08 11:15:42,153 [INFO] preprocessing: Sobel gradient -- mean=45.7, max=255.0
+2026-04-08 11:15:42,154 [INFO] preprocessing: Canny thresholds: low=131, high=255
+2026-04-08 11:15:42,154 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,154 [INFO] preprocessing: Background brightness: 222.3 -> light background
+2026-04-08 11:15:42,154 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,155 [INFO] preprocessing: Extracted contour with 250 boundary points
+2026-04-08 11:15:42,155 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023 - 250 contour points, 93x79 px, 3.8 ms
+2026-04-08 11:15:42,156 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024.jpg -- shape (78, 85, 3)
+2026-04-08 11:15:42,157 [INFO] preprocessing: Sobel gradient -- mean=39.1, max=255.0
+2026-04-08 11:15:42,157 [INFO] preprocessing: Canny thresholds: low=142, high=255
+2026-04-08 11:15:42,157 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,157 [INFO] preprocessing: Background brightness: 226.9 -> light background
+2026-04-08 11:15:42,158 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,158 [INFO] preprocessing: Extracted contour with 216 boundary points
+2026-04-08 11:15:42,158 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024 - 216 contour points, 85x78 px, 2.5 ms
+2026-04-08 11:15:42,159 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025.jpg -- shape (72, 74, 3)
+2026-04-08 11:15:42,159 [INFO] preprocessing: Sobel gradient -- mean=44.4, max=255.0
+2026-04-08 11:15:42,159 [INFO] preprocessing: Canny thresholds: low=138, high=255
+2026-04-08 11:15:42,159 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,160 [INFO] preprocessing: Background brightness: 220.9 -> light background
+2026-04-08 11:15:42,160 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,160 [INFO] preprocessing: Extracted contour with 196 boundary points
+2026-04-08 11:15:42,160 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025 - 196 contour points, 74x72 px, 2.6 ms
+2026-04-08 11:15:42,161 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026.jpg -- shape (79, 62, 3)
+2026-04-08 11:15:42,162 [INFO] preprocessing: Sobel gradient -- mean=46.8, max=255.0
+2026-04-08 11:15:42,162 [INFO] preprocessing: Canny thresholds: low=149, high=255
+2026-04-08 11:15:42,163 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,163 [INFO] preprocessing: Background brightness: 225.6 -> light background
+2026-04-08 11:15:42,163 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,163 [INFO] preprocessing: Extracted contour with 188 boundary points
+2026-04-08 11:15:42,163 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026 - 188 contour points, 62x79 px, 2.6 ms
+2026-04-08 11:15:42,163 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,163 [INFO] test_real_fragments: Phase 2: Creating Test Pairs
+2026-04-08 11:15:42,163 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,163 [INFO] test_real_fragments: Created 3 positive pairs (same source) and 0 negative pairs (different sources)
+2026-04-08 11:15:42,164 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,164 [INFO] test_real_fragments: Phase 3: Testing Fragment Pairs
+2026-04-08 11:15:42,164 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,164 [INFO] test_real_fragments: Testing 3 positive pairs (same source)...
+2026-04-08 11:15:42,172 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001.jpg -- shape (947, 1087, 3)
+2026-04-08 11:15:42,195 [INFO] preprocessing: Sobel gradient -- mean=18.3, max=254.0
+2026-04-08 11:15:42,201 [INFO] preprocessing: Canny thresholds: low=72, high=143
+2026-04-08 11:15:42,209 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,209 [INFO] preprocessing: Background brightness: 247.8 -> light background
+2026-04-08 11:15:42,231 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,236 [INFO] preprocessing: Extracted contour with 3296 boundary points
+2026-04-08 11:15:42,243 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:15:42,259 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:15:42,263 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:15:42,266 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,271 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:15:42,285 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,288 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:15:42,289 [INFO] shape_descriptors: PCA orientation: centroid=(476.3, 431.5), angle=2.757 rad (158.0deg)
+2026-04-08 11:15:42,289 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:15:42,310 [INFO] chain_code: Chain code: length=2819, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 1, 7, 2, 7, 6, 7, 1, 7, 2, 0, 6, 1, 7, 1, 7, 1, 7, 0, 1, 0, 0, 7, 0, 2, 6, 1, 7, 1, 7, 7, 2, 7, 0, 0, 1, 7, 0, 1, 7, 0, 0, 7, 2, 7, 0, 1, 0, 1, 7, 0, 0, 5, 2, 7, 0, 7, 1, 7, 2, 7, 0, 0, 1, 7, 0, 1, 6, 1, 0]
+2026-04-08 11:15:42,315 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:15:42,329 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.836  mean=0.836  max=0.836
+2026-04-08 11:15:42,357 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3364, max=0.7245
+2026-04-08 11:15:42,357 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:15:42,357 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:15:42,372 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002 [SAME] - verdict=MATCH, confidence=0.258, color_BC=0.836, 208 ms
+2026-04-08 11:15:42,378 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:15:42,389 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:15:42,389 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:15:42,404 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,404 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:15:42,419 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,420 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:15:42,426 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg -- shape (767, 871, 3)
+2026-04-08 11:15:42,441 [INFO] preprocessing: Sobel gradient -- mean=14.4, max=255.0
+2026-04-08 11:15:42,441 [INFO] preprocessing: Canny thresholds: low=129, high=255
+2026-04-08 11:15:42,447 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,448 [INFO] preprocessing: Background brightness: 231.1 -> light background
+2026-04-08 11:15:42,458 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,460 [INFO] preprocessing: Extracted contour with 3200 boundary points
+2026-04-08 11:15:42,461 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:15:42,461 [INFO] shape_descriptors: PCA orientation: centroid=(396.2, 377.3), angle=2.470 rad (141.5deg)
+2026-04-08 11:15:42,472 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:15:42,488 [INFO] chain_code: Chain code: length=2456, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 1, 7, 7, 1, 0, 1, 0, 0, 0, 0, 1, 7, 7, 1, 7, 2, 7, 0, 0, 1, 7, 1, 1, 6, 2, 6, 1, 0, 0, 0, 7, 1, 7, 0, 1, 7, 0, 0, 2, 7, 7, 1, 7, 2, 7, 1, 7, 7, 0, 1, 7, 1, 1, 6, 1, 0, 7, 2, 6, 1, 1, 7, 1, 7, 7, 1]
+2026-04-08 11:15:42,497 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.927  mean=0.927  max=0.927
+2026-04-08 11:15:42,503 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3646, max=0.7719
+2026-04-08 11:15:42,503 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:15:42,503 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:15:42,503 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003 [SAME] - verdict=MATCH, confidence=0.254, color_BC=0.927, 130 ms
+2026-04-08 11:15:42,513 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg -- shape (767, 871, 3)
+2026-04-08 11:15:42,528 [INFO] preprocessing: Sobel gradient -- mean=14.4, max=255.0
+2026-04-08 11:15:42,528 [INFO] preprocessing: Canny thresholds: low=129, high=255
+2026-04-08 11:15:42,535 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,535 [INFO] preprocessing: Background brightness: 231.1 -> light background
+2026-04-08 11:15:42,544 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,544 [INFO] preprocessing: Extracted contour with 3200 boundary points
+2026-04-08 11:15:42,544 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004.jpg -- shape (719, 900, 3)
+2026-04-08 11:15:42,567 [INFO] preprocessing: Sobel gradient -- mean=23.6, max=255.0
+2026-04-08 11:15:42,572 [INFO] preprocessing: Canny thresholds: low=75, high=148
+2026-04-08 11:15:42,579 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:15:42,579 [INFO] preprocessing: Background brightness: 243.7 -> light background
+2026-04-08 11:15:42,591 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:15:42,593 [INFO] preprocessing: Extracted contour with 2562 boundary points
+2026-04-08 11:15:42,594 [INFO] shape_descriptors: PCA orientation: centroid=(396.2, 377.3), angle=2.470 rad (141.5deg)
+2026-04-08 11:15:42,594 [INFO] shape_descriptors: PCA orientation: centroid=(500.7, 399.0), angle=2.580 rad (147.8deg)
+2026-04-08 11:15:42,606 [INFO] chain_code: Chain code: length=2456, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 7, 1, 7, 7, 1, 0, 1, 0, 0, 0, 0, 1, 7, 7, 1, 7, 2, 7, 0, 0, 1, 7, 1, 1, 6, 2, 6, 1, 0, 0, 0, 7, 1, 7, 0, 1, 7, 0, 0, 2, 7, 7, 1, 7, 2, 7, 1, 7, 7, 0, 1, 7, 1, 1, 6, 1, 0, 7, 2, 6, 1, 1, 7, 1, 7, 7, 1]
+2026-04-08 11:15:42,620 [INFO] chain_code: Chain code: length=2090, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 2, 7, 7, 0, 0, 7, 1, 0, 0, 0, 0, 2, 6, 0, 0, 6, 2, 7, 1, 7, 1, 7, 1, 0, 0, 7, 1, 7, 2, 7, 0, 0, 7, 0, 1, 7, 1, 0, 0, 0, 7, 0, 1, 0, 0, 6, 1, 1, 0, 0, 0, 0, 7, 1, 6, 0, 2, 0, 7, 0, 1, 7, 7, 2, 7, 3, 6, 7]
+2026-04-08 11:15:42,628 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.946  mean=0.946  max=0.946
+2026-04-08 11:15:42,638 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3635, max=0.7817
+2026-04-08 11:15:42,638 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:15:42,638 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: [OK] 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004 [SAME] - verdict=MATCH, confidence=0.254, color_BC=0.946, 135 ms
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Testing 0 negative pairs (different sources)...
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Phase 4: Computing Summary Statistics
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Preprocessing: 26/26 succeeded (100.0%)
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Positive pairs: 3/3 correct (100.0%)
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Negative pairs: 0/0 correct (0.0%)
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Overall accuracy: 100.0%
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: Phase 6: Generating Reports and Visualizations
+2026-04-08 11:15:42,638 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:43,059 [INFO] test_real_fragments: Saved preprocessing_comparison.png
+2026-04-08 11:15:43,466 [INFO] test_real_fragments: Saved accuracy_comparison.png
+2026-04-08 11:15:44,228 [INFO] test_real_fragments: Saved confidence_distribution.png
+2026-04-08 11:15:44,660 [INFO] test_real_fragments: Saved color_vs_geometric.png
+2026-04-08 11:15:44,662 [INFO] test_real_fragments: Saved markdown report: outputs/real_test\real_fragment_test_report.md
+2026-04-08 11:15:44,664 [INFO] test_real_fragments: Saved JSON report: outputs/real_test\real_fragment_test_report.json
+2026-04-08 11:15:44,664 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:44,664 [INFO] test_real_fragments: Test Complete
+2026-04-08 11:15:44,664 [INFO] test_real_fragments: ======================================================================
+2026-04-08 11:15:44,664 [INFO] test_real_fragments: Reports saved to: outputs/real_test
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - real_fragment_test_report.md (human-readable)
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - real_fragment_test_report.json (machine-readable)
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - preprocessing_comparison.png
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - accuracy_comparison.png
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - confidence_distribution.png
+2026-04-08 11:15:44,664 [INFO] test_real_fragments:   - color_vs_geometric.png

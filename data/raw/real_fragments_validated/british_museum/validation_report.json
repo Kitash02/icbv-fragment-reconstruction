@@ -1,0 +1,86 @@
+{
+  "validation_date": "2026-04-08T10:56:58.514310",
+  "criteria": {
+    "min_resolution": "600x600",
+    "single_fragment": "Must have exactly one connected component",
+    "simple_background": "Background should be mostly uniform",
+    "clear_edges": "Edges should be well-defined",
+    "not_complete_vessel": "Should be a fragment, not a complete object"
+  },
+  "validated_images": [],
+  "rejected_images": [
+    {
+      "filename": "fragment_001_File020240849Identifyingpotterysherdsjpg.jpg",
+      "path": "data\\raw\\real_fragments_validated\\british_museum\\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg",
+      "checks": {
+        "resolution": {
+          "passed": true,
+          "message": "Resolution OK: 3019x2012"
+        },
+        "single_fragment": {
+          "passed": true,
+          "message": "Single fragment detected",
+          "num_components": 1
+        },
+        "simple_background": {
+          "passed": true,
+          "message": "Background is simple (uniformity: 0.87)",
+          "uniformity_score": 0.8693895464296564
+        },
+        "clear_edges": {
+          "passed": true,
+          "message": "Clear edges (density: 0.022, compactness: 0.148)",
+          "edge_score": 0.021637646792316653
+        },
+        "fragment_not_vessel": {
+          "passed": false,
+          "message": "May be complete vessel (solidity: 0.88, extent: 0.86)",
+          "solidity": 0.8785980809221707
+        }
+      },
+      "passed": false,
+      "reason": [
+        "May be complete vessel (solidity: 0.88, extent: 0.86)"
+      ]
+    },
+    {
+      "filename": "fragment_001_File020240849Identifyingpotterysherdsjpg.jpg",
+      "path": "data\\raw\\real_fragments_validated\\british_museum\\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg",
+      "checks": {
+        "resolution": {
+          "passed": true,
+          "message": "Resolution OK: 3019x2012"
+        },
+        "single_fragment": {
+          "passed": true,
+          "message": "Single fragment detected",
+          "num_components": 1
+        },
+        "simple_background": {
+          "passed": true,
+          "message": "Background is simple (uniformity: 0.87)",
+          "uniformity_score": 0.8693895464296564
+        },
+        "clear_edges": {
+          "passed": true,
+          "message": "Clear edges (density: 0.022, compactness: 0.148)",
+          "edge_score": 0.021637646792316653
+        },
+        "fragment_not_vessel": {
+          "passed": false,
+          "message": "May be complete vessel (solidity: 0.88, extent: 0.86)",
+          "solidity": 0.8785980809221707
+        }
+      },
+      "passed": false,
+      "reason": [
+        "May be complete vessel (solidity: 0.88, extent: 0.86)"
+      ]
+    }
+  ],
+  "summary": {
+    "total_checked": 2,
+    "passed": 0,
+    "rejected": 2
+  }
+}

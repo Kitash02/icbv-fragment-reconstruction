@@ -1,0 +1,630 @@
+2026-04-08 11:24:33,460 [INFO] hyperparameter_sensitivity: Log file: outputs/testing\hyperparameter_sensitivity_20260408_112433.log
+2026-04-08 11:24:33,460 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,460 [INFO] hyperparameter_sensitivity: Hyperparameter Sensitivity Analysis
+2026-04-08 11:24:33,460 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: Input directory: data/raw/real_fragments_validated
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: Output directory: outputs/testing
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: Test pairs: 10 positive, 10 negative
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: Quick mode: True
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: Phase 1: Collecting Test Fragments
+2026-04-08 11:24:33,465 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,467 [INFO] hyperparameter_sensitivity: Found 1 fragments in source 'british_museum'
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: Found 20 fragments in source 'wikimedia'
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: Found 26 fragments in source 'wikimedia_processed'
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: Selected 10 positive pairs and 3 negative pairs for testing
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: Phase 2: Generating Test Configurations
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity: Generated 10 configurations across 4 parameters
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity:   - color_penalty_weight: 3 configurations
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity:   - match_threshold: 3 configurations
+2026-04-08 11:24:33,469 [INFO] hyperparameter_sensitivity:   - n_segments: 3 configurations
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity:   - baseline: 1 configurations
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity: Phase 3: Testing Configurations
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity: Testing parameter: color_penalty_weight
+2026-04-08 11:24:33,475 [INFO] hyperparameter_sensitivity: Testing config: CPW_0.70: CPW=0.70
+2026-04-08 11:24:33,477 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:33,498 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:33,499 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:33,499 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:33,504 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:33,505 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:33,505 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:33,505 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:33,505 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:33,509 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:33,551 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:33,758 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:33,791 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:33,841 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:33,867 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:33,873 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:33,883 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:33,885 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:33,887 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:33,888 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:33,888 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:33,889 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:33,890 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:33,891 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:33,937 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:33,957 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3758, max=0.8555
+2026-04-08 11:24:33,957 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:33,957 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:34,034 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:34,236 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:34,271 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:34,323 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:34,348 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:34,354 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:34,382 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:34,388 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:34,401 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:34,401 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:34,426 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:34,431 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:34,431 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:34,431 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:34,434 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:34,447 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:34,497 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:34,522 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3367, max=0.7128
+2026-04-08 11:24:34,522 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:34,522 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:34,524 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:34,524 [INFO] hyperparameter_sensitivity: Config CPW_0.70: Pos=0.0% Neg=0.0% Overall=0.0% Time=1049ms
+2026-04-08 11:24:34,524 [INFO] hyperparameter_sensitivity: Testing config: CPW_0.80
+2026-04-08 11:24:34,532 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:34,541 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:34,543 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:34,546 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:34,547 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:34,548 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:34,550 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:34,551 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:34,551 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:34,551 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:34,551 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:34,553 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:34,553 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:34,553 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:34,553 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:34,597 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:34,799 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:34,825 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:34,869 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:34,897 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:34,907 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:34,916 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:34,918 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:34,920 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:34,921 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:34,921 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:34,922 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:34,924 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:34,924 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:34,970 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:34,983 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:34,983 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:34,983 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:35,028 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:35,238 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:35,268 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:35,317 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:35,339 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:35,349 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:35,374 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:35,381 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:35,392 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:35,392 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:35,412 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:35,416 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:35,417 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:35,417 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:35,419 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:35,436 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:35,477 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:35,501 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:35,505 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:35,505 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:35,507 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:35,507 [INFO] hyperparameter_sensitivity: Config CPW_0.80: Pos=0.0% Neg=0.0% Overall=0.0% Time=983ms
+2026-04-08 11:24:35,507 [INFO] hyperparameter_sensitivity: Testing config: CPW_0.90: CPW=0.90
+2026-04-08 11:24:35,511 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:35,511 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:35,523 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:35,526 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:35,526 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:35,527 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:35,528 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:35,532 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:35,570 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:35,747 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:35,770 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:35,809 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:35,830 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:35,835 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:35,845 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:35,847 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:35,848 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:35,848 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:35,848 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:35,848 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:35,848 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:35,848 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:35,891 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:35,902 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3587, max=0.8213
+2026-04-08 11:24:35,902 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:35,902 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:35,938 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:36,098 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:36,122 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:36,158 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:36,182 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:36,189 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:36,205 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:36,212 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:36,220 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:36,220 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:36,231 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:36,236 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:36,236 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:36,236 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:36,236 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:36,251 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:36,283 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:36,311 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3218, max=0.6830
+2026-04-08 11:24:36,311 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:36,311 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:36,313 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:36,313 [INFO] hyperparameter_sensitivity: Config CPW_0.90: Pos=0.0% Neg=0.0% Overall=0.0% Time=806ms
+2026-04-08 11:24:36,313 [INFO] hyperparameter_sensitivity: Testing parameter: match_threshold
+2026-04-08 11:24:36,313 [INFO] hyperparameter_sensitivity: Testing config: MT_0.45: MT=0.45
+2026-04-08 11:24:36,316 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:36,326 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:36,326 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:36,326 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:36,326 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:36,326 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:36,326 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:36,331 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:36,331 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:36,331 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:36,331 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:36,332 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:36,332 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:36,332 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:36,333 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:36,362 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:36,513 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:36,536 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:36,574 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:36,583 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:36,597 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:36,603 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:36,607 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:36,608 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:36,609 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:36,609 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:36,609 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:36,610 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:36,611 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:36,644 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:36,654 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:36,654 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:36,654 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:36,692 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:36,851 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:36,874 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:36,918 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:36,934 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:36,947 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:36,965 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:36,965 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:36,975 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:36,975 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:36,985 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:36,997 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:36,997 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:36,998 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:36,999 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:37,006 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:37,048 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:37,069 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:37,069 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:37,069 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:37,072 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:37,072 [INFO] hyperparameter_sensitivity: Config MT_0.45: Pos=0.0% Neg=0.0% Overall=0.0% Time=759ms
+2026-04-08 11:24:37,072 [INFO] hyperparameter_sensitivity: Testing config: MT_0.55
+2026-04-08 11:24:37,077 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:37,083 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:37,085 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:37,086 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:37,087 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:37,088 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,090 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:37,121 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:37,266 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:37,286 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:37,327 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:37,346 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:37,353 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:37,359 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:37,360 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:37,361 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:37,361 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:37,361 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:37,361 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:37,361 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:37,361 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:37,396 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:37,400 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:37,400 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:37,400 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:37,441 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:37,576 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:37,599 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:37,644 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:37,667 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:37,675 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:37,690 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:37,690 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:37,703 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:37,703 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:37,717 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:37,721 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:37,721 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:37,722 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:37,723 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:37,732 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:37,768 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:37,800 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:37,800 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:37,801 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:37,802 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:37,803 [INFO] hyperparameter_sensitivity: Config MT_0.55: Pos=0.0% Neg=0.0% Overall=0.0% Time=731ms
+2026-04-08 11:24:37,803 [INFO] hyperparameter_sensitivity: Testing config: MT_0.65: MT=0.65
+2026-04-08 11:24:37,807 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:37,813 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:37,815 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:37,817 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:37,818 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:37,819 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:37,819 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:37,820 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:37,820 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:37,820 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:37,821 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:37,821 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,821 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,822 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:37,822 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:37,849 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:37,996 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:38,026 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:38,066 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,087 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:38,096 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:38,104 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:38,104 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:38,107 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,108 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:38,108 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:38,108 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:38,108 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:38,108 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:38,140 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:38,151 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:38,151 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:38,151 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:38,182 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:38,357 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:38,380 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:38,411 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,432 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:38,447 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:38,464 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:38,464 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:38,473 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:38,473 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:38,496 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:38,498 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:38,498 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:38,498 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:38,498 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:38,516 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:38,556 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:38,575 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:38,577 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:38,577 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:38,577 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:38,577 [INFO] hyperparameter_sensitivity: Config MT_0.65: Pos=0.0% Neg=0.0% Overall=0.0% Time=774ms
+2026-04-08 11:24:38,577 [INFO] hyperparameter_sensitivity: Testing parameter: n_segments
+2026-04-08 11:24:38,577 [INFO] hyperparameter_sensitivity: Testing config: NS_3: NS=3
+2026-04-08 11:24:38,577 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:38,589 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:38,589 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:38,589 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,589 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:38,589 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:38,618 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:38,781 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:38,807 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:38,846 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,870 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:38,877 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:38,884 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:38,886 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:38,889 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:38,890 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:38,891 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:38,891 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:38,892 [INFO] chain_code: Chain code: length=222, segments=3, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:38,892 [INFO] chain_code: Chain code: length=128, segments=3, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:38,929 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:38,936 [INFO] compatibility: Compatibility matrix built: shape=(2, 3, 2, 3), mean=0.3686, max=0.7890
+2026-04-08 11:24:38,936 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:38,936 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:38,971 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:39,133 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:39,159 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:39,202 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:39,221 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:39,232 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:39,252 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:39,262 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:39,263 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:39,263 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:39,284 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:39,288 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:39,288 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:39,288 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:39,292 [INFO] chain_code: Chain code: length=222, segments=3, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:39,312 [INFO] chain_code: Chain code: length=2166, segments=3, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:39,364 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:39,374 [INFO] compatibility: Compatibility matrix built: shape=(2, 3, 2, 3), mean=0.3218, max=0.7012
+2026-04-08 11:24:39,374 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:39,374 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:39,374 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:39,374 [INFO] hyperparameter_sensitivity: Config NS_3: Pos=0.0% Neg=0.0% Overall=0.0% Time=796ms
+2026-04-08 11:24:39,374 [INFO] hyperparameter_sensitivity: Testing config: NS_4
+2026-04-08 11:24:39,382 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:39,389 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:39,391 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:39,396 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:39,396 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:39,396 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:39,435 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:39,594 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:39,617 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:39,655 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:39,673 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:39,686 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:39,694 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:39,695 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:39,699 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:39,699 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:39,699 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:39,699 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:39,702 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:39,702 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:39,738 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:39,747 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:39,747 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:39,747 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:39,779 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:39,945 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:39,972 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:40,016 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:40,038 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:40,047 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:40,068 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:40,075 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:40,084 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:40,085 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:40,104 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:40,109 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:40,110 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:40,110 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:40,112 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:40,123 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:40,166 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:40,201 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:40,201 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:40,202 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:40,204 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:40,204 [INFO] hyperparameter_sensitivity: Config NS_4: Pos=0.0% Neg=0.0% Overall=0.0% Time=828ms
+2026-04-08 11:24:40,205 [INFO] hyperparameter_sensitivity: Testing config: NS_8: NS=8
+2026-04-08 11:24:40,213 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:40,222 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:40,224 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:40,226 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:40,227 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:40,228 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:40,229 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:40,230 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:40,230 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:40,230 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:40,231 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:40,231 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:40,232 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:40,233 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:40,233 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:40,270 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:40,465 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:40,495 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:40,531 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:40,553 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:40,564 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:40,569 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:40,569 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:40,569 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:40,569 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:40,569 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:40,569 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:40,579 [INFO] chain_code: Chain code: length=222, segments=8, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:40,579 [INFO] chain_code: Chain code: length=128, segments=8, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:40,611 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:40,652 [INFO] compatibility: Compatibility matrix built: shape=(2, 8, 2, 8), mean=0.3907, max=0.8903
+2026-04-08 11:24:40,653 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:40,653 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:40,685 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:40,883 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:40,910 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:40,957 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:40,985 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:40,993 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:41,014 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:41,017 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:41,028 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:41,028 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:41,045 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:41,049 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:41,050 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:41,050 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:41,051 [INFO] chain_code: Chain code: length=222, segments=8, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:41,064 [INFO] chain_code: Chain code: length=2166, segments=8, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:41,101 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:41,163 [INFO] compatibility: Compatibility matrix built: shape=(2, 8, 2, 8), mean=0.3343, max=0.7215
+2026-04-08 11:24:41,164 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:41,164 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:41,165 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:41,165 [INFO] hyperparameter_sensitivity: Config NS_8: Pos=0.0% Neg=0.0% Overall=0.0% Time=960ms
+2026-04-08 11:24:41,167 [INFO] hyperparameter_sensitivity: Testing parameter: baseline
+2026-04-08 11:24:41,167 [INFO] hyperparameter_sensitivity: Testing config: Baseline
+2026-04-08 11:24:41,174 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:41,183 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:41,185 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:41,187 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:41,188 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:41,189 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_10_Pottery_sherd_-_YDEA_-_91293 <-> candidate_11_Pottery_sherd_-_YDEA_-_91292: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:41,190 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_11_Pottery_sherd_-_YDEA_-_91292 <-> candidate_12_Pottery_sherd_-_YDEA_-_91299: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg
+2026-04-08 11:24:41,191 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> candidate_13_Pottery_sherd_-_YDEA_-_91290: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:41,191 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_13_Pottery_sherd_-_YDEA_-_91290 <-> candidate_14_Pottery_sherd_-_YDEA_-_91306: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg
+2026-04-08 11:24:41,192 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_14_Pottery_sherd_-_YDEA_-_91306 <-> candidate_15_Pottery_sherd_-_YDEA_-_91303: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg
+2026-04-08 11:24:41,192 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_15_Pottery_sherd_-_YDEA_-_91303 <-> candidate_16_02024_0849_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg
+2026-04-08 11:24:41,192 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_16_02024_0849_Identifying_pottery_sherds <-> candidate_17_02024_0861_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_16_02024_0849_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:41,193 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_17_02024_0861_Identifying_pottery_sherds <-> candidate_18_02024_0867_Identifying_pottery_sherds: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_17_02024_0861_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:41,193 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_18_02024_0867_Identifying_pottery_sherds <-> candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_18_02024_0867_Identifying_pottery_sherds.jpg
+2026-04-08 11:24:41,196 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_ <-> candidate_1_Sherd_-_YDEA_-_95805: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg
+2026-04-08 11:24:41,224 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:41,414 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:41,439 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:41,481 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:41,503 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:41,511 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia\candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg -- shape (426, 480, 3)
+2026-04-08 11:24:41,515 [INFO] preprocessing: Sobel gradient -- mean=17.6, max=255.0
+2026-04-08 11:24:41,515 [INFO] preprocessing: Canny thresholds: low=127, high=252
+2026-04-08 11:24:41,515 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:41,515 [INFO] preprocessing: Extracted contour with 144 boundary points
+2026-04-08 11:24:41,515 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:41,515 [INFO] shape_descriptors: PCA orientation: centroid=(374.1, 387.2), angle=1.143 rad (65.5deg)
+2026-04-08 11:24:41,515 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:41,515 [INFO] chain_code: Chain code: length=128, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 1, 6, 1, 0, 1, 7, 2, 6, 1, 7, 0, 0, 2, 6, 1, 7, 0, 1, 6, 2, 7, 0, 0, 7, 0, 1, 7, 0, 7, 2, 7, 0, 7, 2, 7, 7, 1, 7, 0, 0, 0, 1, 7, 1, 7, 0, 0, 0, 1, 7, 0, 0, 1, 6, 2, 6, 1, 6, 2, 6, 1, 7]
+2026-04-08 11:24:41,557 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.829  mean=0.829  max=0.829
+2026-04-08 11:24:41,565 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3673, max=0.8384
+2026-04-08 11:24:41,566 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:41,566 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:41,594 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\british_museum\fragment_001_File020240849Identifyingpotterysherdsjpg.jpg -- shape (2012, 3019, 3)
+2026-04-08 11:24:41,789 [INFO] preprocessing: Sobel gradient -- mean=10.9, max=255.0
+2026-04-08 11:24:41,813 [INFO] preprocessing: Canny thresholds: low=113, high=224
+2026-04-08 11:24:41,860 [INFO] preprocessing: Using Canny silhouette mask
+2026-04-08 11:24:41,882 [INFO] preprocessing: Extracted contour with 229 boundary points
+2026-04-08 11:24:41,891 [INFO] preprocessing: Loaded image data\raw\real_fragments_validated\wikimedia_processed\14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg -- shape (782, 917, 3)
+2026-04-08 11:24:41,907 [INFO] preprocessing: Sobel gradient -- mean=20.6, max=255.0
+2026-04-08 11:24:41,913 [INFO] preprocessing: Canny thresholds: low=67, high=133
+2026-04-08 11:24:41,917 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:24:41,917 [INFO] preprocessing: Background brightness: 247.5 -> light background
+2026-04-08 11:24:41,930 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:24:41,938 [INFO] preprocessing: Extracted contour with 2545 boundary points
+2026-04-08 11:24:41,938 [INFO] shape_descriptors: PCA orientation: centroid=(990.0, 1639.0), angle=1.509 rad (86.4deg)
+2026-04-08 11:24:41,938 [INFO] shape_descriptors: PCA orientation: centroid=(433.8, 387.7), angle=2.752 rad (157.7deg)
+2026-04-08 11:24:41,938 [INFO] chain_code: Chain code: length=222, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 1, 7, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 7, 1, 0, 7, 0, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 7, 1, 0, 7, 1]
+2026-04-08 11:24:41,954 [INFO] chain_code: Chain code: length=2166, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 1, 7, 0, 1, 7, 1, 1, 6, 0, 0, 2, 7, 7, 0, 1, 0, 1, 6, 0, 0, 1, 7, 2, 7, 7, 1, 1, 6, 1, 7, 1, 0, 1, 6, 0, 2, 0, 7, 0, 1, 7, 0, 7, 0, 1, 7, 1, 0, 1, 7, 0, 1, 6, 0, 2, 7, 0, 7, 0, 1, 0, 7, 0, 1, 0, 7]
+2026-04-08 11:24:41,980 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.851  mean=0.851  max=0.851
+2026-04-08 11:24:42,012 [INFO] compatibility: Compatibility matrix built: shape=(2, 4, 2, 4), mean=0.3293, max=0.6979
+2026-04-08 11:24:42,013 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.000000
+2026-04-08 11:24:42,013 [INFO] relaxation: Converged after 1 iterations.
+2026-04-08 11:24:42,015 [WARNING] hyperparameter_sensitivity: Failed to test pair candidate_12_Pottery_sherd_-_YDEA_-_91299 <-> 14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003: Could not load image: data\raw\real_fragments_validated\wikimedia\candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: Config Baseline: Pos=0.0% Neg=0.0% Overall=0.0% Time=848ms
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: Phase 4: Finding Optimal Configuration
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: 
+Optimal Configuration: MT_0.55
+
+Selection Criteria:
+- Positive Accuracy: 0.0% (weight: 50%)
+- Negative Accuracy: 0.0% (weight: 40%)
+- Performance: 365.3ms/pair (weight: 10%)
+- Overall Score: 9.27/100
+
+Key Parameters:
+- Color Penalty Weight: 0.8
+- Match Threshold: 0.55
+- N_SEGMENTS: 4
+
+Why This Configuration:
+- Represents the best balance of all tested configurations
+
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: Phase 5: Generating Visualizations
+2026-04-08 11:24:42,015 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:42,999 [INFO] hyperparameter_sensitivity: Saved sensitivity_color_penalty_weight.png
+2026-04-08 11:24:44,362 [INFO] hyperparameter_sensitivity: Saved sensitivity_match_threshold.png
+2026-04-08 11:24:45,366 [INFO] hyperparameter_sensitivity: Saved sensitivity_n_segments.png
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: Saved sensitivity_overall_comparison.png
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: Phase 6: Generating Report
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: Saved markdown report: outputs/testing\hyperparameter_sensitivity.md
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: Saved JSON results: outputs/testing\hyperparameter_sensitivity.json
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:45,868 [INFO] hyperparameter_sensitivity: Analysis Complete
+2026-04-08 11:24:45,875 [INFO] hyperparameter_sensitivity: ======================================================================
+2026-04-08 11:24:45,875 [INFO] hyperparameter_sensitivity: Optimal configuration: MT_0.55
+2026-04-08 11:24:45,875 [INFO] hyperparameter_sensitivity:   - Positive accuracy: 0.0%
+2026-04-08 11:24:45,875 [INFO] hyperparameter_sensitivity:   - Negative accuracy: 0.0%
+2026-04-08 11:24:45,876 [INFO] hyperparameter_sensitivity:   - Overall accuracy: 0.0%
+2026-04-08 11:24:45,876 [INFO] hyperparameter_sensitivity: Reports saved to: outputs/testing

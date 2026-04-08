@@ -1,0 +1,220 @@
+
+================================================================================
+  PERFORMANCE PROFILING - Fragment Reconstruction Test Suite
+================================================================================
+  Arguments: --no-rotate
+================================================================================
+
+
+====================================================================
+  RUNNING 45 TEST CASES  (NO rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    ~ WEAK_MATCH  9.5s  PASS
+  > [P] gettyimages-170096524-1024x1024                     OK MATCH       10.0s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    ~ WEAK_MATCH  11.0s  PASS
+  > [P] gettyimages-470816328-2048x2048                     ~ WEAK_MATCH  21.0s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom  C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ~ WEAK_MATCH  18.2s  PASS
+  > [P] scroll                                              ~ WEAK_MATCH  24.7s  PASS
+  > [P] shard_01_british                                    X NO_MATCH    20.7s  FAIL
+  > [P] shard_02_cord_marked                                ~ WEAK_MATCH  16.1s  PASS
+  > [P] Wall painting from Room H of the Villa of P. Fan    ~ WEAK_MATCH  20.5s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-17009652     ~ WEAK_MATCH  22.7s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-21778090     ~ WEAK_MATCH  21.0s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-47081632     X NO_MATCH    21.1s  PASS
+  > [N] mixed_gettyimages-13116049_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ~ WEAK_MATCH  22.0s  FAIL
+  > [N] mixed_gettyimages-13116049_scroll                   ~ WEAK_MATCH  18.7s  FAIL
+  > [N] mixed_gettyimages-13116049_shard_01_british         X NO_MATCH    21.8s  PASS
+  > [N] mixed_gettyimages-13116049_shard_02_cord_marked     ~ WEAK_MATCH  20.4s  FAIL
+  > [N] mixed_gettyimages-17009652_gettyimages-21778090     ~ WEAK_MATCH  28.5s  FAIL
+  > [N] mixed_gettyimages-17009652_gettyimages-47081632     X NO_MATCH    25.0s  PASS
+  > [N] mixed_gettyimages-17009652_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  X NO_MATCH    18.0s  PASS
+  > [N] mixed_gettyimages-17009652_scroll                   ~ WEAK_MATCH  17.4s  FAIL
+  > [N] mixed_gettyimages-17009652_shard_01_british         OK MATCH       19.1s  FAIL
+  > [N] mixed_gettyimages-17009652_shard_02_cord_marked     ~ WEAK_MATCH  22.4s  FAIL
+  > [N] mixed_gettyimages-21778090_gettyimages-47081632     X NO_MATCH    23.2s  PASS
+  > [N] mixed_gettyimages-21778090_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  X NO_MATCH    21.6s  PASS
+  > [N] mixed_gettyimages-21778090_scroll                   X NO_MATCH    16.4s  PASS
+  > [N] mixed_gettyimages-21778090_shard_01_british         ~ WEAK_MATCH  18.4s  FAIL
+  > [N] mixed_gettyimages-21778090_shard_02_cord_marked     ~ WEAK_MATCH  17.3s  FAIL
+  > [N] mixed_gettyimages-47081632_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ~ WEAK_MATCH  18.5s  FAIL
+  > [N] mixed_gettyimages-47081632_scroll                   X NO_MATCH    17.1s  PASS
+  > [N] mixed_gettyimages-47081632_shard_01_british         ~ WEAK_MATCH  16.2s  FAIL
+  > [N] mixed_gettyimages-47081632_shard_02_cord_marked     ~ WEAK_MATCH  16.0s  FAIL
+  > [N] mixed_high-res-antique-clo_scroll                 C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  X NO_MATCH    16.0s  PASS
+  > [N] mixed_high-res-antique-clo_shard_01_british       C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ~ WEAK_MATCH  15.3s  FAIL
+  > [N] mixed_high-res-antique-clo_shard_02_cord_marked   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  X NO_MATCH    15.0s  PASS
+  > [N] mixed_scroll_shard_01_british                       ~ WEAK_MATCH  17.8s  FAIL
+  > [N] mixed_scroll_shard_02_cord_marked                   ~ WEAK_MATCH  17.8s  FAIL
+  > [N] mixed_shard_01_british_shard_02_cord_marked         ~ WEAK_MATCH  13.3s  FAIL
+  > [N] mixed_Wall painting from R_gettyimages-13116049     ~ WEAK_MATCH  22.6s  FAIL
+  > [N] mixed_Wall painting from R_gettyimages-17009652     X NO_MATCH    22.7s  PASS
+  > [N] mixed_Wall painting from R_gettyimages-21778090     X NO_MATCH    20.8s  PASS
+  > [N] mixed_Wall painting from R_gettyimages-47081632     ~ WEAK_MATCH  21.6s  FAIL
+  > [N] mixed_Wall painting from R_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  X NO_MATCH    19.1s  PASS
+  > [N] mixed_Wall painting from R_scroll                   X NO_MATCH    19.0s  PASS
+  > [N] mixed_Wall painting from R_shard_01_british         ~ WEAK_MATCH  18.5s  FAIL
+  > [N] mixed_Wall painting from R_shard_02_cord_marked     ! ERROR       0.0s  ! ERROR
+
+====================================================================================================
+  RECONSTRUCTION TEST RESULTS  (NO rotation)
+====================================================================================================
+  Test Case                                     Type    Frags    Verdict      Conf  Time(s)  Pass?
+  --------------------------------------------------------------------------------------------------
+  gettyimages-1311604917-1024x1024            positive    5    ~ WEAK_MATCH    0.00      9.5  PASS 
+  gettyimages-170096524-1024x1024             positive    6     OK MATCH      0.00     10.0  PASS 
+  gettyimages-2177809001-1024x1024            positive    6    ~ WEAK_MATCH    0.00     11.0  PASS 
+  gettyimages-470816328-2048x2048             positive    6    ~ WEAK_MATCH    0.00     21.0  PASS 
+  high-res-antique-close-up-earth-muted-tone  positive    6    ~ WEAK_MATCH    0.00     18.2  PASS 
+  scroll                                      positive    6    ~ WEAK_MATCH    0.00     24.7  PASS 
+  shard_01_british                            positive    6    X NO_MATCH     0.00     20.7  FAIL 
+  shard_02_cord_marked                        positive    6    ~ WEAK_MATCH    0.00     16.1  PASS 
+  Wall painting from Room H of the Villa of   positive    6    ~ WEAK_MATCH    0.00     20.5  PASS 
+  --------------------------------------------------------------------------------------------------
+  mixed_gettyimages-13116049_gettyimages-170  negative    6    ~ WEAK_MATCH    0.00     22.7  FAIL 
+  mixed_gettyimages-13116049_gettyimages-217  negative    6    ~ WEAK_MATCH    0.00     21.0  FAIL 
+  mixed_gettyimages-13116049_gettyimages-470  negative    6    X NO_MATCH     0.00     21.1  PASS 
+  mixed_gettyimages-13116049_high-res-antiqu  negative    6    ~ WEAK_MATCH    0.00     22.0  FAIL 
+  mixed_gettyimages-13116049_scroll           negative    6    ~ WEAK_MATCH    0.00     18.7  FAIL 
+  mixed_gettyimages-13116049_shard_01_britis  negative    6    X NO_MATCH     0.00     21.8  PASS 
+  mixed_gettyimages-13116049_shard_02_cord_m  negative    6    ~ WEAK_MATCH    0.00     20.4  FAIL 
+  mixed_gettyimages-17009652_gettyimages-217  negative    6    ~ WEAK_MATCH    0.00     28.5  FAIL 
+  mixed_gettyimages-17009652_gettyimages-470  negative    6    X NO_MATCH     0.00     25.0  PASS 
+  mixed_gettyimages-17009652_high-res-antiqu  negative    6    X NO_MATCH     0.00     18.0  PASS 
+  mixed_gettyimages-17009652_scroll           negative    6    ~ WEAK_MATCH    0.00     17.4  FAIL 
+  mixed_gettyimages-17009652_shard_01_britis  negative    6     OK MATCH      0.00     19.1  FAIL 
+  mixed_gettyimages-17009652_shard_02_cord_m  negative    6    ~ WEAK_MATCH    0.00     22.4  FAIL 
+  mixed_gettyimages-21778090_gettyimages-470  negative    6    X NO_MATCH     0.00     23.2  PASS 
+  mixed_gettyimages-21778090_high-res-antiqu  negative    6    X NO_MATCH     0.00     21.6  PASS 
+  mixed_gettyimages-21778090_scroll           negative    6    X NO_MATCH     0.00     16.4  PASS 
+  mixed_gettyimages-21778090_shard_01_britis  negative    6    ~ WEAK_MATCH    0.00     18.4  FAIL 
+  mixed_gettyimages-21778090_shard_02_cord_m  negative    6    ~ WEAK_MATCH    0.00     17.3  FAIL 
+  mixed_gettyimages-47081632_high-res-antiqu  negative    6    ~ WEAK_MATCH    0.00     18.5  FAIL 
+  mixed_gettyimages-47081632_scroll           negative    6    X NO_MATCH     0.00     17.1  PASS 
+  mixed_gettyimages-47081632_shard_01_britis  negative    6    ~ WEAK_MATCH    0.00     16.2  FAIL 
+  mixed_gettyimages-47081632_shard_02_cord_m  negative    6    ~ WEAK_MATCH    0.00     16.0  FAIL 
+  mixed_high-res-antique-clo_scroll           negative    6    X NO_MATCH     0.00     16.0  PASS 
+  mixed_high-res-antique-clo_shard_01_britis  negative    6    ~ WEAK_MATCH    0.00     15.3  FAIL 
+  mixed_high-res-antique-clo_shard_02_cord_m  negative    6    X NO_MATCH     0.00     15.0  PASS 
+  mixed_scroll_shard_01_british               negative    6    ~ WEAK_MATCH    0.00     17.8  FAIL 
+  mixed_scroll_shard_02_cord_marked           negative    6    ~ WEAK_MATCH    0.00     17.8  FAIL 
+  mixed_shard_01_british_shard_02_cord_marke  negative    6    ~ WEAK_MATCH    0.00     13.3  FAIL 
+  mixed_Wall painting from R_gettyimages-131  negative    6    ~ WEAK_MATCH    0.00     22.6  FAIL 
+  mixed_Wall painting from R_gettyimages-170  negative    6    X NO_MATCH     0.00     22.7  PASS 
+  mixed_Wall painting from R_gettyimages-217  negative    6    X NO_MATCH     0.00     20.8  PASS 
+  mixed_Wall painting from R_gettyimages-470  negative    6    ~ WEAK_MATCH    0.00     21.6  FAIL 
+  mixed_Wall painting from R_high-res-antiqu  negative    6    X NO_MATCH     0.00     19.1  PASS 
+  mixed_Wall painting from R_scroll           negative    6    X NO_MATCH     0.00     19.0  PASS 
+  mixed_Wall painting from R_shard_01_britis  negative    6    ~ WEAK_MATCH    0.00     18.5  FAIL 
+  mixed_Wall painting from R_shard_02_cord_m  negative    6      ! ERROR         -      0.0   ERR 
+                                                ERROR: Could not load image: outputs\test_results\_work_mixed_Wall 
+  --------------------------------------------------------------------------------------------------
+  TOTAL  22/45 pass  22 fail  1 error                                                             
+====================================================================================================
+
+  Final result : 22/45 PASS
+  Results saved to: C:\Users\I763940\icbv-fragment-reconstruction\outputs\test_results
+
+
+
+
+================================================================================
+  PROFILING RESULTS SUMMARY
+================================================================================
+  Total wall-clock time: 837.72 seconds (13.96 minutes)
+
+================================================================================
+  TIME BY MODULE/STAGE
+================================================================================
+
+Module/Stage                   Time (s)     Percentage  
+------------------------------------------------------
+other                            10649.95s       89.6%
+visualize                          652.86s        5.5%
+compatibility                      418.03s        3.5%
+numpy                              141.35s        1.2%
+chain_code                          17.80s        0.1%
+preprocessing                       10.24s        0.1%
+shape_descriptors                    0.74s        0.0%
+relaxation                           0.30s        0.0%
+cv2/opencv                           0.30s        0.0%
+hard_discriminators                  0.00s        0.0%
+ensemble_voting                      0.00s        0.0%
+------------------------------------------------------
+TOTAL                            11891.57s      100.0%
+
+================================================================================
+  TOP 30 SLOWEST FUNCTIONS (by cumulative time)
+================================================================================
+         163739432 function calls (159245549 primitive calls) in 837.515 seconds
+
+   Ordered by: cumulative time
+   List reduced from 5983 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.003    0.003  836.109  836.109 C:\Users\I763940\icbv-fragment-reconstruction\run_test.py:321(main)
+       45    0.028    0.001  836.094   18.580 C:\Users\I763940\icbv-fragment-reconstruction\run_test.py:81(run_one_folder)
+       45    0.285    0.006  834.164   18.537 C:\Users\I763940\icbv-fragment-reconstruction\src\main.py:246(run_pipeline)
+      132    0.089    0.001  276.767    2.097 C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:100(render_assembly_proposal)
+      396    0.006    0.000  242.923    0.613 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\pyplot.py:1621(subplots)
+      396    0.007    0.000  242.033    0.611 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\pyplot.py:1245(savefig)
+      396    0.185    0.000  241.980    0.611 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\figure.py:3334(savefig)
+      396    0.057    0.000  241.787    0.611 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py:2051(print_figure)
+       44    0.538    0.012  188.414    4.282 C:\Users\I763940\icbv-fragment-reconstruction\src\compatibility.py:453(build_compatibility_matrix)
+      396    0.017    0.000  184.860    0.467 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\pyplot.py:871(figure)
+      396    0.005    0.000  184.796    0.467 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\pyplot.py:548(new_figure_manager)
+      396    0.011    0.000  184.714    0.466 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py:3497(new_figure_manager)
+      396    0.002    0.000  184.224    0.465 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py:3506(new_figure_manager_given_figure)
+      396    0.007    0.000  184.222    0.465 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py:1774(new_manager)
+      396    0.056    0.000  184.205    0.465 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backends\_backend_tk.py:528(create_with_canvas)
+      132    0.651    0.005  166.751    1.263 C:\Users\I763940\icbv-fragment-reconstruction\src\assembly_renderer.py:255(render_assembly_sheet)
+      792    0.004    0.000  163.254    0.206 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\artist.py:92(draw_wrapper)
+48478/792    0.448    0.000  163.250    0.206 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\artist.py:53(draw_wrapper)
+      792    0.037    0.000  163.239    0.206 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\figure.py:3237(draw)
+ 4928/792    0.099    0.000  161.434    0.204 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\image.py:116(_draw_list_compositing_images)
+     4136    0.236    0.000  159.707    0.039 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axes\_base.py:3161(draw)
+     6156    0.296    0.000  146.713    0.024 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axis.py:1337(get_tightbbox)
+     8272    0.509    0.000  140.509    0.017 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axes\_base.py:3090(_update_title_position)
+      792    0.008    0.000  129.179    0.163 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backend_bases.py:2042(<lambda>)
+      792    0.004    0.000  129.170    0.163 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backends\backend_agg.py:434(print_png)
+      792    0.024    0.000  129.166    0.163 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\backends\backend_agg.py:424(_print_pil)
+    84532  128.129    0.002  128.937    0.002 {method 'call' of '_tkinter.tkapp' objects}
+     4136    0.256    0.000  113.036    0.027 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axes\_base.py:4508(get_tightbbox)
+      263    2.466    0.009  103.772    0.395 C:\Users\I763940\icbv-fragment-reconstruction\src\compatibility.py:311(extract_gabor_features)
+    20756    2.174    0.000   98.435    0.005 C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\site-packages\matplotlib\axis.py:1276(_update_ticks)
+
+
+Traceback (most recent call last):
+  File "C:\Users\I763940\icbv-fragment-reconstruction\profile_tests.py", line 239, in <module>
+    main()
+  File "C:\Users\I763940\icbv-fragment-reconstruction\profile_tests.py", line 210, in main
+    s = pstats.Stats(stats, stream=f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\pstats.py", line 115, in __init__
+    self.init(arg)
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\pstats.py", line 129, in init
+    self.load_stats(arg)
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\pstats.py", line 155, in load_stats
+    raise TypeError("Cannot create or construct a %r object from %r"
+TypeError: Cannot create or construct a <class 'pstats.Stats'> object from <pstats.Stats object at 0x000001E964911D90>

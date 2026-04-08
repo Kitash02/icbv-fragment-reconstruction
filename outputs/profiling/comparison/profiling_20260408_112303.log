@@ -1,0 +1,227 @@
+2026-04-08 11:23:03,018 [INFO] profiler: Profiling log: outputs/profiling/comparison\profiling_20260408_112303.log
+2026-04-08 11:23:03,018 [INFO] profiler: ================================================================================
+2026-04-08 11:23:03,019 [INFO] profiler: FRAGMENT RECONSTRUCTION PERFORMANCE PROFILER
+2026-04-08 11:23:03,019 [INFO] profiler: ================================================================================
+2026-04-08 11:23:03,019 [INFO] profiler: Input directory: data/sample
+2026-04-08 11:23:03,019 [INFO] profiler: Output directory: outputs/profiling/comparison
+2026-04-08 11:23:03,019 [WARNING] profiler: psutil not installed; memory profiling disabled.
+2026-04-08 11:23:03,019 [WARNING] profiler: Install with: pip install psutil
+2026-04-08 11:23:03,019 [INFO] profiler: Running comparison for fragment counts: [3, 5]
+2026-04-08 11:23:03,019 [INFO] profiler: 
+============================================================
+2026-04-08 11:23:03,019 [INFO] profiler: Profiling with 3 fragments
+2026-04-08 11:23:03,019 [INFO] profiler: ============================================================
+2026-04-08 11:23:03,020 [INFO] __main__: Processing 3 fragments from data/sample
+2026-04-08 11:23:03,023 [INFO] preprocessing: Loaded image data\sample\fragment_01.png -- shape (500, 500, 3)
+2026-04-08 11:23:03,033 [INFO] preprocessing: Sobel gradient -- mean=3.1, max=255.0
+2026-04-08 11:23:03,034 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:03,035 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:03,035 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:03,037 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:03,037 [INFO] preprocessing: Extracted contour with 630 boundary points
+2026-04-08 11:23:03,037 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4deg)
+2026-04-08 11:23:03,041 [INFO] preprocessing: Loaded image data\sample\fragment_02.png -- shape (500, 500, 3)
+2026-04-08 11:23:03,045 [INFO] preprocessing: Sobel gradient -- mean=2.2, max=255.0
+2026-04-08 11:23:03,047 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:03,047 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:03,047 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:03,047 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:03,047 [INFO] preprocessing: Extracted contour with 464 boundary points
+2026-04-08 11:23:03,047 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0deg)
+2026-04-08 11:23:03,047 [INFO] preprocessing: Loaded image data\sample\fragment_03.png -- shape (500, 500, 3)
+2026-04-08 11:23:03,058 [INFO] preprocessing: Sobel gradient -- mean=2.0, max=254.0
+2026-04-08 11:23:03,059 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:03,060 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:03,060 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:03,062 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:03,063 [INFO] preprocessing: Extracted contour with 430 boundary points
+2026-04-08 11:23:03,063 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5deg)
+2026-04-08 11:23:03,063 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4deg)
+2026-04-08 11:23:03,063 [INFO] chain_code: Chain code: length=528, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 0, 7, 0, 6, 1, 1, 0, 1, 7, 7, 1, 0, 6, 2, 6, 0, 0, 1, 0, 0, 2, 7, 0, 7, 1, 1, 0, 2, 6, 1, 7, 0, 1, 0, 7, 2, 6, 1, 5, 2, 6, 0, 0, 7, 1, 2, 7, 0, 1, 1, 7, 7, 1, 7, 0, 1, 2, 4, 2, 6, 2, 7, 0, 0, 1, 6, 0, 0, 0]
+2026-04-08 11:23:03,063 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0deg)
+2026-04-08 11:23:03,067 [INFO] chain_code: Chain code: length=347, segments=4, preview=[0, 0, 0, 0, 0, 1, 7, 0, 1, 1, 7, 1, 7, 1, 0, 1, 7, 1, 0, 0, 1, 7, 7, 2, 7, 7, 1, 1, 6, 6, 0, 0, 0, 1, 7, 1, 1, 0, 7, 1, 7, 1, 0, 6, 0, 1, 1, 7, 1, 7, 1, 6, 2, 0, 7, 1, 7, 0, 7, 0, 0, 1, 1, 7, 1, 7, 1, 7, 1, 7, 7, 1, 6, 1, 7, 1, 6, 1, 7, 2]
+2026-04-08 11:23:03,067 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5deg)
+2026-04-08 11:23:03,067 [INFO] chain_code: Chain code: length=410, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 0, 0, 6, 2, 7, 1, 0, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 7, 1, 7, 7, 0, 0, 0, 7, 7, 1, 7]
+2026-04-08 11:23:03,067 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.989  mean=0.994  max=0.999
+2026-04-08 11:23:03,099 [INFO] compatibility: Compatibility matrix built: shape=(3, 4, 3, 4), mean=0.5564, max=0.9489
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.004338
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 02 -- max Delta: 0.003870
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 03 -- max Delta: 0.003532
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 04 -- max Delta: 0.003321
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 05 -- max Delta: 0.003169
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 06 -- max Delta: 0.003221
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 07 -- max Delta: 0.003313
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 08 -- max Delta: 0.003387
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 09 -- max Delta: 0.003446
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 10 -- max Delta: 0.003496
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 11 -- max Delta: 0.003537
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 12 -- max Delta: 0.003572
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 13 -- max Delta: 0.003602
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 14 -- max Delta: 0.003628
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 15 -- max Delta: 0.003651
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 16 -- max Delta: 0.003670
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 17 -- max Delta: 0.003687
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 18 -- max Delta: 0.003702
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 19 -- max Delta: 0.003715
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 20 -- max Delta: 0.003725
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 21 -- max Delta: 0.003733
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 22 -- max Delta: 0.003740
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 23 -- max Delta: 0.003745
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 24 -- max Delta: 0.003748
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 25 -- max Delta: 0.003749
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 26 -- max Delta: 0.003748
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 27 -- max Delta: 0.003746
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 28 -- max Delta: 0.003742
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 29 -- max Delta: 0.003737
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 30 -- max Delta: 0.003730
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 31 -- max Delta: 0.003721
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 32 -- max Delta: 0.003711
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 33 -- max Delta: 0.003699
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 34 -- max Delta: 0.003686
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 35 -- max Delta: 0.003671
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 36 -- max Delta: 0.003655
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 37 -- max Delta: 0.003637
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 38 -- max Delta: 0.003620
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 39 -- max Delta: 0.003604
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 40 -- max Delta: 0.003586
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 41 -- max Delta: 0.003567
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 42 -- max Delta: 0.003546
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 43 -- max Delta: 0.003525
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 44 -- max Delta: 0.003502
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 45 -- max Delta: 0.003479
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 46 -- max Delta: 0.003454
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 47 -- max Delta: 0.003428
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 48 -- max Delta: 0.003401
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 49 -- max Delta: 0.003373
+2026-04-08 11:23:03,099 [INFO] relaxation: Relaxation iteration 50 -- max Delta: 0.003345
+2026-04-08 11:23:03,099 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-08 11:23:03,579 [INFO] visualize: Saved fragment grid -> outputs/profiling/comparison\temp_viz\fragments.png
+2026-04-08 11:23:03,891 [INFO] visualize: Saved compatibility heatmap -> outputs/profiling/comparison\temp_viz\heatmap.png
+2026-04-08 11:23:04,287 [INFO] visualize: Saved convergence plot -> outputs/profiling/comparison\temp_viz\convergence.png
+2026-04-08 11:23:04,789 [INFO] visualize: Saved assembly proposal #1 -> outputs/profiling/comparison\temp_viz\assembly_01.png
+2026-04-08 11:23:05,334 [INFO] visualize: Saved assembly proposal #2 -> outputs/profiling/comparison\temp_viz\assembly_02.png
+2026-04-08 11:23:05,908 [INFO] visualize: Saved assembly proposal #3 -> outputs/profiling/comparison\temp_viz\assembly_03.png
+2026-04-08 11:23:06,546 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_01_geometric.png
+2026-04-08 11:23:07,177 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_02_geometric.png
+2026-04-08 11:23:07,790 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_03_geometric.png
+2026-04-08 11:23:07,793 [INFO] profiler: Saved report -> outputs/profiling/comparison\profiling_report_3_fragments.txt
+2026-04-08 11:23:07,793 [INFO] profiler: 
+============================================================
+2026-04-08 11:23:07,795 [INFO] profiler: Profiling with 5 fragments
+2026-04-08 11:23:07,795 [INFO] profiler: ============================================================
+2026-04-08 11:23:07,795 [INFO] __main__: Processing 5 fragments from data/sample
+2026-04-08 11:23:07,795 [INFO] preprocessing: Loaded image data\sample\fragment_01.png -- shape (500, 500, 3)
+2026-04-08 11:23:07,808 [INFO] preprocessing: Sobel gradient -- mean=3.1, max=255.0
+2026-04-08 11:23:07,809 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:07,811 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:07,811 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:07,814 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:07,815 [INFO] preprocessing: Extracted contour with 630 boundary points
+2026-04-08 11:23:07,816 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4deg)
+2026-04-08 11:23:07,818 [INFO] preprocessing: Loaded image data\sample\fragment_02.png -- shape (500, 500, 3)
+2026-04-08 11:23:07,824 [INFO] preprocessing: Sobel gradient -- mean=2.2, max=255.0
+2026-04-08 11:23:07,824 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:07,829 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:07,829 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:07,829 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:07,834 [INFO] preprocessing: Extracted contour with 464 boundary points
+2026-04-08 11:23:07,834 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0deg)
+2026-04-08 11:23:07,838 [INFO] preprocessing: Loaded image data\sample\fragment_03.png -- shape (500, 500, 3)
+2026-04-08 11:23:07,847 [INFO] preprocessing: Sobel gradient -- mean=2.0, max=254.0
+2026-04-08 11:23:07,849 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:07,851 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:07,851 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:07,854 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:07,856 [INFO] preprocessing: Extracted contour with 430 boundary points
+2026-04-08 11:23:07,857 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5deg)
+2026-04-08 11:23:07,859 [INFO] preprocessing: Loaded image data\sample\fragment_04.png -- shape (500, 500, 3)
+2026-04-08 11:23:07,870 [INFO] preprocessing: Sobel gradient -- mean=1.8, max=255.0
+2026-04-08 11:23:07,870 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:07,875 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:07,875 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:07,878 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:07,879 [INFO] preprocessing: Extracted contour with 356 boundary points
+2026-04-08 11:23:07,880 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2deg)
+2026-04-08 11:23:07,883 [INFO] preprocessing: Loaded image data\sample\fragment_05.png -- shape (500, 500, 3)
+2026-04-08 11:23:07,890 [INFO] preprocessing: Sobel gradient -- mean=1.7, max=255.0
+2026-04-08 11:23:07,890 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-08 11:23:07,890 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-08 11:23:07,890 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-08 11:23:07,894 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-08 11:23:07,896 [INFO] preprocessing: Extracted contour with 339 boundary points
+2026-04-08 11:23:07,896 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6deg)
+2026-04-08 11:23:07,896 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4deg)
+2026-04-08 11:23:07,899 [INFO] chain_code: Chain code: length=528, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 0, 7, 0, 6, 1, 1, 0, 1, 7, 7, 1, 0, 6, 2, 6, 0, 0, 1, 0, 0, 2, 7, 0, 7, 1, 1, 0, 2, 6, 1, 7, 0, 1, 0, 7, 2, 6, 1, 5, 2, 6, 0, 0, 7, 1, 2, 7, 0, 1, 1, 7, 7, 1, 7, 0, 1, 2, 4, 2, 6, 2, 7, 0, 0, 1, 6, 0, 0, 0]
+2026-04-08 11:23:07,900 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0deg)
+2026-04-08 11:23:07,901 [INFO] chain_code: Chain code: length=347, segments=4, preview=[0, 0, 0, 0, 0, 1, 7, 0, 1, 1, 7, 1, 7, 1, 0, 1, 7, 1, 0, 0, 1, 7, 7, 2, 7, 7, 1, 1, 6, 6, 0, 0, 0, 1, 7, 1, 1, 0, 7, 1, 7, 1, 0, 6, 0, 1, 1, 7, 1, 7, 1, 6, 2, 0, 7, 1, 7, 0, 7, 0, 0, 1, 1, 7, 1, 7, 1, 7, 1, 7, 7, 1, 6, 1, 7, 1, 6, 1, 7, 2]
+2026-04-08 11:23:07,901 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5deg)
+2026-04-08 11:23:07,903 [INFO] chain_code: Chain code: length=410, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 0, 0, 6, 2, 7, 1, 0, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 7, 1, 7, 7, 0, 0, 0, 7, 7, 1, 7]
+2026-04-08 11:23:07,904 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2deg)
+2026-04-08 11:23:07,905 [INFO] chain_code: Chain code: length=294, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 1, 1, 0, 7, 1, 0, 7, 2, 7, 7, 1, 6, 0, 0, 0, 0, 0, 0, 1, 6, 0, 1, 6, 2, 7, 1, 6, 2, 7, 2, 7, 1, 7, 2, 7, 7, 1, 7, 0, 7, 0, 7, 0, 0, 1, 6, 2, 6, 2, 1, 6, 0, 2, 0, 0, 1, 7, 1, 7]
+2026-04-08 11:23:07,905 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6deg)
+2026-04-08 11:23:07,908 [INFO] chain_code: Chain code: length=262, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 7, 2, 7, 7, 1, 7, 2, 7, 7, 1, 1, 7, 7, 2, 7, 7, 0, 2, 7, 0, 0, 7, 1, 7, 0, 0, 1, 7, 1, 7, 1, 7, 0, 1, 7, 1, 0, 0, 7, 1, 7, 0, 7, 0, 1, 6, 1, 0, 0, 1, 7, 0, 7, 7, 1, 0, 0, 0, 0, 1, 1, 7, 1, 7, 7, 0, 0, 7]
+2026-04-08 11:23:07,911 [INFO] compatibility: Color similarity matrix (Bhattacharyya): min=0.985  mean=0.995  max=1.000
+2026-04-08 11:23:08,032 [INFO] compatibility: Compatibility matrix built: shape=(5, 4, 5, 4), mean=0.6616, max=0.9614
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 01 -- max Delta: 0.003551
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 02 -- max Delta: 0.003322
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 03 -- max Delta: 0.003122
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 04 -- max Delta: 0.002945
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 05 -- max Delta: 0.002786
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 06 -- max Delta: 0.002644
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 07 -- max Delta: 0.002515
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 08 -- max Delta: 0.002397
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 09 -- max Delta: 0.002287
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 10 -- max Delta: 0.002289
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 11 -- max Delta: 0.002306
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 12 -- max Delta: 0.002320
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 13 -- max Delta: 0.002331
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 14 -- max Delta: 0.002339
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 15 -- max Delta: 0.002344
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 16 -- max Delta: 0.002346
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 17 -- max Delta: 0.002346
+2026-04-08 11:23:08,034 [INFO] relaxation: Relaxation iteration 18 -- max Delta: 0.002343
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 19 -- max Delta: 0.002337
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 20 -- max Delta: 0.002329
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 21 -- max Delta: 0.002319
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 22 -- max Delta: 0.002306
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 23 -- max Delta: 0.002292
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 24 -- max Delta: 0.002275
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 25 -- max Delta: 0.002257
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 26 -- max Delta: 0.002237
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 27 -- max Delta: 0.002215
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 28 -- max Delta: 0.002192
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 29 -- max Delta: 0.002168
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 30 -- max Delta: 0.002147
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 31 -- max Delta: 0.002133
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 32 -- max Delta: 0.002118
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 33 -- max Delta: 0.002102
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 34 -- max Delta: 0.002085
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 35 -- max Delta: 0.002068
+2026-04-08 11:23:08,036 [INFO] relaxation: Relaxation iteration 36 -- max Delta: 0.002049
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 37 -- max Delta: 0.002031
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 38 -- max Delta: 0.002011
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 39 -- max Delta: 0.001991
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 40 -- max Delta: 0.001980
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 41 -- max Delta: 0.001970
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 42 -- max Delta: 0.001959
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 43 -- max Delta: 0.001948
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 44 -- max Delta: 0.001935
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 45 -- max Delta: 0.001922
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 46 -- max Delta: 0.001909
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 47 -- max Delta: 0.001895
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 48 -- max Delta: 0.001880
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 49 -- max Delta: 0.001865
+2026-04-08 11:23:08,038 [INFO] relaxation: Relaxation iteration 50 -- max Delta: 0.001849
+2026-04-08 11:23:08,038 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-08 11:23:08,646 [INFO] visualize: Saved fragment grid -> outputs/profiling/comparison\temp_viz\fragments.png
+2026-04-08 11:23:09,118 [INFO] visualize: Saved compatibility heatmap -> outputs/profiling/comparison\temp_viz\heatmap.png
+2026-04-08 11:23:09,640 [INFO] visualize: Saved convergence plot -> outputs/profiling/comparison\temp_viz\convergence.png
+2026-04-08 11:23:10,299 [INFO] visualize: Saved assembly proposal #1 -> outputs/profiling/comparison\temp_viz\assembly_01.png
+2026-04-08 11:23:10,923 [INFO] visualize: Saved assembly proposal #2 -> outputs/profiling/comparison\temp_viz\assembly_02.png
+2026-04-08 11:23:11,513 [INFO] visualize: Saved assembly proposal #3 -> outputs/profiling/comparison\temp_viz\assembly_03.png
+2026-04-08 11:23:11,944 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_01_geometric.png
+2026-04-08 11:23:12,450 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_02_geometric.png
+2026-04-08 11:23:12,859 [INFO] assembly_renderer: Saved geometric assembly sheet -> outputs/profiling/comparison\temp_viz\assembly_03_geometric.png
+2026-04-08 11:23:12,864 [INFO] profiler: Saved report -> outputs/profiling/comparison\profiling_report_5_fragments.txt
+2026-04-08 11:23:13,277 [INFO] profiler: Saved comparison chart -> outputs/profiling/comparison\comparison_chart.png
+2026-04-08 11:23:13,278 [INFO] profiler: Saved comparison summary -> outputs/profiling/comparison\comparison_summary.txt
