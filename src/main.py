@@ -57,8 +57,8 @@ N_TOP_ASSEMBLIES = 3
 # Conservative values chosen to avoid false positives on positive test cases.
 # Fragment sets with a clear bimodal BC distribution (one group with low mutual
 # similarity) are immediately rejected before the expensive geometric pipeline.
-COLOR_PRECHECK_GAP_THRESH = 0.25    # minimum gap between low and high BC group
-COLOR_PRECHECK_LOW_MAX = 0.62       # max allowed BC in the "low" group
+COLOR_PRECHECK_GAP_THRESH = 0.15    # minimum gap between low and high BC group (FIXED: was 0.25)
+COLOR_PRECHECK_LOW_MAX = 0.75       # max allowed BC in the "low" group (FIXED: was 0.62)
 
 
 def detect_mixed_source_fragments(images: list) -> tuple:
