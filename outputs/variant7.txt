@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\I763940\icbv-fragment-reconstruction\run_variant7.py", line 21, in <module>
-    import relaxation_variant7
-  File "C:\Users\I763940\icbv-fragment-reconstruction\src\relaxation_variant7.py", line 29, in <module>
-    from relaxation import (
-ImportError: cannot import name 'classify_pair' from 'relaxation' (C:\Users\I763940\icbv-fragment-reconstruction\src\relaxation.py)
