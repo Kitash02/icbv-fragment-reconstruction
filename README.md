@@ -3,24 +3,6 @@
 
 ---
 
-## 🎯 Recent Updates
-
-**April 2026 - Evolutionary Optimization Experiment**
-
-We conducted a comprehensive algorithm optimization experiment testing **10 algorithm variants in parallel**. The experiment achieved significant accuracy improvements:
-
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Positive Accuracy | 62.2% | **87.5%** | +25.3 pp |
-| Negative Accuracy | 55.6% | **83.3%** | +27.7 pp |
-| Overall Accuracy | 62.2% | **85.1%** | +22.9 pp |
-
-**Best performer**: Variant 0 Iteration 2 (optimal thresholds 0.74/0.69)
-
-📖 **[Read the full experiment documentation →](EXPERIMENT_DOCUMENTATION.md)**
-
----
-
 ## What This Project Does
 
 Imagine finding hundreds of broken pottery shards at an excavation site. A conservator would spend weeks trying to figure out which pieces belong together and how they fit. This project automates that process using computer vision.
@@ -46,12 +28,12 @@ The system is designed around a concrete academic constraint: every major algori
 pip install -r requirements.txt
 
 # Launch GUI
-python src/gui_main.py
+python launch_gui.py
 ```
 
 The GUI allows you to:
 - ✓ Load and preview fragments visually
-- ✓ Select algorithm variants (Baseline, Variant 0, 1, 5, 8, 9)
+- ✓ Select algorithm variants (Baseline, Variant 0 Iter 2, Variant 1, 5, 8, 9)
 - ✓ Adjust parameters with interactive sliders
 - ✓ View assembly results in real-time
 - ✓ Export configurations and results
@@ -66,24 +48,24 @@ The GUI allows you to:
 # Double-click FragmentReconstruction.exe to launch the GUI
 ```
 
-**What gets bundled**: Complete GUI application with all dependencies, sample data, and configuration files (~250 MB total).
+**What gets bundled**: Complete GUI application with all dependencies, sample data, and configuration files (~257 MB total).
 
-### Option 3: Command Line (Original)
+### Option 3: Command Line
 
 ```bash
-# 1 — Install dependencies (once)
+# Install dependencies (once)
 pip install -r requirements.txt
 
-# 2 — Run on the built-in sample (5 pre-made fragments)
-python src/main.py --input data/sample --output outputs/results --log outputs/logs
+# Run on the built-in sample (5 pre-made fragments)
+python src/src/main.py --input data/sample --output outputs/results --log outputs/logs
 
-# 3 — Run on your own fragment images
-python src/main.py --input /path/to/your/fragments --output outputs/results --log outputs/logs
+# Run on your own fragment images
+python src/src/main.py --input /path/to/your/fragments --output outputs/results --log outputs/logs
 
-# 4 — Run the full benchmark test suite
-python run_test.py --no-rotate
+# Run the full benchmark test suite
+python scripts/utils/run_test.py --no-rotate
 
-# 5 — Unit tests
+# Unit tests
 python -m pytest tests/
 ```
 
@@ -95,8 +77,10 @@ python -m pytest tests/
 opencv-python
 numpy
 matplotlib
-scipy
 Pillow
+pytest
+scipy
+pyyaml
 ```
 
 Install with: `pip install -r requirements.txt`
@@ -108,40 +92,92 @@ Python 3.8 or later. No GPU, no deep learning frameworks.
 ## Directory Structure
 
 ```
-icbl_final_project/
+icbv-fragment-reconstruction/
 │
-├── src/                        Core pipeline — all the actual algorithms
-│   ├── main.py                 Entry point; ties all stages together
-│   ├── preprocessing.py        Image loading, Gaussian blur, thresholding, contour extraction
-│   ├── chain_code.py           Freeman chain code encoding, curvature profiles, segment splitting
-│   ├── compatibility.py        Pairwise edge-compatibility scoring (shape + color)
-│   ├── relaxation.py           Relaxation labeling — iterative assembly search
-│   ├── visualize.py            Result rendering: heatmaps, contour overlays, convergence plots
-│   ├── assembly_renderer.py    Geometric assembly sheet output
-│   └── shape_descriptors.py    PCA-based contour normalization
+├── src/                           Core pipeline and GUI
+│   ├── launch_gui.py              GUI launcher script
+│   ├── path_resolver.py           Path resolution (dev/frozen modes)
+│   ├── gui_main.py                GUI main window
+│   ├── gui_components.py          GUI panels (Setup, Parameters, Results, About)
+│   ├── gui_monitor.py             Progress monitoring and threading
+│   ├── config/                    Configuration files
+│   │   ├── default_config.yaml    Default algorithm configuration
+│   │   └── *.json                 GUI parameter presets
+│   └── src/                       Core pipeline algorithms
+│       ├── main.py                CLI entry point; ties all stages together
+│       ├── preprocessing.py       Image loading, Gaussian blur, thresholding, contour extraction
+│       ├── chain_code.py          Freeman chain code encoding, curvature profiles, segment splitting
+│       ├── compatibility.py       Pairwise edge-compatibility scoring (shape + color)
+│       ├── relaxation.py          Relaxation labeling — iterative assembly search
+│       ├── visualize.py           Result rendering: heatmaps, contour overlays, convergence plots
+│       ├── assembly_renderer.py   Geometric assembly sheet output
+│       ├── shape_descriptors.py   PCA-based contour normalization
+│       ├── config.py              Configuration management system
+│       ├── variant_manager.py     Algorithm variant selection and management
+│       ├── hard_discriminators*.py  Multiple discriminator variants
+│       ├── ensemble_postprocess*.py Multiple ensemble voting variants
+│       ├── compatibility_variant*.py Multiple compatibility scoring variants
+│       └── relaxation_variant*.py Multiple relaxation variants
+│
+├── scripts/                       Utility and development scripts
+│   ├── utils/                     Utility scripts
+│   │   ├── run_test.py            Benchmark runner
+│   │   ├── generate_benchmark_data.py  Fragment generator from source images
+│   │   ├── setup_examples.py     Test suite generator
+│   │   └── run_variant0_iter2.py Best algorithm variant runner
+│   ├── analysis/                  Analysis scripts
+│   │   ├── memory_profile.py      Memory profiling
+│   │   └── stage_timing.py        Performance timing
+│   ├── development/               Development and testing scripts
+│   │   ├── deploy_iteration2.py   Deploy optimal configuration
+│   │   └── *.py                   Various test and evolution scripts
+│   └── build/                     Build-related scripts and logs
+│
+├── examples/                      Example scripts
+│   ├── demo_gui_monitor.py        Progress monitoring demo
+│   ├── example_progress_callback.py  Callback usage example
+│   └── *.py                       Variant selection examples
 │
 ├── data/
-│   ├── raw/                    Source images — the original archaeological photographs
-│   ├── sample/                 5 pre-made fragments for a quick demo run
+│   ├── sample/                    5 pre-made fragments for quick demo
 │   └── examples/
-│       ├── positive/           Test cases where fragments ARE from the same image → expect MATCH
-│       └── negative/           Test cases mixing fragments from DIFFERENT images → expect NO_MATCH
+│       ├── positive/              Test cases where fragments ARE from the same image → expect MATCH
+│       └── negative/              Test cases mixing fragments from DIFFERENT images → expect NO_MATCH
 │
 ├── outputs/
-│   ├── logs/                   Per-run log files (timestamped, e.g. run_20240404_143021.log)
-│   ├── results/                Pipeline output images from main.py runs
-│   ├── test_logs/              Logs from run_test.py benchmark runs
-│   └── test_results/           Assembly images from benchmark runs
+│   ├── logs/                      Per-run log files (timestamped, e.g. run_20260408_143021.log)
+│   ├── results/                   Pipeline output images from main.py runs
+│   ├── test_logs/                 Logs from benchmark runs
+│   └── test_results/              Assembly images from benchmark runs
 │
-├── docs/                       ICBV lecture notes (read-only reference material)
-├── tests/
-│   └── test_pipeline.py        Unit tests for each module
+├── docs/                          Documentation
+│   ├── EXPERIMENT_DOCUMENTATION.md Evolutionary optimization experiment report
+│   ├── QUICK_START_GUI.md        GUI quick start guide
+│   ├── API_REFERENCE.md           API documentation
+│   ├── VARIANT_MANAGER_GUIDE.md  Variant system guide
+│   ├── development/               Development notes and history
+│   └── experiments/               Experiment results and reports
 │
-├── generate_benchmark_data.py  Splits a source image into realistic fragments
-├── setup_examples.py           Generates the full data/examples/ test suite from data/raw/
-├── run_test.py                 Runs the complete benchmark and prints a PASS/FAIL table
-├── requirements.txt
-└── README.md                   This file
+├── config/                        Root-level configuration
+│   ├── default_config.yaml        Default configuration
+│   └── README.md                  Configuration documentation
+│
+├── tests/                         Test suite
+│   ├── test_pipeline.py           Core pipeline unit tests
+│   ├── test_acceptance.py         Acceptance tests
+│   ├── test_integration.py        Integration tests
+│   ├── test_all_modules.py        Module tests
+│   ├── test_extended_suite.py     Extended test suite
+│   └── conftest.py                Pytest configuration
+│
+├── benchmarks/                    Benchmark data (empty placeholder)
+│
+├── launch_gui.py                  Root-level GUI launcher (alternative entry point)
+├── build_exe.sh                   Build standalone Windows executable
+├── fragment_reconstruction.spec   PyInstaller specification
+├── requirements.txt               Python dependencies
+├── pytest.ini                     Pytest configuration
+└── README.md                      This file
 ```
 
 ---
@@ -153,7 +189,7 @@ icbl_final_project/
 Place your fragment images (PNG or JPG, one fragment per file, white or transparent background) in any folder, then run:
 
 ```bash
-python src/main.py --input /your/fragment/folder --output outputs/results --log outputs/logs
+python src/src/main.py --input /your/fragment/folder --output outputs/results --log outputs/logs
 ```
 
 The pipeline will print a `[RESULT]` line to the terminal and write all outputs to `outputs/results/`.
@@ -162,7 +198,7 @@ The pipeline will print a `[RESULT]` line to the terminal and write all outputs 
 
 ```bash
 # Split an image into 6–8 fragments, drop 1 (missing piece), add 30% damage
-python generate_benchmark_data.py \
+python scripts/utils/generate_benchmark_data.py \
   --input data/raw \
   --output my_test_fragments \
   --min-frags 6 --max-frags 8 \
@@ -180,7 +216,7 @@ python generate_benchmark_data.py \
 ### Regenerate the complete test suite
 
 ```bash
-python setup_examples.py   # reads data/raw/, writes data/examples/
+python scripts/utils/setup_examples.py   # reads data/raw/, writes data/examples/
 ```
 
 This creates:
@@ -191,16 +227,16 @@ This creates:
 
 ```bash
 # Full suite with random rotation of each fragment
-python run_test.py
+python scripts/utils/run_test.py
 
 # Without rotation (faster; easier to inspect results)
-python run_test.py --no-rotate
+python scripts/utils/run_test.py --no-rotate
 
 # Only positive cases
-python run_test.py --positive-only --no-rotate
+python scripts/utils/run_test.py --positive-only --no-rotate
 
 # Only negative cases
-python run_test.py --negative-only --no-rotate
+python scripts/utils/run_test.py --negative-only --no-rotate
 ```
 
 The benchmark prints a formatted table like this:
@@ -227,7 +263,7 @@ For each run, the pipeline writes to the specified `--output` folder:
 |---|---|
 | `fragment_contours.png` | All input fragments with extracted boundaries overlaid |
 | `compatibility_heatmap.png` | Color-coded matrix of pairwise edge similarity scores |
-| `convergence_plot.png` | How the relaxation algorithm converged iteration by iteration |
+| `convergence.png` | How the relaxation algorithm converged iteration by iteration |
 | `assembly_01.png` … `assembly_03.png` | Top-3 proposed assemblies with match scores |
 | `assembly_01_geometric.png` … | Fragments arranged in their proposed positions |
 
@@ -264,14 +300,7 @@ Every component maps directly to a lecture from the ICBV course:
 
 **Color pre-check:** Before running the expensive geometric pipeline, the system checks whether the set of fragments has a bimodal color distribution — a clear sign that two distinct source images are present. If detected, the pipeline returns NO_MATCH immediately without running relaxation labeling.
 
-**Experiment Enhancements (v2.0):**
-- **Variant 0**: Iterative threshold tuning (0.74/0.69 optimal)
-- **Variant 1**: Weighted ensemble voting (arXiv:2510.17145)
-- **Variant 5**: Aggressive color penalties (color^6)
-- **Variant 8**: Gabor fix with spectral diversity detection
-- **Variant 9**: Full research stack (multi-layer defense)
-
-See [EXPERIMENT_DOCUMENTATION.md](EXPERIMENT_DOCUMENTATION.md) for algorithmic details.
+**Algorithm Variants:** The system includes multiple tested algorithm variants with different threshold configurations, ensemble voting strategies, color penalty approaches, and discriminator combinations. See [docs/EXPERIMENT_DOCUMENTATION.md](docs/EXPERIMENT_DOCUMENTATION.md) for detailed algorithmic descriptions.
 
 ---
 
@@ -284,34 +313,35 @@ See [EXPERIMENT_DOCUMENTATION.md](EXPERIMENT_DOCUMENTATION.md) for algorithmic d
 - Relaxation labeling for global assembly optimization
 - Real-time visualization of assembly proposals
 
-**New in v2.0:**
-- 🖥️ **GUI Application** - tkinter-based desktop interface
-- 🧪 **Algorithm Variants** - 6 tested configurations to choose from
-- 📊 **Real-time Progress** - Monitor pipeline execution live
-- ⚙️ **Interactive Tuning** - Adjust parameters with sliders
-- 📈 **85.1% Accuracy** - Significant improvement from evolutionary optimization
+**GUI Application:**
+- Desktop interface with tkinter
+- Multiple algorithm variants to choose from
+- Real-time progress monitoring
+- Interactive parameter tuning with sliders
+- Preset configurations (Default, High Precision, Permissive)
+- Visual results display with image viewer
 
 ---
 
 ## Benchmark Results
 
-Running `python run_test.py --no-rotate` on the built-in `data/examples/` suite:
+Running `python scripts/utils/run_test.py --no-rotate` on the built-in `data/examples/` suite:
 
-| Category | Cases | Pass rate | Notes |
-|---|---|---|---|
-| **Positive** (same-image) | 9 | **87.5% (7/8)** | Best: Variant 0 Iteration 2 |
-| **Negative** (mixed-image) | 36 | **83.3% (30/36)** | Improved with Brown Paper fix |
+**Best Algorithm (Variant 0 Iteration 2):**
+- **Positive cases (same-image):** 7 of 8 cases correctly identified as MATCH (87.5%)
+- **Negative cases (mixed-image):** 30 of 36 cases correctly identified as NO_MATCH (83.3%)
+- **Overall accuracy:** 37 of 44 cases correct (84.1%)
 
 **Testing Algorithm Variants:**
 
 ```bash
 # Test best performer (Variant 0 Iteration 2)
-python run_variant0_iter2.py
+python scripts/utils/run_variant0_iter2.py
 
-# Expected: 87.5% positive / 83.3% negative (85.1% overall)
+# Expected: 87.5% positive / 83.3% negative (84.1% overall)
 ```
 
-The remaining failures primarily involve Getty stock images and pottery with Brown Paper Syndrome (inherently similar brown/beige artifacts).
+**Note:** Test suite includes 9 raw source images, but two (shard_01 and shard_02) are duplicates, resulting in 8 unique positive test cases.
 
 ---
 
@@ -319,38 +349,79 @@ The remaining failures primarily involve Getty stock images and pottery with Bro
 
 - **No 3D data.** The system works only on 2D photographs of pre-segmented fragments (clean background required).
 - **Same-color false positives.** Fragments from two different objects of the same material (e.g., two brown clay pots) may not be rejected by the color pre-check.
-- **Dataset contamination**: shard_01 and shard_02 are duplicate images
-- **Brown Paper Syndrome**: Brown/beige artifacts inherently hard to discriminate (documented phenomenon)
-- **Gabor discriminator**: Returns uninformative 1.0 for homogeneous pottery surfaces
+- **Dataset contamination:** shard_01 and shard_02 are duplicate images.
+- **Brown Paper Syndrome:** Brown/beige artifacts inherently hard to discriminate (documented phenomenon).
+- **Gabor discriminator:** Returns uninformative 1.0 for homogeneous pottery surfaces.
 - **Scale.** The system is designed for 5–15 fragments. Scaling to hundreds of fragments would require a faster matching strategy (e.g., ANN indexing instead of exhaustive pairwise scoring).
 - **Real excavation photos.** Fragment images must be pre-segmented (one fragment per image, clean background). Raw field photographs are not supported.
 
 ---
 
-## File Descriptions
+## Core File Descriptions
 
+### Pipeline (src/src/)
 | File | Role |
 |---|---|
-| `src/main.py` | Orchestrates the full pipeline; handles CLI arguments, logging, and output |
-| `src/gui_main.py` | **NEW** - GUI application entry point (tkinter-based) |
-| `src/gui_components.py` | **NEW** - Reusable GUI widgets (Setup, Parameters, Results, About panels) |
-| `src/gui_monitor.py` | **NEW** - Progress monitoring and threading for non-blocking execution |
-| `src/preprocessing.py` | Loads RGBA fragment images, applies Gaussian blur, extracts binary mask and contour |
-| `src/chain_code.py` | Computes Freeman chain codes, curvature profiles, and splits contours into segments |
-| `src/compatibility.py` | Builds the 4D compatibility tensor; implements curvature cross-correlation, Fourier descriptors, good-continuation bonus, and color histogram penalty |
-| `src/relaxation.py` | Implements the relaxation labeling update rule, convergence detection, assembly extraction, and verdict classification |
-| `src/hard_discriminators_variant0_iter2.py` | **NEW** - Best algorithm (85.1% accuracy) with optimal thresholds 0.74/0.69 |
-| `src/ensemble_postprocess_variant1.py` | **NEW** - Weighted ensemble voting implementation |
-| `src/compatibility_variant5.py` | **NEW** - Aggressive color^6 penalty variant |
-| `src/compatibility_variant8.py` | **NEW** - Gabor fix with spectral diversity |
-| `src/ensemble_postprocess_variant9_FINAL.py` | **NEW** - Full research stack variant |
-| `src/visualize.py` | Renders all output images: contour overlays, heatmaps, assembly proposals, convergence plots |
-| `src/assembly_renderer.py` | Produces the geometric assembly sheet (fragments placed in proposed positions) |
-| `src/shape_descriptors.py` | PCA-based contour normalization for consistent orientation |
-| `generate_benchmark_data.py` | Voronoi-based fragment generator with fracture-like boundaries, missing pieces, and erosion damage |
-| `setup_examples.py` | One-shot script to build `data/examples/` from `data/raw/` |
-| `run_test.py` | Runs the full benchmark and prints a PASS/FAIL summary table |
-| `run_variant0_iter2.py` | **NEW** - Test best algorithm variant with one command |
-| `deploy_iteration2.py` | **NEW** - Deploy optimal configuration to production |
-| `tests/test_pipeline.py` | Unit tests for preprocessing, chain code, compatibility, and relaxation modules |
-| `EXPERIMENT_DOCUMENTATION.md` | **NEW** - Complete experiment report (10 variants tested) |
+| `main.py` | Orchestrates the full pipeline; handles CLI arguments, logging, and output |
+| `preprocessing.py` | Loads fragment images, applies Gaussian blur, extracts binary mask and contour |
+| `chain_code.py` | Computes Freeman chain codes, curvature profiles, and splits contours into segments |
+| `compatibility.py` | Builds the 4D compatibility tensor; implements curvature cross-correlation, Fourier descriptors, good-continuation bonus, and color histogram penalty |
+| `relaxation.py` | Implements the relaxation labeling update rule, convergence detection, assembly extraction, and verdict classification |
+| `visualize.py` | Renders all output images: contour overlays, heatmaps, assembly proposals, convergence plots |
+| `assembly_renderer.py` | Produces the geometric assembly sheet (fragments placed in proposed positions) |
+| `shape_descriptors.py` | PCA-based contour normalization for consistent orientation |
+| `config.py` | Configuration management system |
+| `variant_manager.py` | Algorithm variant selection and management |
+
+### GUI (src/)
+| File | Role |
+|---|---|
+| `launch_gui.py` | GUI launcher with path resolution |
+| `gui_main.py` | Main GUI window and menu system |
+| `gui_components.py` | Reusable GUI panels (Setup, Parameters, Results, About) |
+| `gui_monitor.py` | Progress monitoring and threading for non-blocking execution |
+| `path_resolver.py` | Path resolution for development and frozen (PyInstaller) modes |
+
+### Utilities (scripts/)
+| File | Role |
+|---|---|
+| `scripts/utils/run_test.py` | Runs the full benchmark and prints a PASS/FAIL summary table |
+| `scripts/utils/generate_benchmark_data.py` | Voronoi-based fragment generator with fracture-like boundaries, missing pieces, and erosion damage |
+| `scripts/utils/setup_examples.py` | One-shot script to build `data/examples/` from source images |
+| `scripts/utils/run_variant0_iter2.py` | Test best algorithm variant with one command |
+| `scripts/development/deploy_iteration2.py` | Deploy optimal configuration to production |
+
+### Tests (tests/)
+| File | Role |
+|---|---|
+| `test_pipeline.py` | Core pipeline unit tests |
+| `test_acceptance.py` | Acceptance tests |
+| `test_integration.py` | Integration tests |
+| `test_all_modules.py` | Comprehensive module tests |
+| `test_extended_suite.py` | Extended test suite |
+| `conftest.py` | Pytest configuration and fixtures |
+
+---
+
+## Documentation
+
+- **[docs/EXPERIMENT_DOCUMENTATION.md](docs/EXPERIMENT_DOCUMENTATION.md)** — Complete evolutionary optimization experiment report
+- **[docs/QUICK_START_GUI.md](docs/QUICK_START_GUI.md)** — GUI quick start guide
+- **[docs/API_REFERENCE.md](docs/API_REFERENCE.md)** — API reference documentation
+- **[docs/VARIANT_MANAGER_GUIDE.md](docs/VARIANT_MANAGER_GUIDE.md)** — Algorithm variant system guide
+- **[config/README.md](config/README.md)** — Configuration system documentation
+
+---
+
+## Project Information
+
+**Course:** Introduction to Computational and Biological Vision (ICBV)
+**Date:** April 2026
+**Language:** Python 3.8+
+**Dependencies:** OpenCV, NumPy, Matplotlib, SciPy, Pillow, PyYAML, pytest
+
+---
+
+## License
+
+This project is part of academic coursework for the ICBV course.
