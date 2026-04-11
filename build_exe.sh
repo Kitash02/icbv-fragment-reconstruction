@@ -46,7 +46,7 @@ fi
 echo "Building EXE with PyInstaller..."
 echo "This may take several minutes..."
 echo ""
-pyinstaller fragment_reconstruction.spec
+python -m PyInstaller fragment_reconstruction.spec
 
 # Check if build was successful
 if [ -d "dist/FragmentReconstruction" ]; then

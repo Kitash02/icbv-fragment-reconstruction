@@ -971,7 +971,7 @@ class SetupPanel(ttk.Frame):
     def _open_experiment_docs(self):
         """Open EXPERIMENT_DOCUMENTATION.md in default viewer."""
         import webbrowser
-        doc_path = os.path.join(os.path.dirname(__file__), "..", "EXPERIMENT_DOCUMENTATION.md")
+        doc_path = os.path.join(os.path.dirname(__file__), "..", "docs", "EXPERIMENT_DOCUMENTATION.md")
 
         if os.path.exists(doc_path):
             webbrowser.open(f"file://{os.path.abspath(doc_path)}")
@@ -2047,7 +2047,7 @@ class AboutPanel(ttk.Frame):
             "• Optimized hard discriminator thresholds\n"
             "• Refined gap detection for boundary quality\n"
             "• Improved ensemble voting logic\n\n"
-            "See EXPERIMENT_DOCUMENTATION.md for full details."
+            "See docs/EXPERIMENT_DOCUMENTATION.md for full details."
         )
 
         results_label = ttk.Label(
@@ -2097,7 +2097,7 @@ class AboutPanel(ttk.Frame):
     def _open_experiment_docs(self):
         """Open EXPERIMENT_DOCUMENTATION.md in default viewer."""
         import webbrowser
-        doc_path = os.path.join(os.path.dirname(__file__), "..", "EXPERIMENT_DOCUMENTATION.md")
+        doc_path = os.path.join(os.path.dirname(__file__), "..", "docs", "EXPERIMENT_DOCUMENTATION.md")
 
         if os.path.exists(doc_path):
             webbrowser.open(f"file://{os.path.abspath(doc_path)}")
@@ -2107,7 +2107,7 @@ class AboutPanel(ttk.Frame):
     def _open_readme(self):
         """Open README.md in default viewer."""
         import webbrowser
-        readme_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
+        readme_path = os.path.join(os.path.dirname(__file__), "..", "docs", "README.md")
 
         if os.path.exists(readme_path):
             webbrowser.open(f"file://{os.path.abspath(readme_path)}")

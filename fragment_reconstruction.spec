@@ -17,8 +17,9 @@ a = Analysis(
     datas=[
         ('data/sample', 'data/sample'),
         ('config', 'config'),
-        ('README.md', '.'),
-        ('QUICK_START_GUI.md', '.'),
+        ('docs/README.md', 'docs'),
+        ('docs/QUICK_START_GUI.md', 'docs'),
+        ('docs/EXPERIMENT_DOCUMENTATION.md', 'docs'),
     ],
     hiddenimports=[
         # Tkinter and GUI components

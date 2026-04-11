@@ -110,8 +110,7 @@ def setup_logging(log_dir: str = None) -> logging.Logger:
     """
     Configure file and console logging with a timestamped log file.
 
-    INFO and above go to both the log file and stdout, matching the
-    logging specification in CLAUDE.md.
+    INFO and above go to both the log file and stdout.
     """
     if log_dir is None:
         log_dir = get_log_dir()
