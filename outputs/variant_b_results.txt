@@ -1,0 +1,130 @@
+
+====================================================================
+  RUNNING 45 TEST CASES  (WITH rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  ▶ [P] gettyimages-1311604917-1024x1024                    ✓ MATCH       13.2s  ✓ PASS
+  ▶ [P] gettyimages-170096524-1024x1024                     ✓ MATCH       13.7s  ✓ PASS
+  ▶ [P] gettyimages-2177809001-1024x1024                    ✓ MATCH       14.3s  ✓ PASS
+  ▶ [P] gettyimages-470816328-2048x2048                     ✓ MATCH       15.0s  ✓ PASS
+  ▶ [P] high-res-antique-close-up-earth-muted-tones-geom  C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✓ MATCH       8.2s  ✓ PASS
+  ▶ [P] scroll                                              ✗ NO_MATCH    10.6s  ✗ FAIL
+  ▶ [P] shard_01_british                                    ✓ MATCH       7.4s  ✓ PASS
+  ▶ [P] shard_02_cord_marked                                ✓ MATCH       7.8s  ✓ PASS
+  ▶ [P] Wall painting from Room H of the Villa of P. Fan    ✗ NO_MATCH    12.7s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-13116049_gettyimages-17009652     ✓ MATCH       15.6s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-13116049_gettyimages-21778090     ✓ MATCH       13.5s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-13116049_gettyimages-47081632     ✓ MATCH       15.9s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-13116049_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✓ MATCH       17.6s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-13116049_scroll                   ✗ NO_MATCH    13.4s  ✓ PASS
+  ▶ [N] mixed_gettyimages-13116049_shard_01_british         ✗ NO_MATCH    10.9s  ✓ PASS
+  ▶ [N] mixed_gettyimages-13116049_shard_02_cord_marked     ✗ NO_MATCH    11.4s  ✓ PASS
+  ▶ [N] mixed_gettyimages-17009652_gettyimages-21778090     ✗ NO_MATCH    15.3s  ✓ PASS
+  ▶ [N] mixed_gettyimages-17009652_gettyimages-47081632     ✓ MATCH       13.5s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-17009652_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✓ MATCH       10.4s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-17009652_scroll                   ✗ NO_MATCH    14.3s  ✓ PASS
+  ▶ [N] mixed_gettyimages-17009652_shard_01_british         ✗ NO_MATCH    10.6s  ✓ PASS
+  ▶ [N] mixed_gettyimages-17009652_shard_02_cord_marked     ✓ MATCH       12.9s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-21778090_gettyimages-47081632     ✓ MATCH       16.5s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-21778090_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    10.1s  ✓ PASS
+  ▶ [N] mixed_gettyimages-21778090_scroll                   ✗ NO_MATCH    12.9s  ✓ PASS
+  ▶ [N] mixed_gettyimages-21778090_shard_01_british         ✗ NO_MATCH    10.6s  ✓ PASS
+  ▶ [N] mixed_gettyimages-21778090_shard_02_cord_marked     ✗ NO_MATCH    12.5s  ✓ PASS
+  ▶ [N] mixed_gettyimages-47081632_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    11.9s  ✓ PASS
+  ▶ [N] mixed_gettyimages-47081632_scroll                   ✗ NO_MATCH    10.7s  ✓ PASS
+  ▶ [N] mixed_gettyimages-47081632_shard_01_british         ✓ MATCH       10.0s  ✗ FAIL
+  ▶ [N] mixed_gettyimages-47081632_shard_02_cord_marked     ✗ NO_MATCH    10.9s  ✓ PASS
+  ▶ [N] mixed_high-res-antique-clo_scroll                 C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    12.5s  ✓ PASS
+  ▶ [N] mixed_high-res-antique-clo_shard_01_british       C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    7.8s  ✓ PASS
+  ▶ [N] mixed_high-res-antique-clo_shard_02_cord_marked   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    8.1s  ✓ PASS
+  ▶ [N] mixed_scroll_shard_01_british                       ✓ MATCH       10.1s  ✗ FAIL
+  ▶ [N] mixed_scroll_shard_02_cord_marked                   ✗ NO_MATCH    8.6s  ✓ PASS
+  ▶ [N] mixed_shard_01_british_shard_02_cord_marked         ✓ MATCH       7.5s  ✗ FAIL
+  ▶ [N] mixed_Wall painting from R_gettyimages-13116049     ✓ MATCH       21.8s  ✗ FAIL
+  ▶ [N] mixed_Wall painting from R_gettyimages-17009652     ✗ NO_MATCH    17.7s  ✓ PASS
+  ▶ [N] mixed_Wall painting from R_gettyimages-21778090     ✗ NO_MATCH    16.4s  ✓ PASS
+  ▶ [N] mixed_Wall painting from R_gettyimages-47081632     ✓ MATCH       17.8s  ✗ FAIL
+  ▶ [N] mixed_Wall painting from R_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  ✗ NO_MATCH    11.8s  ✓ PASS
+  ▶ [N] mixed_Wall painting from R_scroll                   ✗ NO_MATCH    13.1s  ✓ PASS
+  ▶ [N] mixed_Wall painting from R_shard_01_british         ✓ MATCH       11.7s  ✗ FAIL
+  ▶ [N] mixed_Wall painting from R_shard_02_cord_marked     ✓ MATCH       14.1s  ✗ FAIL
+
+====================================================================================================
+  RECONSTRUCTION TEST RESULTS  (WITH rotation)
+====================================================================================================
+  Test Case                                     Type    Frags    Verdict      Conf  Time(s)  Pass?
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  gettyimages-1311604917-1024x1024            positive    5      ✓ MATCH      0.00     13.2  PASS 
+  gettyimages-170096524-1024x1024             positive    6      ✓ MATCH      0.00     13.7  PASS 
+  gettyimages-2177809001-1024x1024            positive    6      ✓ MATCH      0.00     14.3  PASS 
+  gettyimages-470816328-2048x2048             positive    6      ✓ MATCH      0.00     15.0  PASS 
+  high-res-antique-close-up-earth-muted-tone  positive    6      ✓ MATCH      0.00      8.2  PASS 
+  scroll                                      positive    6    ✗ NO_MATCH     0.00     10.6  FAIL 
+  shard_01_british                            positive    6      ✓ MATCH      0.00      7.4  PASS 
+  shard_02_cord_marked                        positive    6      ✓ MATCH      0.00      7.8  PASS 
+  Wall painting from Room H of the Villa of   positive    6    ✗ NO_MATCH     0.00     12.7  FAIL 
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  mixed_gettyimages-13116049_gettyimages-170  negative    6      ✓ MATCH      0.00     15.6  FAIL 
+  mixed_gettyimages-13116049_gettyimages-217  negative    6      ✓ MATCH      0.00     13.5  FAIL 
+  mixed_gettyimages-13116049_gettyimages-470  negative    6      ✓ MATCH      0.00     15.9  FAIL 
+  mixed_gettyimages-13116049_high-res-antiqu  negative    6      ✓ MATCH      0.00     17.6  FAIL 
+  mixed_gettyimages-13116049_scroll           negative    6    ✗ NO_MATCH     0.00     13.4  PASS 
+  mixed_gettyimages-13116049_shard_01_britis  negative    6    ✗ NO_MATCH     0.00     10.9  PASS 
+  mixed_gettyimages-13116049_shard_02_cord_m  negative    6    ✗ NO_MATCH     0.00     11.4  PASS 
+  mixed_gettyimages-17009652_gettyimages-217  negative    6    ✗ NO_MATCH     0.00     15.3  PASS 
+  mixed_gettyimages-17009652_gettyimages-470  negative    6      ✓ MATCH      0.00     13.5  FAIL 
+  mixed_gettyimages-17009652_high-res-antiqu  negative    6      ✓ MATCH      0.00     10.4  FAIL 
+  mixed_gettyimages-17009652_scroll           negative    6    ✗ NO_MATCH     0.00     14.3  PASS 
+  mixed_gettyimages-17009652_shard_01_britis  negative    6    ✗ NO_MATCH     0.00     10.6  PASS 
+  mixed_gettyimages-17009652_shard_02_cord_m  negative    6      ✓ MATCH      0.00     12.9  FAIL 
+  mixed_gettyimages-21778090_gettyimages-470  negative    6      ✓ MATCH      0.00     16.5  FAIL 
+  mixed_gettyimages-21778090_high-res-antiqu  negative    6    ✗ NO_MATCH     0.00     10.1  PASS 
+  mixed_gettyimages-21778090_scroll           negative    6    ✗ NO_MATCH     0.00     12.9  PASS 
+  mixed_gettyimages-21778090_shard_01_britis  negative    6    ✗ NO_MATCH     0.00     10.6  PASS 
+  mixed_gettyimages-21778090_shard_02_cord_m  negative    6    ✗ NO_MATCH     0.00     12.5  PASS 
+  mixed_gettyimages-47081632_high-res-antiqu  negative    6    ✗ NO_MATCH     0.00     11.9  PASS 
+  mixed_gettyimages-47081632_scroll           negative    6    ✗ NO_MATCH     0.00     10.7  PASS 
+  mixed_gettyimages-47081632_shard_01_britis  negative    6      ✓ MATCH      0.00     10.0  FAIL 
+  mixed_gettyimages-47081632_shard_02_cord_m  negative    6    ✗ NO_MATCH     0.00     10.9  PASS 
+  mixed_high-res-antique-clo_scroll           negative    6    ✗ NO_MATCH     0.00     12.5  PASS 
+  mixed_high-res-antique-clo_shard_01_britis  negative    6    ✗ NO_MATCH     0.00      7.8  PASS 
+  mixed_high-res-antique-clo_shard_02_cord_m  negative    6    ✗ NO_MATCH     0.00      8.1  PASS 
+  mixed_scroll_shard_01_british               negative    6      ✓ MATCH      0.00     10.1  FAIL 
+  mixed_scroll_shard_02_cord_marked           negative    6    ✗ NO_MATCH     0.00      8.6  PASS 
+  mixed_shard_01_british_shard_02_cord_marke  negative    6      ✓ MATCH      0.00      7.5  FAIL 
+  mixed_Wall painting from R_gettyimages-131  negative    6      ✓ MATCH      0.00     21.8  FAIL 
+  mixed_Wall painting from R_gettyimages-170  negative    6    ✗ NO_MATCH     0.00     17.7  PASS 
+  mixed_Wall painting from R_gettyimages-217  negative    6    ✗ NO_MATCH     0.00     16.4  PASS 
+  mixed_Wall painting from R_gettyimages-470  negative    6      ✓ MATCH      0.00     17.8  FAIL 
+  mixed_Wall painting from R_high-res-antiqu  negative    6    ✗ NO_MATCH     0.00     11.8  PASS 
+  mixed_Wall painting from R_scroll           negative    6    ✗ NO_MATCH     0.00     13.1  PASS 
+  mixed_Wall painting from R_shard_01_britis  negative    6      ✓ MATCH      0.00     11.7  FAIL 
+  mixed_Wall painting from R_shard_02_cord_m  negative    6      ✓ MATCH      0.00     14.1  FAIL 
+  ──────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL  28/45 pass  17 fail  0 error                                                             
+====================================================================================================
+
+  Final result : 28/45 PASS
+  Results saved to: C:\Users\I763940\icbv-fragment-reconstruction\outputs\test_results
+

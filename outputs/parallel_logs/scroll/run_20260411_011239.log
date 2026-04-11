@@ -1,0 +1,91 @@
+2026-04-11 01:12:39,032 [INFO] main: Log file: outputs\parallel_logs\scroll\run_20260411_011239.log
+2026-04-11 01:12:39,034 [INFO] main: Found 6 fragment images in data/examples/positive\scroll
+2026-04-11 01:12:39,051 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,062 [INFO] preprocessing: Extracted contour with 1399 boundary points
+2026-04-11 01:12:39,064 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0836
+2026-04-11 01:12:39,065 [INFO] shape_descriptors: PCA orientation: centroid=(107.9, 204.5), angle=1.891 rad (108.4°)
+2026-04-11 01:12:39,066 [INFO] shape_descriptors: Shape summary [scroll_frag_00]: Fourier=[1.    0.512 0.204 0.062]  PCA_angle=108.37°
+2026-04-11 01:12:39,066 [INFO] shape_descriptors: PCA orientation: centroid=(107.9, 204.5), angle=1.891 rad (108.4°)
+2026-04-11 01:12:39,084 [INFO] chain_code: Chain code: length=1268, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 1, 0, 6, 1, 0, 7, 0, 1, 7, 1, 0, 1, 6, 1, 0, 7, 0, 1, 7, 1, 0, 1, 0, 7, 1, 7, 7, 1, 0, 0, 0, 1, 0, 1, 7, 0, 7, 3, 6, 1, 0, 1, 0, 7, 1, 6, 2, 7, 0, 7, 2, 7, 6, 1, 0, 1, 1, 7, 7, 7, 2, 7, 0, 0, 2, 7, 0, 7, 7, 2, 6, 1, 0]
+2026-04-11 01:12:39,084 [INFO] main: Fragment scroll_frag_00        size=293x472  contour=1399 pts  segments=4
+2026-04-11 01:12:39,104 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,104 [INFO] preprocessing: Extracted contour with 1484 boundary points
+2026-04-11 01:12:39,104 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0908
+2026-04-11 01:12:39,104 [INFO] shape_descriptors: PCA orientation: centroid=(279.2, 110.7), angle=2.958 rad (169.5°)
+2026-04-11 01:12:39,112 [INFO] shape_descriptors: Shape summary [scroll_frag_01]: Fourier=[1.    0.848 0.472 0.227]  PCA_angle=169.47°
+2026-04-11 01:12:39,112 [INFO] shape_descriptors: PCA orientation: centroid=(279.2, 110.7), angle=2.958 rad (169.5°)
+2026-04-11 01:12:39,135 [INFO] chain_code: Chain code: length=1388, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 7, 2, 6, 0, 0, 1, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 7, 0, 7, 1, 1, 7, 0, 7, 1, 0, 1, 7, 0, 0, 0, 1, 7, 0, 0, 7, 1, 1, 7, 0, 1, 7, 1, 7, 0, 0, 0, 0, 1, 0, 7, 0, 1, 7, 1, 0, 0, 0, 0, 1, 7, 1]
+2026-04-11 01:12:39,135 [INFO] main: Fragment scroll_frag_01        size=512x289  contour=1484 pts  segments=4
+2026-04-11 01:12:39,148 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,151 [INFO] preprocessing: Extracted contour with 1555 boundary points
+2026-04-11 01:12:39,154 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0393
+2026-04-11 01:12:39,154 [INFO] shape_descriptors: PCA orientation: centroid=(195.1, 242.8), angle=1.948 rad (111.6°)
+2026-04-11 01:12:39,154 [INFO] shape_descriptors: Shape summary [scroll_frag_02]: Fourier=[1.    1.726 0.624 0.187]  PCA_angle=111.61°
+2026-04-11 01:12:39,154 [INFO] shape_descriptors: PCA orientation: centroid=(195.1, 242.8), angle=1.948 rad (111.6°)
+2026-04-11 01:12:39,171 [INFO] chain_code: Chain code: length=1350, segments=4, preview=[0, 0, 0, 0, 0, 1, 0, 1, 7, 1, 7, 1, 7, 2, 7, 0, 6, 1, 0, 1, 0, 7, 1, 7, 2, 0, 1, 7, 0, 7, 2, 0, 6, 0, 7, 2, 7, 1, 6, 1, 0, 7, 1, 7, 6, 0, 7, 2, 7, 0, 1, 7, 7, 1, 0, 7, 1, 0, 2, 6, 2, 7, 6, 2, 0, 7, 2, 7, 1, 0, 1, 7, 1, 0, 6, 2, 0, 7, 1, 1]
+2026-04-11 01:12:39,174 [INFO] main: Fragment scroll_frag_02        size=384x409  contour=1555 pts  segments=4
+2026-04-11 01:12:39,176 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,181 [INFO] preprocessing: Extracted contour with 1055 boundary points
+2026-04-11 01:12:39,184 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.1250
+2026-04-11 01:12:39,184 [INFO] shape_descriptors: PCA orientation: centroid=(112.4, 201.0), angle=1.782 rad (102.1°)
+2026-04-11 01:12:39,184 [INFO] shape_descriptors: Shape summary [scroll_frag_03]: Fourier=[1.    0.259 0.159 0.095]  PCA_angle=102.11°
+2026-04-11 01:12:39,184 [INFO] shape_descriptors: PCA orientation: centroid=(112.4, 201.0), angle=1.782 rad (102.1°)
+2026-04-11 01:12:39,198 [INFO] chain_code: Chain code: length=989, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 1, 1, 7, 6, 1, 7, 7, 0, 0, 1, 7, 1, 0, 7, 1, 6, 1, 7, 1, 1, 6, 2, 7, 1, 7, 2, 0, 6, 0, 0, 7, 1, 0, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 7, 1, 0, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 0, 7, 1, 0, 0, 0]
+2026-04-11 01:12:39,198 [INFO] main: Fragment scroll_frag_03        size=183x360  contour=1055 pts  segments=4
+2026-04-11 01:12:39,215 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,223 [INFO] preprocessing: Extracted contour with 1771 boundary points
+2026-04-11 01:12:39,223 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0385
+2026-04-11 01:12:39,226 [INFO] shape_descriptors: PCA orientation: centroid=(207.0, 211.1), angle=2.268 rad (130.0°)
+2026-04-11 01:12:39,226 [INFO] shape_descriptors: Shape summary [scroll_frag_04]: Fourier=[1.    0.403 0.232 0.099]  PCA_angle=129.97°
+2026-04-11 01:12:39,226 [INFO] shape_descriptors: PCA orientation: centroid=(207.0, 211.1), angle=2.268 rad (130.0°)
+2026-04-11 01:12:39,247 [INFO] chain_code: Chain code: length=1403, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 2, 6, 1, 7, 2, 6, 1, 6, 1, 7, 0, 0, 7, 1, 0, 2, 6, 0, 7, 0, 0, 1, 0, 0, 7, 1, 1, 7, 0, 1, 7, 0, 7, 0, 0, 1, 0, 1, 7, 1, 7, 0, 1, 1, 0, 0, 0, 0, 0, 7, 1, 2, 4, 2, 6, 7, 1, 6, 1, 1, 7, 7, 2, 7, 0, 0, 1, 7, 7, 2, 7]
+2026-04-11 01:12:39,249 [INFO] main: Fragment scroll_frag_04        size=429x474  contour=1771 pts  segments=4
+2026-04-11 01:12:39,261 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,261 [INFO] preprocessing: Extracted contour with 1261 boundary points
+2026-04-11 01:12:39,261 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0974
+2026-04-11 01:12:39,261 [INFO] shape_descriptors: PCA orientation: centroid=(203.4, 188.3), angle=2.463 rad (141.1°)
+2026-04-11 01:12:39,261 [INFO] shape_descriptors: Shape summary [scroll_frag_05]: Fourier=[1.    0.309 0.292 0.161]  PCA_angle=141.11°
+2026-04-11 01:12:39,261 [INFO] shape_descriptors: PCA orientation: centroid=(203.4, 188.3), angle=2.463 rad (141.1°)
+2026-04-11 01:12:39,279 [INFO] chain_code: Chain code: length=1004, segments=4, preview=[0, 0, 0, 0, 0, 1, 6, 1, 6, 0, 7, 1, 0, 0, 0, 0, 0, 2, 7, 7, 1, 1, 7, 1, 0, 6, 1, 7, 7, 1, 1, 7, 0, 1, 1, 6, 2, 7, 2, 7, 7, 7, 1, 0, 0, 1, 0, 7, 1, 1, 7, 7, 0, 1, 0, 0, 0, 7, 0, 7, 0, 0, 1, 7, 2, 7, 7, 1, 0, 1, 0, 7, 1, 0, 7, 0, 6, 1, 7, 1]
+2026-04-11 01:12:39,279 [INFO] main: Fragment scroll_frag_05        size=370x319  contour=1261 pts  segments=4
+2026-04-11 01:12:39,289 [INFO] main: Color pre-check (Lecture 71): min_BC=0.740  max_gap=0.086  is_mixed=False
+2026-04-11 01:12:39,292 [INFO] compatibility: Extracting appearance features from 6 fragments...
+2026-04-11 01:12:41,769 [INFO] compatibility: Fragment 0 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:43,683 [INFO] compatibility: Fragment 1 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:45,323 [INFO] compatibility: Fragment 2 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:46,217 [INFO] compatibility: Fragment 3 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:48,806 [INFO] compatibility: Fragment 4 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:50,306 [INFO] compatibility: Fragment 5 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:50,309 [INFO] compatibility: Appearance similarity (color): min=0.740  mean=0.893  max=0.984
+2026-04-11 01:12:50,309 [INFO] compatibility: Appearance similarity (texture): min=0.943  mean=0.983  max=0.999
+2026-04-11 01:12:50,309 [INFO] compatibility: Appearance similarity (gabor): min=0.995  mean=1.000  max=1.000
+2026-04-11 01:12:50,310 [INFO] compatibility: Appearance similarity (haralick): min=0.986  mean=0.996  max=0.999
+2026-04-11 01:12:51,914 [INFO] compatibility: Compatibility matrix built: shape=(6, 4, 6, 4), mean=0.3877, max=0.8146
+2026-04-11 01:12:51,914 [INFO] main: Pairwise compatibility matrix (mean over segments):
+2026-04-11 01:12:51,914 [INFO] main:          scroll_frag_00  scroll_frag_01  scroll_frag_02  scroll_frag_03  scroll_frag_04  scroll_frag_05
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_00      0.0000      0.6886      0.6913      0.0000      0.4459      0.3420
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_01      0.7137      0.0000      0.6359      0.0000      0.5320      0.3787
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_02      0.6958      0.6182      0.0000      0.0000      0.5994      0.5498
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_03      0.0000      0.0000      0.0000      0.0000      0.6220      0.7729
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_04      0.4536      0.5219      0.6055      0.6103      0.0000      0.7307
+2026-04-11 01:12:51,916 [INFO] main: scroll_frag_05      0.3458      0.3696      0.5524      0.7548      0.7267      0.0000
+2026-04-11 01:12:52,015 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-11 01:12:52,015 [INFO] main: Convergence trace (50 iterations): 0.008787, 0.007754, 0.006861, 0.006106, 0.005469, 0.004926, 0.004453, 0.004029, 0.003640, 0.003275, 0.003418, 0.003552, 0.003715, 0.003864, 0.003996, 0.004108, 0.004199, 0.004270, 0.004322, 0.004356, 0.004373, 0.004377, 0.004369, 0.004352, 0.004326, 0.004295, 0.004259, 0.004219, 0.004177, 0.004134, 0.004090, 0.004044, 0.003999, 0.003954, 0.003909, 0.003863, 0.003819, 0.003774, 0.003730, 0.003686, 0.003643, 0.003599, 0.003556, 0.003513, 0.003470, 0.003428, 0.003385, 0.003342, 0.003299, 0.003256
+2026-04-11 01:12:52,017 [INFO] main: Applying Track 3 (Ensemble Voting) post-processing...
+2026-04-11 01:12:52,017 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:52,017 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING (Track 3)
+2026-04-11 01:12:52,017 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:52,041 [INFO] ensemble_postprocess: Pre-computed morphological features for 6 fragments
+2026-04-11 01:12:52,064 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:52,064 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING SUMMARY
+2026-04-11 01:12:52,064 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:52,064 [INFO] ensemble_postprocess: Total pairs re-classified: 12
+2026-04-11 01:12:52,068 [INFO] ensemble_postprocess: Assemblies with verdict changes: 3 / 3
+2026-04-11 01:12:52,068 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:52,068 [INFO] main: ============================================================
+2026-04-11 01:12:52,071 [INFO] main: ============================================================
+2026-04-11 01:12:52,071 [INFO] main: Assembly #1  verdict=MATCH       confidence=0.1333  pairs: 8 MATCH / 0 WEAK / 3 NO_MATCH
+2026-04-11 01:12:52,083 [INFO] main: Assembly #2  verdict=NO_MATCH    confidence=0.1271  pairs: 4 MATCH / 0 WEAK / 7 NO_MATCH
+2026-04-11 01:12:52,101 [INFO] main: Assembly #3  verdict=MATCH       confidence=0.1313  pairs: 8 MATCH / 0 WEAK / 3 NO_MATCH
+2026-04-11 01:12:52,115 [INFO] main: ============================================================
+2026-04-11 01:13:08,969 [INFO] main: Pipeline completed in 29.94 seconds.

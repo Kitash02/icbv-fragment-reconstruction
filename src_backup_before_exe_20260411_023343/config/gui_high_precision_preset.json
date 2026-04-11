@@ -1,0 +1,11 @@
+{
+  "color_power": 6.0,
+  "texture_power": 3.0,
+  "gabor_power": 3.0,
+  "haralick_power": 3.0,
+  "match_score_threshold": 0.85,
+  "weak_match_threshold": 0.7,
+  "assembly_confidence_threshold": 0.75,
+  "gaussian_sigma": 1.0,
+  "segment_count": 300
+}

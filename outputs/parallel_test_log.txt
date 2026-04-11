@@ -1,0 +1,45 @@
+[Variant 4] Starting...
+[Variant 1] Starting...
+[Variant 5] Starting...
+[Variant 6] Starting...
+[Variant 0] Starting...
+[Variant 3] Starting...
+[Variant 8] Starting...
+[Variant 7] Starting...
+[Variant 2] Starting...
+[Variant 9] Starting...
+================================================================================
+PARALLEL VARIANT TESTING - 10 Variants
+================================================================================
+Testing configurations:
+  Variant 0: Stage 1.6 Baseline (control)
+  Variant 1: Weighted Ensemble (arXiv:2510.17145)
+  Variant 2: Hierarchical Ensemble
+  Variant 3: Tuned Weighted Ensemble
+  Variant 4: Relaxed Thresholds
+  Variant 5: Color-Dominant (color^6)
+  Variant 6: Balanced Powers (all^2)
+  Variant 7: Optimized Powers (color^5, texture^2.5)
+  Variant 8: Adaptive Thresholds
+  Variant 9: Full Research Stack (99.3% target)
+================================================================================
+
+Traceback (most recent call last):
+  File "C:\Users\I763940\icbv-fragment-reconstruction\parallel_variant_tester.py", line 159, in main
+    print(f"[Variant {variant_id}] \u2717 FAILED: {result.get('error', 'Unknown error')}")
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 12: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\I763940\icbv-fragment-reconstruction\parallel_variant_tester.py", line 241, in <module>
+    main()
+  File "C:\Users\I763940\icbv-fragment-reconstruction\parallel_variant_tester.py", line 162, in main
+    print(f"[Variant {variant_id}] \u2717 EXCEPTION: {e}")
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 12: character maps to <undefined>

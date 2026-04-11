@@ -1,0 +1,140 @@
+[
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Baseline",
+      "weights": {
+        "color": 0.35,
+        "raw_compat": 0.25,
+        "texture": 0.2,
+        "morphological": 0.15,
+        "gabor": 0.05
+      },
+      "thresholds": [
+        0.75,
+        0.6
+      ]
+    },
+    "elapsed": 390.7061312198639
+  },
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Iteration_1_Balanced",
+      "weights": {
+        "color": 0.3,
+        "raw_compat": 0.28,
+        "texture": 0.23,
+        "morphological": 0.14,
+        "gabor": 0.05
+      },
+      "thresholds": [
+        0.75,
+        0.6
+      ]
+    },
+    "elapsed": 399.2822277545929
+  },
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Iteration_2_More_Permissive",
+      "weights": {
+        "color": 0.28,
+        "raw_compat": 0.29,
+        "texture": 0.25,
+        "morphological": 0.13,
+        "gabor": 0.05
+      },
+      "thresholds": [
+        0.75,
+        0.6
+      ]
+    },
+    "elapsed": 443.87233090400696
+  },
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Iteration_3_Lower_Thresholds",
+      "weights": {
+        "color": 0.28,
+        "raw_compat": 0.29,
+        "texture": 0.25,
+        "morphological": 0.13,
+        "gabor": 0.05
+      },
+      "thresholds": [
+        0.72,
+        0.57
+      ]
+    },
+    "elapsed": 404.7328677177429
+  },
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Iteration_4_Balance_for_Negatives",
+      "weights": {
+        "color": 0.32,
+        "raw_compat": 0.28,
+        "texture": 0.23,
+        "morphological": 0.13,
+        "gabor": 0.04
+      },
+      "thresholds": [
+        0.73,
+        0.58
+      ]
+    },
+    "elapsed": 409.1319224834442
+  },
+  {
+    "pos_pass": 7,
+    "pos_total": 9,
+    "pos_acc": 77.77777777777779,
+    "neg_pass": 27,
+    "neg_total": 36,
+    "neg_acc": 75.0,
+    "config": {
+      "name": "Iteration_5_Fine_Tune",
+      "weights": {
+        "color": 0.31,
+        "raw_compat": 0.28,
+        "texture": 0.24,
+        "morphological": 0.13,
+        "gabor": 0.04
+      },
+      "thresholds": [
+        0.73,
+        0.58
+      ]
+    },
+    "elapsed": 313.5827531814575
+  }
+]

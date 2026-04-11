@@ -1,0 +1,72 @@
+2026-04-11 02:46:06,621 [INFO] main: Log file: C:\Users\I763940\icbv-fragment-reconstruction\logs\run_20260411_024606.log
+2026-04-11 02:46:06,624 [INFO] main: Found 5 fragment images in data/sample
+2026-04-11 02:46:06,631 [INFO] preprocessing: Loaded image data\sample\fragment_01.png — shape (500, 500, 3)
+2026-04-11 02:46:06,662 [INFO] preprocessing: Sobel gradient — mean=3.1, max=255.0
+2026-04-11 02:46:06,665 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-11 02:46:06,671 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 02:46:06,672 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-11 02:46:06,676 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 02:46:06,679 [INFO] preprocessing: Extracted contour with 630 boundary points
+2026-04-11 02:46:06,680 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0180
+2026-04-11 02:46:06,681 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4°)
+2026-04-11 02:46:06,682 [INFO] shape_descriptors: Shape summary [fragment_01]: Fourier=[1.    0.908 0.583 0.06 ]  PCA_angle=67.42°
+2026-04-11 02:46:06,682 [INFO] shape_descriptors: PCA orientation: centroid=(175.5, 267.9), angle=1.177 rad (67.4°)
+2026-04-11 02:46:06,688 [INFO] chain_code: Chain code: length=528, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 1, 7, 0, 0, 7, 0, 6, 1, 1, 0, 1, 7, 7, 1, 0, 6, 2, 6, 0, 0, 1, 0, 0, 2, 7, 0, 7, 1, 1, 0, 2, 6, 1, 7, 0, 1, 0, 7, 2, 6, 1, 5, 2, 6, 0, 0, 7, 1, 2, 7, 0, 1, 1, 7, 7, 1, 7, 0, 1, 2, 4, 2, 6, 2, 7, 0, 0, 1, 6, 0, 0, 0]
+2026-04-11 02:46:06,690 [INFO] main: Fragment fragment_01           size=500x500  contour=630 pts  segments=4
+2026-04-11 02:46:06,694 [INFO] preprocessing: Loaded image data\sample\fragment_02.png — shape (500, 500, 3)
+2026-04-11 02:46:06,707 [INFO] preprocessing: Sobel gradient — mean=2.2, max=255.0
+2026-04-11 02:46:06,710 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-11 02:46:06,713 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 02:46:06,714 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-11 02:46:06,718 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 02:46:06,722 [INFO] preprocessing: Extracted contour with 464 boundary points
+2026-04-11 02:46:06,723 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0512
+2026-04-11 02:46:06,723 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0°)
+2026-04-11 02:46:06,724 [INFO] shape_descriptors: Shape summary [fragment_02]: Fourier=[1.    0.419 0.166 0.153]  PCA_angle=49.99°
+2026-04-11 02:46:06,724 [INFO] shape_descriptors: PCA orientation: centroid=(346.5, 206.1), angle=0.872 rad (50.0°)
+2026-04-11 02:46:06,728 [INFO] chain_code: Chain code: length=347, segments=4, preview=[0, 0, 0, 0, 0, 1, 7, 0, 1, 1, 7, 1, 7, 1, 0, 1, 7, 1, 0, 0, 1, 7, 7, 2, 7, 7, 1, 1, 6, 6, 0, 0, 0, 1, 7, 1, 1, 0, 7, 1, 7, 1, 0, 6, 0, 1, 1, 7, 1, 7, 1, 6, 2, 0, 7, 1, 7, 0, 7, 0, 0, 1, 1, 7, 1, 7, 1, 7, 1, 7, 7, 1, 6, 1, 7, 1, 6, 1, 7, 2]
+2026-04-11 02:46:06,729 [INFO] main: Fragment fragment_02           size=500x500  contour=464 pts  segments=4
+2026-04-11 02:46:06,735 [INFO] preprocessing: Loaded image data\sample\fragment_03.png — shape (500, 500, 3)
+2026-04-11 02:46:06,748 [INFO] preprocessing: Sobel gradient — mean=2.0, max=254.0
+2026-04-11 02:46:06,751 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-11 02:46:06,755 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 02:46:06,755 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-11 02:46:06,760 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 02:46:06,763 [INFO] preprocessing: Extracted contour with 430 boundary points
+2026-04-11 02:46:06,764 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.1183
+2026-04-11 02:46:06,764 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5°)
+2026-04-11 02:46:06,765 [INFO] shape_descriptors: Shape summary [fragment_03]: Fourier=[1.    0.45  0.065 0.087]  PCA_angle=95.55°
+2026-04-11 02:46:06,766 [INFO] shape_descriptors: PCA orientation: centroid=(266.1, 320.6), angle=1.668 rad (95.5°)
+2026-04-11 02:46:06,771 [INFO] chain_code: Chain code: length=410, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 0, 0, 6, 2, 7, 1, 0, 0, 0, 0, 0, 7, 1, 7, 1, 0, 0, 0, 7, 1, 7, 7, 0, 0, 0, 7, 7, 1, 7]
+2026-04-11 02:46:06,772 [INFO] main: Fragment fragment_03           size=500x500  contour=430 pts  segments=4
+2026-04-11 02:46:06,779 [INFO] preprocessing: Loaded image data\sample\fragment_04.png — shape (500, 500, 3)
+2026-04-11 02:46:06,797 [INFO] preprocessing: Sobel gradient — mean=1.8, max=255.0
+2026-04-11 02:46:06,800 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-11 02:46:06,802 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 02:46:06,804 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-11 02:46:06,808 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 02:46:06,813 [INFO] preprocessing: Extracted contour with 356 boundary points
+2026-04-11 02:46:06,813 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0634
+2026-04-11 02:46:06,814 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2°)
+2026-04-11 02:46:06,815 [INFO] shape_descriptors: Shape summary [fragment_04]: Fourier=[1.    1.011 0.229 0.158]  PCA_angle=64.23°
+2026-04-11 02:46:06,816 [INFO] shape_descriptors: PCA orientation: centroid=(329.0, 310.9), angle=1.121 rad (64.2°)
+2026-04-11 02:46:06,820 [INFO] chain_code: Chain code: length=294, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 1, 1, 0, 7, 1, 0, 7, 2, 7, 7, 1, 6, 0, 0, 0, 0, 0, 0, 1, 6, 0, 1, 6, 2, 7, 1, 6, 2, 7, 2, 7, 1, 7, 2, 7, 7, 1, 7, 0, 7, 0, 7, 0, 0, 1, 6, 2, 6, 2, 1, 6, 0, 2, 0, 0, 1, 7, 1, 7]
+2026-04-11 02:46:06,820 [INFO] main: Fragment fragment_04           size=500x500  contour=356 pts  segments=4
+2026-04-11 02:46:06,831 [INFO] preprocessing: Loaded image data\sample\fragment_05.png — shape (500, 500, 3)
+2026-04-11 02:46:06,844 [INFO] preprocessing: Sobel gradient — mean=1.7, max=255.0
+2026-04-11 02:46:06,847 [INFO] preprocessing: Canny thresholds: low=170, high=255
+2026-04-11 02:46:06,850 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 02:46:06,851 [INFO] preprocessing: Background brightness: 255.0 -> light background
+2026-04-11 02:46:06,855 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 02:46:06,858 [INFO] preprocessing: Extracted contour with 339 boundary points
+2026-04-11 02:46:06,859 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0622
+2026-04-11 02:46:06,859 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6°)
+2026-04-11 02:46:06,860 [INFO] shape_descriptors: Shape summary [fragment_05]: Fourier=[1.    0.69  0.198 0.036]  PCA_angle=-135.63°
+2026-04-11 02:46:06,860 [INFO] shape_descriptors: PCA orientation: centroid=(227.6, 153.9), angle=-2.367 rad (-135.6°)
+2026-04-11 02:46:06,863 [INFO] chain_code: Chain code: length=262, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 7, 2, 7, 7, 1, 7, 2, 7, 7, 1, 1, 7, 7, 2, 7, 7, 0, 2, 7, 0, 0, 7, 1, 7, 0, 0, 1, 7, 1, 7, 1, 7, 0, 1, 7, 1, 0, 0, 7, 1, 7, 0, 7, 0, 1, 6, 1, 0, 0, 1, 7, 0, 7, 7, 1, 0, 0, 0, 0, 1, 1, 7, 1, 7, 7, 0, 0, 7]
+2026-04-11 02:46:06,864 [INFO] main: Fragment fragment_05           size=500x500  contour=339 pts  segments=4
+2026-04-11 02:46:06,874 [INFO] main: Color pre-check (Lecture 71): min_BC=0.985  max_gap=0.006  is_mixed=False
+2026-04-11 02:46:06,876 [INFO] compatibility: Extracting appearance features from 5 fragments...
+2026-04-11 02:46:09,945 [INFO] compatibility: Fragment 0 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 02:46:12,735 [INFO] compatibility: Fragment 1 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 02:46:15,870 [INFO] compatibility: Fragment 2 features: color=512, texture=26, gabor=240, haralick=60

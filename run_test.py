@@ -203,7 +203,7 @@ def run_one_folder(
 # ---------------------------------------------------------------------------
 
 def _verdict_icon(verdict: str) -> str:
-    return {"MATCH": "✓", "WEAK_MATCH": "~", "NO_MATCH": "✗", "ERROR": "!", "UNKNOWN": "?"}.get(verdict, "?")
+    return {"MATCH": "+", "WEAK_MATCH": "~", "NO_MATCH": "-", "ERROR": "!", "UNKNOWN": "?"}.get(verdict, "?")
 
 
 def _pass_fail(verdict: str, expected: str) -> str:
@@ -225,7 +225,7 @@ def print_summary_table(results: list, rotate_label: str) -> None:
     col_time   =  7
     col_pass   =  5
 
-    sep = "─"
+    sep = "-"
     hdr_fmt = (
         f"  {{:<{col_folder}}}  {{:^{col_type}}}  {{:^{col_frags}}}  "
         f"{{:^{col_verdict}}}  {{:>{col_conf}}}  {{:>{col_time}}}  {{:^{col_pass}}}"
@@ -366,7 +366,7 @@ def main() -> None:
         case_type = case["case_type"]
         expected  = case["expected"]
         label     = f"[{case_type[0].upper()}] {folder.name[:48]}"
-        print(f"  ▶ {label:<54}", end="", flush=True)
+        print(f"  > {label:<54}", end="", flush=True)
 
         res = run_one_folder(
             folder=folder,
@@ -380,7 +380,7 @@ def main() -> None:
 
         icon = _verdict_icon(res["verdict"])
         pf   = _pass_fail(res["verdict"], expected)
-        pf_marker = "✓ PASS" if pf == "PASS" else "✗ FAIL"
+        pf_marker = "PASS" if pf == "PASS" else "FAIL"
         if res["verdict"] == "ERROR":
             pf_marker = "! ERROR"
         print(f"  {icon} {res['verdict']:<10}  {res['t_total']:.1f}s  {pf_marker}")
@@ -391,7 +391,7 @@ def main() -> None:
 
     n_pass = sum(1 for r in results if _pass_fail(r["verdict"], r["expected"]) == "PASS")
     n_total = len(results)
-    final_verdict = "ALL PASS ✓" if n_pass == n_total else f"{n_pass}/{n_total} PASS"
+    final_verdict = "ALL PASS" if n_pass == n_total else f"{n_pass}/{n_total} PASS"
     print(f"  Final result : {final_verdict}")
     print(f"  Results saved to: {results_dir.resolve()}\n")
 

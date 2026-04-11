@@ -1,0 +1,12 @@
+Variant,Description,Status,Overall_Pass,Overall_Total,Overall_Pct,Positive_Pass,Positive_Total,Positive_Pct,Negative_Pass,Negative_Total,Negative_Pct,False_Positives,False_Negatives,Errors
+0,Original Baseline,COMPLETE,28,45,62.2,8,9,88.9,20,36,55.6,16,1,1
+0_FIXED,Fixed Baseline,COMPLETE,34,45,75.6,6,9,66.7,27,36,75.0,9,3,0
+1,Weighted Ensemble,COMPLETE,26,45,57.8,6,9,66.7,20,36,55.6,16,3,3
+2,Hierarchical Ensemble,INCOMPLETE,,,,,,,,,,,,,
+3,Tuned Weighted,INCOMPLETE,,,,,,,,,,,,,
+4,Relaxed Thresholds,INCOMPLETE,,,,,,,,,,,,,
+5,Color-Dominant (color^6),INCOMPLETE,,,,,,,,,,,,,
+6,Balanced Powers (all^2),INCOMPLETE,,,,,,,,,,,,,
+7,Optimized Powers + Tuned,INCOMPLETE,,,,,,,,,,,,,
+8,Adaptive Thresholds,INCOMPLETE,,,,,,,,,,,,,
+9,Full Research Stack,INCOMPLETE,,,,,,,,,,,,,

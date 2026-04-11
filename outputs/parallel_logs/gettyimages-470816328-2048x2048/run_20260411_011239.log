@@ -1,0 +1,91 @@
+2026-04-11 01:12:39,911 [INFO] main: Log file: outputs\parallel_logs\gettyimages-470816328-2048x2048\run_20260411_011239.log
+2026-04-11 01:12:39,913 [INFO] main: Found 6 fragment images in data/examples/positive\gettyimages-470816328-2048x2048
+2026-04-11 01:12:39,930 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:39,943 [INFO] preprocessing: Extracted contour with 1595 boundary points
+2026-04-11 01:12:39,945 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0321
+2026-04-11 01:12:39,945 [INFO] shape_descriptors: PCA orientation: centroid=(214.5, 253.7), angle=1.816 rad (104.0°)
+2026-04-11 01:12:39,947 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_00]: Fourier=[1.    0.743 0.419 0.201]  PCA_angle=104.03°
+2026-04-11 01:12:39,947 [INFO] shape_descriptors: PCA orientation: centroid=(214.5, 253.7), angle=1.816 rad (104.0°)
+2026-04-11 01:12:39,966 [INFO] chain_code: Chain code: length=1425, segments=4, preview=[0, 0, 0, 0, 1, 0, 1, 7, 1, 0, 0, 7, 1, 0, 0, 7, 2, 0, 0, 1, 0, 7, 1, 0, 0, 6, 2, 0, 7, 1, 0, 1, 6, 1, 6, 2, 0, 7, 1, 0, 7, 1, 6, 0, 0, 7, 0, 0, 1, 6, 2, 7, 6, 2, 7, 1, 7, 1, 1, 0, 7, 1, 1, 0, 7, 1, 0, 1, 7, 1, 0, 1, 7, 7, 0, 1, 7, 7, 0, 0]
+2026-04-11 01:12:39,966 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_00  size=431x428  contour=1595 pts  segments=4
+2026-04-11 01:12:39,997 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:40,002 [INFO] preprocessing: Extracted contour with 2250 boundary points
+2026-04-11 01:12:40,006 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0287
+2026-04-11 01:12:40,007 [INFO] shape_descriptors: PCA orientation: centroid=(305.1, 228.2), angle=2.749 rad (157.5°)
+2026-04-11 01:12:40,007 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_01]: Fourier=[1.    0.452 0.508 0.31 ]  PCA_angle=157.51°
+2026-04-11 01:12:40,007 [INFO] shape_descriptors: PCA orientation: centroid=(305.1, 228.2), angle=2.749 rad (157.5°)
+2026-04-11 01:12:40,040 [INFO] chain_code: Chain code: length=1938, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 0, 1, 7, 0, 1, 7, 2, 7, 0, 1, 7, 0, 2, 7, 1, 0, 0, 7, 1, 7, 7, 1, 7, 2, 0, 7, 1, 0, 0, 6, 0, 0, 1, 7, 6, 1, 7, 0, 0, 7, 1, 0, 0, 7, 2, 0, 7, 0, 1, 1, 6, 1, 0, 1, 7, 1, 1, 7, 7, 2, 7, 0, 1, 7, 6, 1, 0, 1, 6, 1, 1, 0, 1]
+2026-04-11 01:12:40,040 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_01  size=598x468  contour=2250 pts  segments=4
+2026-04-11 01:12:40,053 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:40,057 [INFO] preprocessing: Extracted contour with 1491 boundary points
+2026-04-11 01:12:40,057 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0291
+2026-04-11 01:12:40,058 [INFO] shape_descriptors: PCA orientation: centroid=(189.5, 182.9), angle=-3.009 rad (-172.4°)
+2026-04-11 01:12:40,058 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_03]: Fourier=[1.    0.63  0.773 0.279]  PCA_angle=-172.42°
+2026-04-11 01:12:40,058 [INFO] shape_descriptors: PCA orientation: centroid=(189.5, 182.9), angle=-3.009 rad (-172.4°)
+2026-04-11 01:12:40,080 [INFO] chain_code: Chain code: length=1426, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 7, 0, 6, 1, 7, 1, 6, 1, 7, 0, 0, 7, 0, 0, 7, 1, 0, 1, 0, 0, 0, 7, 7, 1, 7, 0, 1, 0, 7, 7, 1, 7, 1, 0, 0, 7, 1, 0, 0, 1, 0, 7, 1, 7, 1, 7, 7, 2, 0, 0, 0, 0, 0, 6, 1, 6, 1, 6, 1, 2, 7, 0, 1, 0, 0, 7, 2, 0, 0, 7, 1, 1, 0]
+2026-04-11 01:12:40,080 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_03  size=398x326  contour=1491 pts  segments=4
+2026-04-11 01:12:40,098 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:40,100 [INFO] preprocessing: Extracted contour with 1650 boundary points
+2026-04-11 01:12:40,102 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0701
+2026-04-11 01:12:40,103 [INFO] shape_descriptors: PCA orientation: centroid=(306.2, 194.1), angle=-3.022 rad (-173.1°)
+2026-04-11 01:12:40,103 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_04]: Fourier=[1.    0.697 0.311 0.145]  PCA_angle=-173.12°
+2026-04-11 01:12:40,105 [INFO] shape_descriptors: PCA orientation: centroid=(306.2, 194.1), angle=-3.022 rad (-173.1°)
+2026-04-11 01:12:40,131 [INFO] chain_code: Chain code: length=1574, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 0, 0, 0]
+2026-04-11 01:12:40,131 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_04  size=501x378  contour=1650 pts  segments=4
+2026-04-11 01:12:40,151 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:40,154 [INFO] preprocessing: Extracted contour with 1796 boundary points
+2026-04-11 01:12:40,155 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.1282
+2026-04-11 01:12:40,155 [INFO] shape_descriptors: PCA orientation: centroid=(246.6, 253.0), angle=2.869 rad (164.4°)
+2026-04-11 01:12:40,156 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_05]: Fourier=[1.    0.184 0.076 0.029]  PCA_angle=164.40°
+2026-04-11 01:12:40,157 [INFO] shape_descriptors: PCA orientation: centroid=(246.6, 253.0), angle=2.869 rad (164.4°)
+2026-04-11 01:12:40,182 [INFO] chain_code: Chain code: length=1591, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 7, 1, 7, 0, 0, 1, 1, 6, 1, 1, 6, 1, 0, 1, 6, 1, 0, 7, 1, 0, 0, 7, 2, 6, 1, 1, 0, 0, 7, 2, 7, 7, 2, 7, 7, 1, 7, 1, 0, 7, 7, 2, 6, 7, 1, 7, 7, 1, 0, 7, 2, 7, 0, 0, 1, 1, 6, 1, 1, 0, 7, 2, 6, 1, 2, 6, 1, 7, 1, 0, 7, 2, 7]
+2026-04-11 01:12:40,182 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_05  size=530x424  contour=1796 pts  segments=4
+2026-04-11 01:12:40,205 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:12:40,210 [INFO] preprocessing: Extracted contour with 2283 boundary points
+2026-04-11 01:12:40,212 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0125
+2026-04-11 01:12:40,212 [INFO] shape_descriptors: PCA orientation: centroid=(278.3, 265.1), angle=2.630 rad (150.7°)
+2026-04-11 01:12:40,212 [INFO] shape_descriptors: Shape summary [gettyimages-470816328-2048x2048_frag_06]: Fourier=[1.    0.332 0.943 0.358]  PCA_angle=150.67°
+2026-04-11 01:12:40,216 [INFO] shape_descriptors: PCA orientation: centroid=(278.3, 265.1), angle=2.630 rad (150.7°)
+2026-04-11 01:12:40,247 [INFO] chain_code: Chain code: length=1921, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6, 1, 0, 1, 7, 1, 0, 7, 1, 7, 1, 7, 2, 7, 0, 1, 7, 1, 0, 6, 1, 1, 0, 7, 1, 6, 1, 7, 7, 0, 0, 1, 7, 1, 6, 2, 7, 2, 7, 0, 0, 1, 7, 2, 7, 1, 6, 7, 0, 0, 0, 0, 0, 0, 0, 1, 7, 2, 7, 1, 7, 1, 7, 7, 1, 2, 5, 2, 7, 1]
+2026-04-11 01:12:40,249 [INFO] main: Fragment gettyimages-470816328-2048x2048_frag_06  size=566x522  contour=2283 pts  segments=4
+2026-04-11 01:12:40,262 [INFO] main: Color pre-check (Lecture 71): min_BC=0.884  max_gap=0.036  is_mixed=False
+2026-04-11 01:12:40,268 [INFO] compatibility: Extracting appearance features from 6 fragments...
+2026-04-11 01:12:42,265 [INFO] compatibility: Fragment 0 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:45,379 [INFO] compatibility: Fragment 1 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:47,117 [INFO] compatibility: Fragment 2 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:49,730 [INFO] compatibility: Fragment 3 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:52,115 [INFO] compatibility: Fragment 4 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:55,835 [INFO] compatibility: Fragment 5 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:12:55,837 [INFO] compatibility: Appearance similarity (color): min=0.863  mean=0.927  max=0.977
+2026-04-11 01:12:55,839 [INFO] compatibility: Appearance similarity (texture): min=0.957  mean=0.984  max=0.999
+2026-04-11 01:12:55,839 [INFO] compatibility: Appearance similarity (gabor): min=1.000  mean=1.000  max=1.000
+2026-04-11 01:12:55,839 [INFO] compatibility: Appearance similarity (haralick): min=0.992  mean=0.998  max=1.000
+2026-04-11 01:12:57,088 [INFO] compatibility: Compatibility matrix built: shape=(6, 4, 6, 4), mean=0.2089, max=0.8093
+2026-04-11 01:12:57,088 [INFO] main: Pairwise compatibility matrix (mean over segments):
+2026-04-11 01:12:57,088 [INFO] main:          gettyimages-470816328-2048x2048_frag_00  gettyimages-470816328-2048x2048_frag_01  gettyimages-470816328-2048x2048_frag_03  gettyimages-470816328-2048x2048_frag_04  gettyimages-470816328-2048x2048_frag_05  gettyimages-470816328-2048x2048_frag_06
+2026-04-11 01:12:57,088 [INFO] main: gettyimages-470816328-2048x2048_frag_00      0.0000      0.0000      0.6688      0.0000      0.0000      0.6752
+2026-04-11 01:12:57,088 [INFO] main: gettyimages-470816328-2048x2048_frag_01      0.0000      0.0000      0.0000      0.6970      0.6401      0.0000
+2026-04-11 01:12:57,088 [INFO] main: gettyimages-470816328-2048x2048_frag_03      0.6688      0.0000      0.0000      0.0000      0.0000      0.5584
+2026-04-11 01:12:57,090 [INFO] main: gettyimages-470816328-2048x2048_frag_04      0.0000      0.6893      0.0000      0.0000      0.5225      0.0000
+2026-04-11 01:12:57,090 [INFO] main: gettyimages-470816328-2048x2048_frag_05      0.0000      0.6517      0.0000      0.5376      0.0000      0.0000
+2026-04-11 01:12:57,090 [INFO] main: gettyimages-470816328-2048x2048_frag_06      0.6621      0.0000      0.5481      0.0000      0.0000      0.0000
+2026-04-11 01:12:57,181 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-11 01:12:57,182 [INFO] main: Convergence trace (50 iterations): 0.007329, 0.006142, 0.005187, 0.004538, 0.004181, 0.003895, 0.003661, 0.003466, 0.003299, 0.003153, 0.003022, 0.002909, 0.002805, 0.002737, 0.002678, 0.002640, 0.002656, 0.002669, 0.002678, 0.002686, 0.002692, 0.002695, 0.002698, 0.002699, 0.002700, 0.002699, 0.002697, 0.002695, 0.002692, 0.002688, 0.002684, 0.002678, 0.002673, 0.002667, 0.002660, 0.002653, 0.002645, 0.002637, 0.002628, 0.002619, 0.002610, 0.002602, 0.002593, 0.002584, 0.002575, 0.002565, 0.002555, 0.002545, 0.002538, 0.002534
+2026-04-11 01:12:57,183 [INFO] main: Applying Track 3 (Ensemble Voting) post-processing...
+2026-04-11 01:12:57,186 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:57,186 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING (Track 3)
+2026-04-11 01:12:57,186 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:57,210 [INFO] ensemble_postprocess: Pre-computed morphological features for 6 fragments
+2026-04-11 01:12:57,245 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:57,245 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING SUMMARY
+2026-04-11 01:12:57,245 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:57,245 [INFO] ensemble_postprocess: Total pairs re-classified: 17
+2026-04-11 01:12:57,247 [INFO] ensemble_postprocess: Assemblies with verdict changes: 3 / 3
+2026-04-11 01:12:57,251 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:12:57,251 [INFO] main: ============================================================
+2026-04-11 01:12:57,252 [INFO] main: ============================================================
+2026-04-11 01:12:57,252 [INFO] main: Assembly #1  verdict=MATCH       confidence=0.1877  pairs: 6 MATCH / 0 WEAK / 6 NO_MATCH
+2026-04-11 01:12:57,270 [INFO] main: Assembly #2  verdict=MATCH       confidence=0.1898  pairs: 6 MATCH / 0 WEAK / 6 NO_MATCH
+2026-04-11 01:12:57,285 [INFO] main: Assembly #3  verdict=MATCH       confidence=0.1914  pairs: 5 MATCH / 0 WEAK / 7 NO_MATCH
+2026-04-11 01:12:57,303 [INFO] main: ============================================================
+2026-04-11 01:13:13,359 [INFO] main: Pipeline completed in 33.45 seconds.

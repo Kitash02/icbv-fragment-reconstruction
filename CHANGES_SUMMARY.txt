@@ -1,0 +1,201 @@
+CHANGES MADE TO src/main.py
+============================
+
+## Summary
+- Added 3 new wrapper functions with progress reporting
+- Modified 1 existing function to accept optional progress_callback
+- Added 1 import (MAX_ITERATIONS)
+- ZERO changes to core algorithm logic
+- CLI usage remains 100% backward compatible
+
+## Detailed Changes
+
+### 1. Import Statement (Line 34-41)
+BEFORE:
+```python
+from relaxation import (
+    run_relaxation,
+    extract_top_assemblies,
+    MATCH_SCORE_THRESHOLD,
+    WEAK_MATCH_SCORE_THRESHOLD,
+    ASSEMBLY_CONFIDENCE_THRESHOLD,
+)
+```
+
+AFTER:
+```python
+from relaxation import (
+    run_relaxation,
+    extract_top_assemblies,
+    MATCH_SCORE_THRESHOLD,
+    WEAK_MATCH_SCORE_THRESHOLD,
+    ASSEMBLY_CONFIDENCE_THRESHOLD,
+    MAX_ITERATIONS,  # <-- ADDED
+)
+```
+
+### 2. New Function: extract_contours() (Lines 248-307)
+NEW FUNCTION - wraps the fragment loading loop with progress reporting
+
+Key features:
+- Reports progress after each fragment: "Loading fragments... (N/TOTAL)"
+- Calculates percentage: int((idx / total) * 100)
+- Optional callback: only reports if progress_callback is not None
+- Returns same data as before: images, contours, all_segments, all_pixel_segs, names
+
+### 3. New Function: compute_compatibility_matrix() (Lines 310-357)
+NEW FUNCTION - wraps build_compatibility_matrix() with progress reporting
+
+Key features:
+- Reports at start: "Computing compatibility scores..." at 0%
+- Reports at end: "Computing compatibility scores... (100%)" at 100%
+- Calls log_compatibility_matrix() after computation
+- Returns same data as before: compat_matrix, appearance_mats
+
+### 4. New Function: run_relaxation_labeling() (Lines 360-400)
+NEW FUNCTION - wraps run_relaxation() with progress reporting
+
+Key features:
+- Reports at start: "Relaxation iteration 0/50..." at 0%
+- Reports at end: "Relaxation iteration N/50..." at 100%
+- Calls run_logger.info() to log convergence trace
+- Returns same data as before: probs, trace
+
+### 5. Modified Function: run_pipeline() (Lines 403-504)
+MODIFIED - added progress_callback parameter and replaced inline code with function calls
+
+BEFORE (Lines 247-277):
+```python
+def run_pipeline(args: argparse.Namespace) -> None:
+    """Execute the full reconstruction pipeline and write all outputs."""
+    # ... setup code ...
+
+    images, contours, all_segments, all_pixel_segs, names = [], [], [], [], []
+
+    for fpath in fragment_paths:
+        name = fpath.stem
+        image, contour = preprocess_fragment(str(fpath))
+        # ... process each fragment ...
+        images.append(image)
+        contours.append(contour)
+        all_segments.append(segments)
+        all_pixel_segs.append(pixel_segs)
+        names.append(name)
+```
+
+AFTER (Lines 403-426):
+```python
+def run_pipeline(args: argparse.Namespace, progress_callback=None) -> None:
+    """
+    Execute the full reconstruction pipeline and write all outputs.
+
+    Parameters
+    ----------
+    args : argparse.Namespace
+        Command-line arguments (input, output, log directories)
+    progress_callback : callable, optional
+        Optional callback function for progress reporting.
+        Signature: progress_callback(message, percent=None)
+    """
+    # ... setup code ...
+
+    # Extract contours with progress reporting
+    images, contours, all_segments, all_pixel_segs, names = extract_contours(
+        fragment_paths, run_logger, progress_callback
+    )
+```
+
+BEFORE (Line 302):
+```python
+    compat_matrix, appearance_mats = build_compatibility_matrix(all_segments, all_pixel_segs, images)
+    log_compatibility_matrix(compat_matrix, names, run_logger)
+```
+
+AFTER (Lines 454-457):
+```python
+    # Compute compatibility matrix with progress reporting
+    compat_matrix, appearance_mats = compute_compatibility_matrix(
+        all_segments, all_pixel_segs, images, names, run_logger, progress_callback
+    )
+```
+
+BEFORE (Lines 305-310):
+```python
+    probs, trace = run_relaxation(compat_matrix)
+    run_logger.info(
+        "Convergence trace (%d iterations): %s",
+        len(trace),
+        ", ".join(f"{v:.6f}" for v in trace),
+    )
+```
+
+AFTER (Lines 459-460):
+```python
+    # Run relaxation labeling with progress reporting
+    probs, trace = run_relaxation_labeling(compat_matrix, run_logger, progress_callback)
+```
+
+ADDED (Lines 432-433):
+```python
+    if progress_callback:
+        progress_callback("Extracting contours...")
+```
+
+ADDED (Lines 476-477):
+```python
+    if progress_callback:
+        progress_callback("Rendering results...")
+```
+
+### 6. CLI Entry Point (Lines 527-528)
+NO CHANGE - backward compatible!
+
+```python
+if __name__ == '__main__':
+    run_pipeline(build_arg_parser().parse_args())
+    # Note: no progress_callback argument, so defaults to None
+```
+
+## Progress Callback Invocation Points
+
+In order of execution:
+
+1. "Loading fragments... (1/N)" at X%  [in extract_contours()]
+2. "Loading fragments... (2/N)" at Y%  [in extract_contours()]
+   ... (one per fragment)
+3. "Loading fragments... (N/N)" at 100%  [in extract_contours()]
+4. "Extracting contours..."  [in run_pipeline()]
+5. "Computing compatibility scores..." at 0%  [in compute_compatibility_matrix()]
+6. "Computing compatibility scores... (100%)" at 100%  [in compute_compatibility_matrix()]
+7. "Relaxation iteration 0/50..." at 0%  [in run_relaxation_labeling()]
+8. "Relaxation iteration N/50..." at 100%  [in run_relaxation_labeling()]
+9. "Rendering results..."  [in run_pipeline()]
+
+## Line Count Changes
+
+BEFORE: 376 lines
+AFTER: 529 lines
+ADDED: 153 lines (new functions + documentation)
+
+ALL new lines are additions - NO deletions or modifications to algorithm logic!
+
+## Verification
+
+Run these commands to verify:
+
+1. Test progress callback functionality:
+   ```bash
+   python test_progress_callback.py
+   ```
+
+2. Verify CLI still works (no callback):
+   ```bash
+   python src/main.py --help
+   ```
+
+3. Import check:
+   ```bash
+   python -c "import sys; sys.path.insert(0, 'src'); from main import run_pipeline; print('OK')"
+   ```
+
+All tests should pass without errors.

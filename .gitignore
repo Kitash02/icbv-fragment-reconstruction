@@ -23,6 +23,11 @@ outputs/results/
 outputs/test_logs/
 outputs/test_results/
 
+# PyInstaller build outputs — large (~250MB), regenerate with: ./build_exe.sh
+dist/
+build/
+*.spec.bak
+
 # Benchmark data — included in repo (88MB, regeneratable via: python setup_examples.py)
 # data/examples/   ← intentionally included
 

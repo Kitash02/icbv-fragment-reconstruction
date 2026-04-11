@@ -1,0 +1,91 @@
+2026-04-11 01:14:34,654 [INFO] main: Log file: outputs\parallel_logs\Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale\run_20260411_011434.log
+2026-04-11 01:14:34,656 [INFO] main: Found 6 fragment images in data/examples/positive\Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale
+2026-04-11 01:14:34,682 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,696 [INFO] preprocessing: Extracted contour with 2282 boundary points
+2026-04-11 01:14:34,698 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0430
+2026-04-11 01:14:34,699 [INFO] shape_descriptors: PCA orientation: centroid=(204.1, 354.7), angle=1.057 rad (60.6°)
+2026-04-11 01:14:34,700 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00]: Fourier=[1.    0.459 0.647 0.319]  PCA_angle=60.55°
+2026-04-11 01:14:34,701 [INFO] shape_descriptors: PCA orientation: centroid=(204.1, 354.7), angle=1.057 rad (60.6°)
+2026-04-11 01:14:34,736 [INFO] chain_code: Chain code: length=1944, segments=4, preview=[0, 0, 0, 0, 0, 1, 6, 2, 6, 1, 7, 7, 0, 0, 2, 6, 1, 7, 1, 1, 7, 7, 1, 6, 3, 6, 1, 7, 2, 7, 7, 1, 7, 1, 1, 0, 0, 1, 6, 2, 7, 7, 7, 6, 1, 1, 7, 0, 2, 7, 1, 1, 2, 7, 7, 2, 6, 7, 2, 7, 0, 6, 1, 7, 6, 0, 2, 0, 0, 0, 7, 1, 0, 1, 7, 1, 1, 0, 0, 0]
+2026-04-11 01:14:34,736 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00  size=481x626  contour=2282 pts  segments=4
+2026-04-11 01:14:34,755 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,758 [INFO] preprocessing: Extracted contour with 1518 boundary points
+2026-04-11 01:14:34,758 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0496
+2026-04-11 01:14:34,759 [INFO] shape_descriptors: PCA orientation: centroid=(261.0, 180.5), angle=2.567 rad (147.0°)
+2026-04-11 01:14:34,761 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01]: Fourier=[1.    0.259 1.355 1.036]  PCA_angle=147.05°
+2026-04-11 01:14:34,762 [INFO] shape_descriptors: PCA orientation: centroid=(261.0, 180.5), angle=2.567 rad (147.0°)
+2026-04-11 01:14:34,780 [INFO] chain_code: Chain code: length=1188, segments=4, preview=[0, 0, 0, 0, 0, 7, 1, 7, 6, 2, 7, 0, 1, 7, 0, 1, 7, 0, 0, 0, 0, 1, 5, 0, 1, 1, 1, 1, 6, 2, 6, 0, 1, 7, 1, 6, 2, 7, 0, 0, 2, 0, 2, 4, 1, 0, 1, 6, 2, 0, 6, 0, 7, 2, 5, 1, 7, 1, 6, 2, 0, 7, 1, 0, 0, 1, 7, 1, 7, 2, 7, 0, 1, 1, 7, 7, 0, 0, 2, 7]
+2026-04-11 01:14:34,781 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01  size=438x361  contour=1518 pts  segments=4
+2026-04-11 01:14:34,794 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,799 [INFO] preprocessing: Extracted contour with 1534 boundary points
+2026-04-11 01:14:34,800 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.1641
+2026-04-11 01:14:34,800 [INFO] shape_descriptors: PCA orientation: centroid=(177.6, 131.0), angle=-2.931 rad (-168.0°)
+2026-04-11 01:14:34,802 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02]: Fourier=[1.    0.609 0.576 0.366]  PCA_angle=-167.96°
+2026-04-11 01:14:34,803 [INFO] shape_descriptors: PCA orientation: centroid=(177.6, 131.0), angle=-2.931 rad (-168.0°)
+2026-04-11 01:14:34,826 [INFO] chain_code: Chain code: length=1437, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 7, 7, 1, 1, 7, 0, 0, 1, 1, 7, 1, 6, 0, 0, 7, 1, 6, 1, 7, 1, 6, 2, 7, 0, 0, 1, 7, 1, 6, 2, 0, 6, 2, 0, 0, 0, 7, 1, 0, 7, 1, 0, 7, 1, 0, 0, 7, 2, 7, 0, 7, 1, 1, 7, 1, 6, 2, 7, 0, 0, 1, 7, 1, 0, 7, 1, 7, 0, 1]
+2026-04-11 01:14:34,827 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02  size=371x269  contour=1534 pts  segments=4
+2026-04-11 01:14:34,850 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,855 [INFO] preprocessing: Extracted contour with 1275 boundary points
+2026-04-11 01:14:34,855 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0322
+2026-04-11 01:14:34,856 [INFO] shape_descriptors: PCA orientation: centroid=(227.7, 258.2), angle=3.059 rad (175.3°)
+2026-04-11 01:14:34,857 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04]: Fourier=[1.    0.908 0.316 0.227]  PCA_angle=175.25°
+2026-04-11 01:14:34,857 [INFO] shape_descriptors: PCA orientation: centroid=(227.7, 258.2), angle=3.059 rad (175.3°)
+2026-04-11 01:14:34,877 [INFO] chain_code: Chain code: length=1235, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 1, 7, 0, 0, 0, 2, 6, 0, 0, 0, 1, 7, 0, 0, 0, 2, 6, 0, 0, 1, 7, 0, 1, 7, 1, 0, 0, 7, 1, 7, 0, 1, 7, 1, 7, 1, 7, 1, 0, 0, 7, 1, 7, 1, 7, 1, 0, 7, 1, 1, 7, 0, 7, 1, 0, 0, 7, 1, 0, 1, 6]
+2026-04-11 01:14:34,877 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04  size=600x377  contour=1275 pts  segments=4
+2026-04-11 01:14:34,897 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,903 [INFO] preprocessing: Extracted contour with 1990 boundary points
+2026-04-11 01:14:34,905 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0211
+2026-04-11 01:14:34,908 [INFO] shape_descriptors: PCA orientation: centroid=(239.0, 179.8), angle=1.079 rad (61.8°)
+2026-04-11 01:14:34,908 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05]: Fourier=[1.    1.091 1.457 0.809]  PCA_angle=61.81°
+2026-04-11 01:14:34,908 [INFO] shape_descriptors: PCA orientation: centroid=(239.0, 179.8), angle=1.079 rad (61.8°)
+2026-04-11 01:14:34,938 [INFO] chain_code: Chain code: length=1619, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 2, 7, 0, 0, 1, 6, 1, 1, 0, 1, 7, 1, 1, 0, 7, 3, 7, 6, 2, 7, 2, 7, 0, 1, 7, 0, 1, 7, 2, 6, 7, 2, 7, 6, 1, 7, 7, 0, 7, 2, 7, 1, 7, 0, 7, 1, 7, 0, 7, 2, 0, 0, 1, 7, 2, 7, 1, 1, 6, 2, 6, 1, 2, 6, 0, 0, 2, 7, 0, 1, 7, 1, 1]
+2026-04-11 01:14:34,938 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05  size=417x446  contour=1990 pts  segments=4
+2026-04-11 01:14:34,953 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,958 [INFO] preprocessing: Extracted contour with 1610 boundary points
+2026-04-11 01:14:34,958 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.1591
+2026-04-11 01:14:34,958 [INFO] shape_descriptors: PCA orientation: centroid=(353.6, 136.1), angle=-2.934 rad (-168.1°)
+2026-04-11 01:14:34,958 [INFO] shape_descriptors: Shape summary [Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06]: Fourier=[1.    0.232 0.017 0.171]  PCA_angle=-168.12°
+2026-04-11 01:14:34,960 [INFO] shape_descriptors: PCA orientation: centroid=(353.6, 136.1), angle=-2.934 rad (-168.1°)
+2026-04-11 01:14:34,980 [INFO] chain_code: Chain code: length=1467, segments=4, preview=[0, 0, 0, 0, 0, 0, 1, 6, 1, 0, 1, 7, 7, 1, 1, 7, 0, 0, 0, 0, 1, 7, 1, 6, 2, 7, 0, 7, 0, 0, 7, 1, 0, 0, 7, 1, 1, 7, 7, 2, 7, 0, 0, 0, 1, 6, 1, 0, 0, 1, 7, 1, 0, 7, 1, 7, 0, 0, 1, 6, 2, 7, 0, 1, 0, 7, 0, 1, 7, 1, 0, 7, 7, 2, 0, 0, 7, 0, 1, 0]
+2026-04-11 01:14:34,981 [INFO] main: Fragment Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06  size=561x313  contour=1610 pts  segments=4
+2026-04-11 01:14:34,994 [INFO] main: Color pre-check (Lecture 71): min_BC=0.685  max_gap=0.138  is_mixed=False
+2026-04-11 01:14:34,998 [INFO] compatibility: Extracting appearance features from 6 fragments...
+2026-04-11 01:14:40,503 [INFO] compatibility: Fragment 0 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:42,336 [INFO] compatibility: Fragment 1 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:43,834 [INFO] compatibility: Fragment 2 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:46,456 [INFO] compatibility: Fragment 3 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:48,270 [INFO] compatibility: Fragment 4 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:50,437 [INFO] compatibility: Fragment 5 features: color=512, texture=26, gabor=240, haralick=60
+2026-04-11 01:14:50,446 [INFO] compatibility: Appearance similarity (color): min=0.714  mean=0.891  max=0.966
+2026-04-11 01:14:50,446 [INFO] compatibility: Appearance similarity (texture): min=0.997  mean=0.999  max=1.000
+2026-04-11 01:14:50,446 [INFO] compatibility: Appearance similarity (gabor): min=1.000  mean=1.000  max=1.000
+2026-04-11 01:14:50,447 [INFO] compatibility: Appearance similarity (haralick): min=0.982  mean=0.994  max=0.999
+2026-04-11 01:14:51,983 [INFO] compatibility: Compatibility matrix built: shape=(6, 4, 6, 4), mean=0.3981, max=0.7541
+2026-04-11 01:14:51,983 [INFO] main: Pairwise compatibility matrix (mean over segments):
+2026-04-11 01:14:51,983 [INFO] main:          Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00      0.0000      0.5829      0.4176      0.6698      0.6444      0.4987
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01      0.5762      0.0000      0.0000      0.5047      0.4719      0.6780
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02      0.4186      0.0000      0.0000      0.5030      0.6690      0.0000
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04      0.6621      0.5047      0.4963      0.0000      0.6359      0.5136
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05      0.6348      0.4702      0.6575      0.6336      0.0000      0.3890
+2026-04-11 01:14:51,985 [INFO] main: Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06      0.4987      0.6856      0.0000      0.5195      0.3950      0.0000
+2026-04-11 01:14:52,131 [INFO] relaxation: Reached maximum of 50 iterations without convergence.
+2026-04-11 01:14:52,132 [INFO] main: Convergence trace (50 iterations): 0.006675, 0.005874, 0.005174, 0.004568, 0.004046, 0.003597, 0.003211, 0.002876, 0.002630, 0.002444, 0.002286, 0.002149, 0.002031, 0.001928, 0.001838, 0.001758, 0.001687, 0.001623, 0.001601, 0.001612, 0.001618, 0.001618, 0.001614, 0.001605, 0.001593, 0.001593, 0.001593, 0.001591, 0.001586, 0.001581, 0.001575, 0.001568, 0.001558, 0.001548, 0.001537, 0.001540, 0.001557, 0.001571, 0.001583, 0.001593, 0.001601, 0.001607, 0.001611, 0.001614, 0.001614, 0.001613, 0.001610, 0.001606, 0.001601, 0.001594
+2026-04-11 01:14:52,134 [INFO] main: Applying Track 3 (Ensemble Voting) post-processing...
+2026-04-11 01:14:52,134 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:14:52,135 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING (Track 3)
+2026-04-11 01:14:52,135 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:14:52,162 [INFO] ensemble_postprocess: Pre-computed morphological features for 6 fragments
+2026-04-11 01:14:52,174 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:14:52,174 [INFO] ensemble_postprocess: ENSEMBLE POST-PROCESSING SUMMARY
+2026-04-11 01:14:52,174 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:14:52,174 [INFO] ensemble_postprocess: Total pairs re-classified: 5
+2026-04-11 01:14:52,183 [INFO] ensemble_postprocess: Assemblies with verdict changes: 3 / 3
+2026-04-11 01:14:52,183 [INFO] ensemble_postprocess: ============================================================
+2026-04-11 01:14:52,183 [INFO] main: ============================================================
+2026-04-11 01:14:52,185 [INFO] main: ============================================================
+2026-04-11 01:14:52,185 [INFO] main: Assembly #1  verdict=NO_MATCH    confidence=0.0933  pairs: 2 MATCH / 0 WEAK / 10 NO_MATCH
+2026-04-11 01:14:52,203 [INFO] main: Assembly #2  verdict=NO_MATCH    confidence=0.0873  pairs: 2 MATCH / 0 WEAK / 10 NO_MATCH
+2026-04-11 01:14:52,221 [INFO] main: Assembly #3  verdict=NO_MATCH    confidence=0.0923  pairs: 1 MATCH / 0 WEAK / 11 NO_MATCH
+2026-04-11 01:14:52,250 [INFO] main: ============================================================
+2026-04-11 01:14:52,250 [WARNING] main: NO MATCH FOUND: all 3 proposed assemblies have fewer than 40% of their pairs above the WEAK_MATCH threshold (0.60). The fragments in this input folder appear geometrically incompatible, or the images could not be segmented cleanly enough for chain-code comparison.

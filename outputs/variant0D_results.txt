@@ -1,0 +1,128 @@
+================================================================================
+VARIANT 0D: ALL FIXES COMBINED
+================================================================================
+
+Configuration:
+  1. STRICTER HARD DISCRIMINATORS
+     - MATCH_SCORE_THRESHOLD: 0.75 (baseline: 0.55, +36%)
+     - WEAK_MATCH_SCORE_THRESHOLD: 0.70 (baseline: 0.35, +100%)
+     - ASSEMBLY_CONFIDENCE_THRESHOLD: 0.65 (unchanged)
+
+  2. ENSEMBLE GATING (new)
+     - Upgrade gate: bc_color > 0.75 AND bc_texture > 0.70
+     - Only WEAK_MATCH -> MATCH upgrades are gated
+     - Downgrades (WEAK_MATCH -> NO_MATCH) are NOT gated
+     - Rationale: True matches have high color+texture similarity
+
+  3. CURRENT COLOR PRE-CHECK (already in main.py)
+     - COLOR_PRECHECK_GAP_THRESH: 0.15
+     - COLOR_PRECHECK_LOW_MAX: 0.75
+     - Rejects mixed-source datasets early
+
+Expected Results:
+  - Target: 85%+ negative accuracy (vs 73.1% baseline)
+  - Target: 75%+ positive accuracy (vs 96.0% baseline)
+  - This should be the optimal baseline configuration
+
+Strategy:
+  - Multi-layered defense against false positives:
+    1. Color pre-check catches obvious mixed-source cases
+    2. Stricter hard discriminators reduce false MATCH classifications
+    3. Ensemble gating prevents false positive upgrades
+  - Each layer is independent and addresses different failure modes
+================================================================================
+
+
+====================================================================
+  RUNNING 45 TEST CASES  (WITH rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    + MATCH       44.2s  PASS
+  > [P] gettyimages-170096524-1024x1024                     + MATCH       52.1s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    + MATCH       45.3s  PASS
+  > [P] gettyimages-470816328-2048x2048                     + MATCH       54.3s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom  C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  + MATCH       44.2s  PASS
+  > [P] scroll                                              - NO_MATCH    52.4s  FAIL
+  > [P] shard_01_british                                    + MATCH       48.1s  PASS
+  > [P] shard_02_cord_marked                                + MATCH       37.7s  PASS
+  > [P] Wall painting from Room H of the Villa of P. Fan    - NO_MATCH    61.5s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-17009652     + MATCH       62.3s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-21778090     - NO_MATCH    0.7s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-47081632     - NO_MATCH    1.3s  PASS
+  > [N] mixed_gettyimages-13116049_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  + MATCH       76.8s  FAIL
+  > [N] mixed_gettyimages-13116049_scroll                   - NO_MATCH    1.2s  PASS
+  > [N] mixed_gettyimages-13116049_shard_01_british         - NO_MATCH    0.7s  PASS
+  > [N] mixed_gettyimages-13116049_shard_02_cord_marked     - NO_MATCH    0.6s  PASS
+  > [N] mixed_gettyimages-17009652_gettyimages-21778090   
+====================================================================
+PARTIAL RESULTS ANALYSIS (Test hung after 20/45 cases)
+====================================================================
+
+Tests completed: 20 / 45 (44.4%)
+  - Positive (MATCH expected): 9 / 9 (100% completed)
+  - Negative (NO_MATCH expected): 7 / 36 (19.4% completed)
+
+POSITIVE TEST RESULTS:
+  Total: 9 tests
+  PASS: 7 (77.8%)
+  FAIL: 2 (22.2%)
+  
+  Failed cases:
+    - scroll: Expected MATCH, got NO_MATCH
+    - Wall painting from Room H of the Villa of P. Fan: Expected MATCH, got NO_MATCH
+
+NEGATIVE TEST RESULTS (PARTIAL):
+  Total completed: 7 / 36 tests
+  PASS: 5 (71.4%)
+  FAIL: 2 (28.6%)
+  
+  Failed cases:
+    - mixed_gettyimages-13116049_gettyimages-17009652: Expected NO_MATCH, got MATCH
+    - mixed_gettyimages-13116049_high-res-antique-clo: Expected NO_MATCH, got MATCH
+
+ACCURACY ANALYSIS (based on completed tests):
+  Positive accuracy: 77.8% (target: 75%+) ✓ TARGET MET
+  Negative accuracy: 71.4% (target: 85%+) ✗ BELOW TARGET
+  
+  Note: Negative accuracy is based on only 7/36 tests (19.4% sample)
+        Results may not be representative of full test suite
+
+COMPARISON TO BASELINE:
+  Baseline: Positive 96.0%, Negative 73.1%
+  Variant 0D: Positive 77.8%, Negative 71.4% (partial)
+  
+  Changes:
+    - Positive: -18.2% (trade-off for stricter thresholds)
+    - Negative: -1.7% (not improved, actually slight regression)
+
+ANALYSIS:
+  The stricter thresholds (0.75/0.70) combined with ensemble gating appear to be
+  TOO STRICT, causing false negatives on positive cases (scroll, wall painting)
+  without achieving the target improvement in negative accuracy.
+  
+  The partial negative results show 71.4% accuracy, which is actually WORSE than
+  the baseline 73.1%. However, this is based on only 7 tests, so conclusions are
+  limited.
+  
+  The two failed negative cases suggest that ensemble gating is not preventing
+  false positives effectively. The cross-source pairs that failed both involve
+  the "high-res-antique" or "gettyimages-17009652" images, suggesting these
+  particular images have geometric features that lead to false matches.
+
+RECOMMENDATIONS:
+  1. The all-fixes-combined approach may be too aggressive
+  2. Consider testing individual fixes separately to identify which contributes
+     most to the trade-offs
+  3. The test hung on test case 21 - investigate why (possibly memory/performance
+     issue with a specific test case)
+  4. Run a complete test to get full negative accuracy results
+
+STATUS: INCONCLUSIVE - Need full test results to properly evaluate
+====================================================================

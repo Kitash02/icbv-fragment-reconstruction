@@ -1,0 +1,28 @@
+2026-04-11 03:08:05,030 [INFO] main: Log file: C:\Users\I763940\icbv-fragment-reconstruction\logs\run_20260411_030805.log
+2026-04-11 03:08:05,031 [INFO] main: Found 8 fragment images in C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments\wikimedia
+2026-04-11 03:08:05,139 [INFO] preprocessing: Loaded image C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments\wikimedia\14_scherven_-_O36ZFL_-_60015859_-_RCE.jpg — shape (3744, 5616, 3)
+2026-04-11 03:08:05,836 [INFO] preprocessing: Sobel gradient — mean=7.1, max=254.0
+2026-04-11 03:08:05,895 [INFO] preprocessing: Canny thresholds: low=159, high=255
+2026-04-11 03:08:06,053 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 03:08:06,053 [INFO] preprocessing: Background brightness: 235.2 -> light background
+2026-04-11 03:08:06,308 [INFO] preprocessing: Binarization: selected Otsu threshold
+2026-04-11 03:08:06,388 [INFO] preprocessing: Extracted contour with 2982 boundary points
+2026-04-11 03:08:06,398 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0151
+2026-04-11 03:08:06,407 [INFO] shape_descriptors: PCA orientation: centroid=(1150.8, 870.7), angle=2.575 rad (147.6°)
+2026-04-11 03:08:06,407 [INFO] shape_descriptors: Shape summary [14_scherven_-_O36ZFL_-_60015859_-_RCE]: Fourier=[1.    0.846 0.054 0.267]  PCA_angle=147.56°
+2026-04-11 03:08:06,408 [INFO] shape_descriptors: PCA orientation: centroid=(1150.8, 870.7), angle=2.575 rad (147.6°)
+2026-04-11 03:08:06,426 [INFO] chain_code: Chain code: length=2363, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, 7, 0, 1, 7, 0, 0, 1, 7, 0, 0, 0, 1, 7, 2, 7, 0, 0, 7, 1, 6, 2, 0, 1, 5, 2, 7, 1, 6, 2, 7, 0, 1, 7, 1, 6, 2, 0, 7, 2, 6, 1, 7, 1, 0, 7, 2, 6, 0, 2, 6, 1, 7, 0, 1, 7, 0, 1, 7, 1, 6, 2, 7, 1, 7, 0, 1, 7]
+2026-04-11 03:08:06,427 [INFO] main: Fragment 14_scherven_-_O36ZFL_-_60015859_-_RCE  size=5616x3744  contour=2982 pts  segments=4
+2026-04-11 03:08:06,510 [INFO] preprocessing: Loaded image C:\Users\I763940\icbv-fragment-reconstruction\data\raw\real_fragments\wikimedia\201005151429_NE_CSM_Diverse_Glasscherben_1._Jh.jpg — shape (2184, 2337, 3)
+2026-04-11 03:08:06,662 [INFO] preprocessing: Sobel gradient — mean=5.7, max=255.0
+2026-04-11 03:08:06,675 [INFO] preprocessing: Canny thresholds: low=105, high=210
+2026-04-11 03:08:06,704 [INFO] preprocessing: Canny yielded no usable region; falling back to threshold
+2026-04-11 03:08:06,705 [INFO] preprocessing: Background brightness: 113.6 -> dark background
+2026-04-11 03:08:06,744 [INFO] preprocessing: Binarization: selected adaptive threshold
+2026-04-11 03:08:06,761 [INFO] preprocessing: Extracted contour with 9038 boundary points
+2026-04-11 03:08:06,764 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0132
+2026-04-11 03:08:06,765 [INFO] shape_descriptors: PCA orientation: centroid=(1168.0, 1091.5), angle=0.000 rad (0.0°)
+2026-04-11 03:08:06,765 [INFO] shape_descriptors: Shape summary [201005151429_NE_CSM_Diverse_Glasscherben_1._Jh]: Fourier=[1.    0.    4.166 0.   ]  PCA_angle=0.00°
+2026-04-11 03:08:06,766 [INFO] shape_descriptors: PCA orientation: centroid=(1168.0, 1091.5), angle=0.000 rad (0.0°)
+2026-04-11 03:08:07,033 [INFO] chain_code: Chain code: length=9037, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2026-04-11 03:08:07,034 [INFO] main: Fragment 201005151429_NE_CSM_Diverse_Glasscherben_1._Jh  size=2337x2184  contour=9038 pts  segments=4

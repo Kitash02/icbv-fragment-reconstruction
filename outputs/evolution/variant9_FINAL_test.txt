@@ -1,0 +1,72 @@
+================================================================================
+VARIANT 9_FINAL: RESEARCH-OPTIMIZED FULL STACK
+================================================================================
+
+Building on Variant 0D (89%/86% - current best)
+
+Configuration:
+  1. FORMULA: color^4 × texture^2 × gabor^2 × haralick^2 (proven)
+
+  2. WEIGHTED ENSEMBLE (research-backed)
+     - Color: 0.45 (PRIMARY - pottery pigment discrimination)
+     - Raw Compat: 0.25 (geometric features)
+     - Texture: 0.15 (surface patterns)
+     - Morphological: 0.10 (edge + entropy)
+     - Gabor: 0.05 (frequency-domain)
+
+  3. THRESHOLDS (from Variant 0D - proven)
+     - MATCH: 0.75
+     - WEAK: 0.70
+     - ASSEMBLY: 0.65
+
+  4. HARD DISCRIMINATOR PRE-FILTER
+     - Edge density diff < 0.15
+     - Entropy diff < 0.50
+     - Min color similarity: 0.60
+     - Min texture similarity: 0.55
+
+  5. ENSEMBLE GATING (from 0D)
+     - Upgrade requires: bc_color > 0.75 AND bc_texture > 0.70
+     - Prevents false positive upgrades
+
+Target: 92%+ both metrics (stretch: 95%+)
+
+Rationale:
+  Multi-layer defense optimized for pottery discrimination:
+  - Layer 1: Hard discriminator pre-filter (fast rejection)
+  - Layer 2: Weighted ensemble (research-backed discrimination)
+  - Layer 3: Ensemble gating (prevent bad upgrades)
+  - Layer 4: Stricter thresholds (reduce false MATCH)
+================================================================================
+
+
+====================================================================
+  RUNNING 45 TEST CASES  (WITH rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    + MATCH       53.5s  PASS
+  > [P] gettyimages-170096524-1024x1024                     + MATCH       59.3s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    + MATCH       51.9s  PASS
+  > [P] gettyimages-470816328-2048x2048                     + MATCH       50.2s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom  C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  + MATCH       31.5s  PASS
+  > [P] scroll                                              - NO_MATCH    38.8s  FAIL
+  > [P] shard_01_british                                    + MATCH       29.8s  PASS
+  > [P] shard_02_cord_marked                                + MATCH       28.4s  PASS
+  > [P] Wall painting from Room H of the Villa of P. Fan    - NO_MATCH    39.0s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-17009652     + MATCH       48.9s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-21778090     - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-47081632     - NO_MATCH    0.7s  PASS
+  > [N] mixed_gettyimages-13116049_high-res-antique-clo   C:\Users\I763940\icbv-fragment-reconstruction\src\visualize.py:94: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+  + MATCH       50.9s  FAIL
+  > [N] mixed_gettyimages-13116049_scroll                   - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-13116049_shard_01_british         - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-13116049_shard_02_cord_marked     - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-17009652_gettyimages-21778090     - NO_MATCH    49.8s  PASS
+  > [N] mixed_gettyimages-17009652_gettyimages-47081632     + MATCH       52.7s  FAIL
+  > [N] mixed_gettyimages-17009652_high-res-antique-clo   

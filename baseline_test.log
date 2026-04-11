@@ -1,0 +1,20 @@
+Running Variant 1 test...
+================================================================================
+
+================================================================================
+ACCURACY METRICS
+================================================================================
+Positive Cases: 7/9 = 77.8%
+Negative Cases: 8/16 = 50.0%
+Overall:        15/25 = 60.0%
+================================================================================
+Time: 600.3s
+Traceback (most recent call last):
+  File "C:\Users\I763940\icbv-fragment-reconstruction\test_variant1_quick.py", line 94, in <module>
+    run_test()
+  File "C:\Users\I763940\icbv-fragment-reconstruction\test_variant1_quick.py", line 81, in run_test
+    print(f"\n\u2717 Need improvement:")
+  File "C:\Users\I763940\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 2: character maps to <undefined>

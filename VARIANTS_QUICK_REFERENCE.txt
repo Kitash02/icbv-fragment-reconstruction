@@ -1,0 +1,112 @@
+================================================================================
+VARIANTS QUICK REFERENCE GUIDE
+================================================================================
+
+CREATED: 2026-04-09
+PROJECT: icbv-fragment-reconstruction
+TOTAL FILES: 21 (10 runners + 11 modules)
+
+================================================================================
+VARIANT SUMMARY TABLE
+================================================================================
+
+Variant | Formula     | Thresholds | Ensemble      | Primary Purpose
+--------|-------------|------------|---------------|----------------------------
+   0    | Baseline    | Baseline   | Five-way      | Reference baseline
+   1    | Baseline    | Baseline   | Weighted      | arXiv:2510.17145 (97.49%)
+   2    | Baseline    | Baseline   | Hierarchical  | Speed optimization
+   3    | Baseline    | Baseline   | Weighted+     | Better color discrimination
+   4    | Baseline    | Relaxed    | Baseline      | Higher recall
+   5    | Color^6     | Baseline   | Baseline      | Max color emphasis
+   6    | Balanced    | Baseline   | Baseline      | Equal feature weighting
+   7    | Optimized   | Tuned      | Baseline      | Balanced optimization
+   8    | Baseline    | Adaptive   | Baseline      | Context-aware thresholds
+   9    | Optimized   | Adaptive   | Weighted+     | Full research stack
+
+================================================================================
+FORMULAS
+================================================================================
+
+Baseline:    color^4 × texture^2 × gabor^2 × haralick^2
+Color^6:     color^6 × texture^2 × gabor^2 × haralick^2
+Balanced:    color^2 × texture^2 × gabor^2 × haralick^2
+Optimized:   color^5 × texture^2.5 × gabor^2 × haralick^2
+
+================================================================================
+THRESHOLDS (MATCH / WEAK / ASSEMBLY)
+================================================================================
+
+Baseline:    0.75 / 0.60 / 0.65
+Relaxed:     0.70 / 0.55 / 0.60
+Tuned:       0.72 / 0.58 / 0.62
+Adaptive:    Context-dependent (pottery/sculpture/default profiles)
+
+================================================================================
+ENSEMBLE METHODS
+================================================================================
+
+Baseline (Five-way):    Equal voting, 5 discriminators
+Weighted:               0.35, 0.25, 0.20, 0.15, 0.05
+Weighted+ (Tuned):      0.40, 0.25, 0.15, 0.15, 0.05
+Hierarchical:           Decision tree with fast path
+
+================================================================================
+HOW TO RUN
+================================================================================
+
+Single variant:
+    python run_variant2.py
+
+All variants sequentially:
+    for i in {0..9}; do python run_variant${i}.py; done
+
+All variants in parallel (background):
+    for i in {0..9}; do python run_variant${i}.py > v${i}.log 2>&1 & done; wait
+
+================================================================================
+FILE LOCATIONS
+================================================================================
+
+Test Runners:     C:/Users/I763940/icbv-fragment-reconstruction/run_variant{N}.py
+Variant Modules:  C:/Users/I763940/icbv-fragment-reconstruction/src/*_variant{N}.py
+Documentation:    VARIANTS_CREATED.md, COMPLETE_VARIANTS_INVENTORY.md
+
+================================================================================
+MODULE DEPENDENCIES
+================================================================================
+
+V0: (none)
+V1: ensemble_postprocess_variant1
+V2: ensemble_postprocess_variant2
+V3: ensemble_postprocess_variant3
+V4: relaxation_variant4
+V5: compatibility_variant5
+V6: compatibility_variant6
+V7: compatibility_variant7 + relaxation_variant7
+V8: relaxation_variant8
+V9: compatibility_variant7 + relaxation_variant8 + ensemble_postprocess_variant9
+
+================================================================================
+EXPECTED CHARACTERISTICS
+================================================================================
+
+V2: Fastest execution (hierarchical fast-path)
+V3: Best color discrimination (increased color weight)
+V4: Highest recall (more matches detected)
+V5: Maximum color penalty (may over-discriminate)
+V6: Most balanced (equal feature contribution)
+V7: Well-rounded optimization
+V8: Context-adaptive behavior
+V9: Maximum accuracy (combines all improvements)
+
+================================================================================
+IMPLEMENTATION STATUS
+================================================================================
+
+✅ All runner scripts created and executable
+✅ All variant modules created
+✅ No existing files modified (clean separation)
+✅ Documentation complete
+✅ Ready for testing
+
+================================================================================

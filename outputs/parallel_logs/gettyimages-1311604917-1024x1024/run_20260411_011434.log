@@ -1,0 +1,44 @@
+2026-04-11 01:14:34,614 [INFO] main: Log file: outputs\parallel_logs\gettyimages-1311604917-1024x1024\run_20260411_011434.log
+2026-04-11 01:14:34,617 [INFO] main: Found 5 fragment images in data/examples/positive\gettyimages-1311604917-1024x1024
+2026-04-11 01:14:34,630 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,645 [INFO] preprocessing: Extracted contour with 1038 boundary points
+2026-04-11 01:14:34,645 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0859
+2026-04-11 01:14:34,645 [INFO] shape_descriptors: PCA orientation: centroid=(89.5, 152.7), angle=1.368 rad (78.4°)
+2026-04-11 01:14:34,645 [INFO] shape_descriptors: Shape summary [gettyimages-1311604917-1024x1024_frag_01]: Fourier=[1.    0.201 0.358 0.194]  PCA_angle=78.36°
+2026-04-11 01:14:34,645 [INFO] shape_descriptors: PCA orientation: centroid=(89.5, 152.7), angle=1.368 rad (78.4°)
+2026-04-11 01:14:34,662 [INFO] chain_code: Chain code: length=975, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 0, 0, 7, 2, 7, 0, 0, 1, 7, 0, 0, 0, 1, 7, 0, 0, 0, 1, 7, 0, 1, 7, 1, 7, 0, 0, 0, 1, 1, 6, 0, 0, 1, 7, 1, 7, 0, 0, 0, 0, 1, 7, 1, 7, 2, 6, 0, 0, 1, 7, 1, 0, 1, 6, 1, 7, 1, 0, 7, 1, 7, 1, 0, 7, 1, 1, 7, 7, 1, 0]
+2026-04-11 01:14:34,662 [INFO] main: Fragment gettyimages-1311604917-1024x1024_frag_01  size=181x793  contour=1038 pts  segments=4
+2026-04-11 01:14:34,694 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,704 [INFO] preprocessing: Extracted contour with 2587 boundary points
+2026-04-11 01:14:34,706 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0223
+2026-04-11 01:14:34,708 [INFO] shape_descriptors: PCA orientation: centroid=(305.4, 354.8), angle=2.441 rad (139.9°)
+2026-04-11 01:14:34,708 [INFO] shape_descriptors: Shape summary [gettyimages-1311604917-1024x1024_frag_02]: Fourier=[1.    1.132 0.669 0.649]  PCA_angle=139.88°
+2026-04-11 01:14:34,708 [INFO] shape_descriptors: PCA orientation: centroid=(305.4, 354.8), angle=2.441 rad (139.9°)
+2026-04-11 01:14:34,751 [INFO] chain_code: Chain code: length=2117, segments=4, preview=[0, 0, 0, 0, 0, 1, 0, 0, 7, 2, 6, 2, 6, 0, 7, 1, 0, 7, 1, 0, 0, 1, 0, 0, 1, 0, 7, 7, 0, 6, 2, 2, 6, 1, 0, 7, 2, 7, 1, 0, 7, 2, 7, 6, 1, 1, 7, 1, 1, 7, 7, 7, 0, 0, 7, 1, 1, 7, 2, 7, 1, 0, 7, 1, 0, 7, 0, 7, 7, 1, 0, 7, 0, 7, 0, 2, 0, 7, 1, 0]
+2026-04-11 01:14:34,752 [INFO] main: Fragment gettyimages-1311604917-1024x1024_frag_02  size=608x614  contour=2587 pts  segments=4
+2026-04-11 01:14:34,776 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,783 [INFO] preprocessing: Extracted contour with 2400 boundary points
+2026-04-11 01:14:34,785 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0270
+2026-04-11 01:14:34,786 [INFO] shape_descriptors: PCA orientation: centroid=(228.2, 284.9), angle=1.453 rad (83.2°)
+2026-04-11 01:14:34,786 [INFO] shape_descriptors: Shape summary [gettyimages-1311604917-1024x1024_frag_03]: Fourier=[1.    0.713 0.264 0.159]  PCA_angle=83.23°
+2026-04-11 01:14:34,787 [INFO] shape_descriptors: PCA orientation: centroid=(228.2, 284.9), angle=1.453 rad (83.2°)
+2026-04-11 01:14:34,837 [INFO] chain_code: Chain code: length=2277, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 1, 7, 0, 1, 0, 7, 0, 1, 0, 0, 0, 0, 7, 7, 7, 1, 6, 1, 7, 1, 1, 6, 1, 6, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 7, 1, 7, 1, 0, 1, 0, 0, 7, 1, 0, 1, 7, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 7, 1, 7, 1, 7, 1, 7, 7, 0, 0, 2]
+2026-04-11 01:14:34,837 [INFO] main: Fragment gettyimages-1311604917-1024x1024_frag_03  size=501x565  contour=2400 pts  segments=4
+2026-04-11 01:14:34,867 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,877 [INFO] preprocessing: Extracted contour with 2401 boundary points
+2026-04-11 01:14:34,878 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.0803
+2026-04-11 01:14:34,879 [INFO] shape_descriptors: PCA orientation: centroid=(309.0, 288.7), angle=1.084 rad (62.1°)
+2026-04-11 01:14:34,880 [INFO] shape_descriptors: Shape summary [gettyimages-1311604917-1024x1024_frag_04]: Fourier=[1.    0.466 0.378 0.05 ]  PCA_angle=62.12°
+2026-04-11 01:14:34,881 [INFO] shape_descriptors: PCA orientation: centroid=(309.0, 288.7), angle=1.084 rad (62.1°)
+2026-04-11 01:14:34,921 [INFO] chain_code: Chain code: length=2073, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 2, 7, 2, 6, 2, 7, 1, 7, 1, 7, 2, 0, 0, 0, 7, 0, 1, 7, 0, 7, 0, 6, 2, 0, 0, 1, 7, 0, 1, 1, 0, 6, 1, 6, 7, 2, 7, 0, 0, 1, 0, 1, 7, 2, 6, 0, 1, 7, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 7, 1, 7, 1, 2, 4, 0, 0, 0, 0, 1, 0]
+2026-04-11 01:14:34,921 [INFO] main: Fragment gettyimages-1311604917-1024x1024_frag_04  size=505x706  contour=2401 pts  segments=4
+2026-04-11 01:14:34,927 [INFO] preprocessing: RGBA fragment detected — using alpha channel as silhouette mask
+2026-04-11 01:14:34,931 [INFO] preprocessing: Extracted contour with 988 boundary points
+2026-04-11 01:14:34,931 [INFO] shape_descriptors: Fourier descriptors: 8 coefficients, energy ratio=0.3061
+2026-04-11 01:14:34,931 [INFO] shape_descriptors: PCA orientation: centroid=(49.2, 171.7), angle=1.523 rad (87.3°)
+2026-04-11 01:14:34,931 [INFO] shape_descriptors: Shape summary [gettyimages-1311604917-1024x1024_frag_06]: Fourier=[1.    0.033 0.043 0.05 ]  PCA_angle=87.28°
+2026-04-11 01:14:34,931 [INFO] shape_descriptors: PCA orientation: centroid=(49.2, 171.7), angle=1.523 rad (87.3°)
+2026-04-11 01:14:34,946 [INFO] chain_code: Chain code: length=973, segments=4, preview=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7, 1, 0, 0, 7, 0, 7, 0, 7, 1, 0, 7, 1, 7, 1, 7, 1, 0, 0, 1, 7, 1, 7, 1, 1, 7, 0, 0, 0, 0, 1, 7, 0, 0, 7, 0, 0, 1, 7, 1, 0, 0, 0, 0, 0, 1, 6, 7, 1, 6, 2, 7, 0, 1, 0, 0, 7, 1]
+2026-04-11 01:14:34,948 [INFO] main: Fragment gettyimages-1311604917-1024x1024_frag_06  size=126x365  contour=988 pts  segments=4
+2026-04-11 01:14:34,960 [INFO] main: Color pre-check (Lecture 71): min_BC=0.547  max_gap=0.235  is_mixed=True
+2026-04-11 01:14:34,961 [WARNING] main: Bimodal color distribution detected (gap=0.235, min_BC=0.547). Fragments appear to come from different source images — NO MATCH returned without running geometric pipeline.

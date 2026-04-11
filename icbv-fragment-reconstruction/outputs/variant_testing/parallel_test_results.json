@@ -1,0 +1,95 @@
+{
+  "total_time": 0.5281651020050049,
+  "results": [
+    {
+      "variant_id": 0,
+      "success": false,
+      "elapsed_time": 0.08329176902770996,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_0\\test_output.txt"
+    },
+    {
+      "variant_id": 1,
+      "success": false,
+      "elapsed_time": 0.08250117301940918,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_1\\test_output.txt"
+    },
+    {
+      "variant_id": 2,
+      "success": false,
+      "elapsed_time": 0.08591341972351074,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_2\\test_output.txt"
+    },
+    {
+      "variant_id": 3,
+      "success": false,
+      "elapsed_time": 0.08449530601501465,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_3\\test_output.txt"
+    },
+    {
+      "variant_id": 4,
+      "success": false,
+      "elapsed_time": 0.08598446846008301,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_4\\test_output.txt"
+    },
+    {
+      "variant_id": 5,
+      "success": false,
+      "elapsed_time": 0.08284807205200195,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_5\\test_output.txt"
+    },
+    {
+      "variant_id": 6,
+      "success": false,
+      "elapsed_time": 0.08227729797363281,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_6\\test_output.txt"
+    },
+    {
+      "variant_id": 7,
+      "success": false,
+      "elapsed_time": 0.08249044418334961,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_7\\test_output.txt"
+    },
+    {
+      "variant_id": 8,
+      "success": false,
+      "elapsed_time": 0.0724189281463623,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_8\\test_output.txt"
+    },
+    {
+      "variant_id": 9,
+      "success": false,
+      "elapsed_time": 0.07619118690490723,
+      "positive_accuracy": null,
+      "negative_accuracy": null,
+      "overall_accuracy": null,
+      "log_file": "icbv-fragment-reconstruction\\outputs\\variant_testing\\variant_9\\test_output.txt"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+# Archaeological Fragment Reconstruction Configuration
+# This file contains ALL configurable parameters for the pipeline
+# Each section corresponds to a module in the system
+
+# =============================================================================
+# PREPROCESSING PARAMETERS (src/preprocessing.py)
+# Early vision pipeline: Gaussian blur, Canny, Otsu threshold
+# =============================================================================
+preprocessing:
+  # Gaussian blur kernel (Lecture 22 - Linear filtering)
+  gaussian_kernel_size: [5, 5]  # (width, height) - must be odd numbers
+  gaussian_sigma: 1.5            # Standard deviation - controls smoothing strength
+  # Expected range: 0.5-3.0 (lower = less smoothing, higher = more smoothing)
+
+  # Contour area filtering
+  min_contour_area: 500          # Minimum pixel area for valid contours
+  # Expected range: 100-2000 (depends on image resolution)
+
+  # Background detection
+  corner_sample_size: 30         # Pixels sampled from corners to detect background
+  # Expected range: 20-50 (must be smaller than image dimensions)
+
+  # Morphological operations
+  morph_kernel_size: 7           # Size of morphological kernel (closing/opening)
+  # Expected range: 3-15 (must be odd, larger = more aggressive cleanup)
+
+  # Canny edge detection (Lecture 23 - Edge Detection)
+  canny_sigma_scale: 0.33        # Controls automatic threshold: (1±scale)*median
+  # Expected range: 0.2-0.5 (Lecture 23 recommends 1:3 low/high ratio)
+
+# =============================================================================
+# CHAIN CODE PARAMETERS (src/chain_code.py)
+# Freeman 8-directional chain code encoding (Lecture 72)
+# =============================================================================
+chain_code:
+  # Number of segments per fragment boundary
+  n_segments: 4                  # Equal-length boundary divisions
+  # Expected range: 3-8 (more segments = finer matching, but slower)
+
+# =============================================================================
+# SHAPE DESCRIPTORS (src/shape_descriptors.py)
+# Fourier descriptors and PCA orientation (Lectures 72, 74)
+# =============================================================================
+shape_descriptors:
+  # Fourier descriptor truncation
+  fourier_descriptor_order: 32   # Number of low-frequency coefficients kept
+  # Expected range: 16-64 (higher = more shape detail retained)
+
+# =============================================================================
+# COMPATIBILITY SCORING (src/compatibility.py)
+# Multi-modal fragment matching (Lectures 23, 52, 71, 72)
+# =============================================================================
+compatibility:
+  # Good continuation bonus (Lecture 52 - Gestalt principles)
+  good_continuation_sigma: 0.5   # Controls smoothness reward at join points
+  # Expected range: 0.3-0.8 (lower = sharper falloff for non-smooth joins)
+
+  good_continuation_weight: 0.10 # Weight of good-continuation in total score
+  # Expected range: 0.05-0.20 (fraction of total compatibility score)
+
+  # Fourier descriptor matching weight
+  fourier_weight: 0.25           # Weight of global shape similarity
+  # Expected range: 0.15-0.35 (complements local curvature matching)
+
+  fourier_segment_order: 8       # Number of Fourier coefficients per segment
+  # Expected range: 4-16 (higher = more global shape detail)
+
+  # Color histogram parameters (Lecture 71 - Appearance-based recognition)
+  # Lab color space (perceptually uniform, better for earth tones)
+  color_hist_bins_l: 16          # Lightness (L*) bins
+  # Expected range: 8-32 (higher = finer color discrimination)
+
+  color_hist_bins_a: 8           # Green-Red (a*) bins
+  # Expected range: 4-16
+
+  color_hist_bins_b: 8           # Blue-Yellow (b*) bins
+  # Expected range: 4-16
+
+  # Appearance penalty weights
+  # STAGE 1.5 FIX: Multiplicative appearance penalty formula
+  # Final score = geometric_score × (color^4 × texture^2 × gabor^2 × haralick^2)
+  color_power: 4.0               # Exponential power for color BC penalty
+  # Expected range: 2.0-6.0 (higher = stronger rejection of color mismatches)
+
+  texture_power: 2.0             # Exponential power for texture BC penalty
+  # Expected range: 1.0-3.0 (texture is secondary to color)
+
+  gabor_power: 2.0               # Exponential power for Gabor feature penalty
+  # Expected range: 1.0-3.0 (frequency-domain texture)
+
+  haralick_power: 2.0            # Exponential power for Haralick GLCM penalty
+  # Expected range: 1.0-3.0 (second-order texture statistics)
+
+  # Texture feature extraction parameters
+  # Local Binary Pattern (LBP)
+  lbp_radius: 3                  # Radius for LBP computation
+  # Expected range: 1-5 (larger = captures coarser texture patterns)
+
+  lbp_n_points: 24               # Number of sampling points on circle
+  # Expected range: 8-24 (must be multiple of 8)
+
+  # Gabor filter bank
+  gabor_frequencies: [0.05, 0.1, 0.2, 0.3, 0.4]  # Spatial frequencies
+  # Expected range: 0.01-0.5 (lower = coarser patterns, higher = finer)
+
+  gabor_n_orientations: 8        # Number of orientations (uniformly spaced)
+  # Expected range: 4-12 (more = better rotation coverage, slower)
+
+  gabor_kernel_size: 31          # Size of Gabor kernel (must be odd)
+  # Expected range: 15-51 (larger = more accurate, slower)
+
+  gabor_sigma: 4.0               # Gaussian envelope standard deviation
+  # Expected range: 2.0-8.0
+
+  gabor_gamma: 0.5               # Aspect ratio of Gabor function
+  # Expected range: 0.3-1.0 (1.0 = circular, <1.0 = elliptical)
+
+  # Haralick GLCM parameters
+  haralick_distances: [1, 3, 5]  # Pixel distances for co-occurrence
+  # Expected range: 1-10 (captures texture at multiple scales)
+
+  haralick_n_angles: 4           # Number of angles (0, 45, 90, 135 deg)
+  # Expected range: 4 (standard), 8 (more directions, slower)
+
+# =============================================================================
+# RELAXATION LABELING (src/relaxation.py)
+# Global optimization via constraint propagation (Lecture 53)
+# =============================================================================
+relaxation:
+  # Convergence control
+  max_iterations: 50             # Maximum relaxation iterations
+  # Expected range: 30-100 (more = better convergence, slower)
+
+  convergence_threshold: 0.0001  # Stop when max probability change < threshold
+  # Expected range: 1e-5 to 1e-3 (smaller = tighter convergence)
+
+  # Match quality thresholds (calibrated for combined score max = 1.25)
+  # STAGE 1.6 FIX: Balanced thresholds for true positive acceptance
+  match_score_threshold: 0.75    # Raw compatibility >= this → confident MATCH
+  # Expected range: 0.60-0.90 (higher = stricter matching)
+  # Note: Lowered from 0.85 to accept more true positives while
+  # appearance formula (color^4 × texture^2 × ...) rejects false positives
+
+  weak_match_score_threshold: 0.60  # Raw compatibility >= this → possible match
+  # Expected range: 0.45-0.75 (should be 0.10-0.20 below match_score_threshold)
+  # Note: Lowered from 0.70 to capture uncertain but valid matches
+
+  assembly_confidence_threshold: 0.65  # Average confidence for assembly acceptance
+  # Expected range: 0.50-0.80 (higher = stricter assembly acceptance)
+  # Note: Lowered from 0.75 to match reduced match thresholds
+
+  # Assembly classification rules
+  assembly_match_fraction: 0.60  # Fraction of pairs that must be MATCH for verdict=MATCH
+  # Expected range: 0.50-0.80 (higher = requires more confident pairs)
+
+  assembly_valid_fraction: 0.40  # Fraction of pairs >= WEAK_MATCH for verdict=WEAK_MATCH
+  # Expected range: 0.30-0.60 (lower = more permissive)
+
+  # Top assembly extraction
+  n_top_assemblies: 3            # Number of candidate assemblies to extract
+  # Expected range: 1-10 (more = more hypotheses, but diminishing returns)
+
+  perturbation_noise: 0.05       # Random noise for assembly diversity
+  # Expected range: 0.01-0.10 (higher = more diverse but less optimal)
+
+# =============================================================================
+# HARD DISCRIMINATORS (src/hard_discriminators.py)
+# Fast rejection criteria (arXiv:2511.12976, arXiv:2309.13512)
+# =============================================================================
+hard_discriminators:
+  # Edge density threshold
+  edge_density_threshold: 0.15   # Maximum allowed difference in edge density
+  # Expected range: 0.10-0.25 (lower = stricter manufacturing similarity)
+
+  # Texture entropy threshold
+  entropy_threshold: 0.5         # Maximum allowed difference in texture entropy
+  # Expected range: 0.3-0.8 (lower = stricter surface similarity)
+
+  # Combined appearance gate (both must pass)
+  color_gate_threshold: 0.60     # Minimum color BC to pass gate
+  # Expected range: 0.50-0.75 (higher = stricter color matching)
+
+  texture_gate_threshold: 0.55   # Minimum texture BC to pass gate
+  # Expected range: 0.45-0.70 (higher = stricter texture matching)
+
+  # Canny edge detection for edge density
+  edge_canny_low: 50             # Low threshold for Canny
+  # Expected range: 30-100
+
+  edge_canny_high: 150           # High threshold for Canny (3:1 ratio recommended)
+  # Expected range: 100-300
+
+# =============================================================================
+# ENSEMBLE VOTING (src/ensemble_voting.py)
+# Multi-discriminator voting (arXiv:2309.13512 - 99.3% accuracy)
+# =============================================================================
+ensemble_voting:
+  # 5-way voting thresholds (each voter independently classifies)
+  # Voter 1: Raw Compatibility (geometric)
+  raw_compat_match_thresh: 0.85  # Confident geometric match
+  raw_compat_weak_thresh: 0.70   # Possible geometric match
+  # Expected range: match 0.70-0.95, weak 0.50-0.80
+
+  # Voter 2: Color Discriminator
+  color_match_thresh: 0.78       # Confident color match
+  color_weak_thresh: 0.65        # Possible color match
+  # Expected range: match 0.70-0.90, weak 0.55-0.75
+
+  # Voter 3: Texture Discriminator (LBP)
+  texture_match_thresh: 0.72     # Confident texture match
+  texture_weak_thresh: 0.58      # Possible texture match
+  # Expected range: match 0.65-0.85, weak 0.50-0.70
+
+  # Voter 4: Gabor Discriminator
+  gabor_match_thresh: 0.70       # Confident Gabor match
+  gabor_weak_thresh: 0.55        # Possible Gabor match
+  # Expected range: match 0.60-0.80, weak 0.45-0.65
+
+  # Voter 5: Morphological Discriminator (edge + entropy)
+  morph_match_thresh: 0.75       # Confident morphological match
+  morph_weak_thresh: 0.60        # Possible morphological match
+  # Expected range: match 0.65-0.85, weak 0.50-0.70
+
+  # Morphological score normalization factors
+  morph_edge_norm: 0.20          # Normalizer for edge density difference
+  morph_entropy_norm: 0.70       # Normalizer for entropy difference
+  # Expected range: edge 0.15-0.30, entropy 0.50-1.00
+
+  # Voting decision rules (pessimistic for archaeology)
+  min_match_votes: 3             # Minimum MATCH votes for verdict=MATCH
+  # Expected range: 2-4 (out of 5 voters)
+
+  min_reject_votes: 2            # Minimum NO_MATCH votes for verdict=NO_MATCH
+  # Expected range: 2-3 (pessimistic: reject on uncertainty)
+
+  # Weighted voting alternative
+  use_weighted_voting: false     # Enable weighted voting (vs. equal voting)
+
+  weights:
+    color: 0.35                  # Color has highest discriminative power
+    raw_compat: 0.25             # Geometric features
+    texture: 0.20                # Local patterns
+    morphological: 0.15          # Edge + entropy
+    gabor: 0.05                  # Frequency-domain (lowest)
+  # Expected range: color 0.25-0.45, raw 0.15-0.35, texture 0.10-0.30,
+  #                 morph 0.10-0.25, gabor 0.00-0.15
+  # Constraint: must sum to 1.0
+
+  # Weighted voting thresholds
+  weighted_match_thresh: 0.75    # Confident match
+  weighted_weak_thresh: 0.60     # Possible match
+  # Expected range: match 0.65-0.85, weak 0.50-0.70
+
+  # Hierarchical voting thresholds (fast paths)
+  hierarchical_edge_reject: 0.15      # Fast reject if edge diff > this
+  hierarchical_entropy_reject: 0.5    # Fast reject if entropy diff > this
+  hierarchical_color_match: 0.80      # Fast match if color >= this
+  hierarchical_geom_match: 0.85       # Fast match if geom >= this
+  hierarchical_color_reject: 0.55     # Fast reject if color < this
+  hierarchical_geom_reject: 0.60      # Fast reject if geom < this
+  # Expected range: tuned for ~80% fast-path coverage
+
+# =============================================================================
+# MIXED-SOURCE DETECTION (src/main.py)
+# Color pre-check to detect fragments from different images (Lecture 71)
+# =============================================================================
+mixed_source_detection:
+  # Bimodal distribution thresholds
+  color_precheck_gap_thresh: 0.25     # Minimum gap between low/high BC groups
+  # Expected range: 0.20-0.35 (larger gap = stronger bimodal evidence)
+
+  color_precheck_low_max: 0.62        # Maximum BC in "low" group
+  # Expected range: 0.55-0.70 (lower = stricter cross-image rejection)
+
+# =============================================================================
+# PIPELINE CONTROL (src/main.py)
+# Top-level orchestration parameters
+# =============================================================================
+pipeline:
+  # File extensions for fragment images
+  image_extensions: ['.png', '.jpg', '.jpeg', '.bmp']
+
+  # Number of top assemblies to visualize
+  n_top_assemblies: 3            # Must match relaxation.n_top_assemblies
+  # Expected range: 1-10
+
+# =============================================================================
+# LOGGING (src/main.py)
+# Controls log verbosity and output
+# =============================================================================
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: INFO
+
+  # Log format string
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+
+  # Log file timestamp format
+  timestamp_format: "%Y%m%d_%H%M%S"

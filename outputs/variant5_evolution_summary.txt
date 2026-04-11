@@ -1,0 +1,66 @@
+================================================================================
+VARIANT 5 EVOLUTIONARY OPTIMIZATION SUMMARY
+================================================================================
+Goal: Achieve 95%+ positive AND 95%+ negative accuracy
+Configuration: color^6 × texture^2 × gabor^2 × haralick^2
+
+Iter  POWER_COLOR  hard_disc      Positive        Negative        Overall
+----  -----------  -------------  --------------  --------------  --------
+0     4.0 (base)   0.70/0.65      Unknown         Unknown         Unknown
+1     6.0          0.70/0.65      5/9  (55.6%)    28/36 (77.8%)   73.3%
+2     5.5          0.70/0.65      4/8  (50.0%)    28/36 (77.8%)   72.7%
+3     6.0          0.65/0.60      4/8  (50.0%)    28/35 (80.0%)   74.4%
+4/5   5.0          0.65/0.60      6/9  (66.7%)    28/36 (77.8%)   75.6%  ← BEST
+
+KEY FINDINGS:
+1. Clear trade-off: Higher color power → better negative, worse positive
+2. Best overall balance at POWER_COLOR=5.0 with relaxed hard_disc (0.65/0.60)
+3. Positive: 66.7% (target: 95%+) - NEEDS +28.3 points
+4. Negative: 77.8% (target: 95%+) - NEEDS +17.2 points
+
+PERSISTENT PROBLEM CASES:
+
+Positive failures (3/9):
+  - gettyimages-1311604917 (0.2s) - Fast early rejection
+  - gettyimages-2177809001 (23.2s) - Geometric mismatch
+  - Wall painting (22.4s) - Geometric mismatch
+
+Negative failures (8/36 - consistent set):
+  - mixed_gettyimages-17009652_gettyimages-21778090
+  - mixed_gettyimages-17009652_gettyimages-47081632
+  - mixed_gettyimages-17009652_scroll
+  - mixed_gettyimages-21778090_gettyimages-47081632
+  - mixed_gettyimages-21778090_shard_01_british
+  - mixed_gettyimages-21778090_shard_02_cord_marked
+  - mixed_shard_01_british_shard_02_cord_marked
+  - mixed_Wall painting_gettyimages-17009652
+
+DIAGNOSIS:
+- Color^5 with relaxed hard_disc is best so far but INSUFFICIENT
+- Cannot reach 95%+ on both with just color power tuning
+- Specific problematic fragments: gettyimages-17009652, gettyimages-21778090
+  These create false matches even with appearance penalty
+- True positive fragments have appearance variations that color^5 can't handle
+
+RECOMMENDATION:
+Current best configuration:
+  - POWER_COLOR = 5.0
+  - POWER_TEXTURE = 2.0
+  - POWER_GABOR = 2.0
+  - POWER_HARALICK = 2.0
+  - hard_disc thresholds = 0.65/0.60
+
+Achieves: 66.7% positive / 77.8% negative (75.6% overall)
+
+To reach 95%+ both positive and negative:
+  Option A: Increase texture/gabor/haralick powers (currently all at 2.0)
+  Option B: Add ensemble voting with multiple power combinations
+  Option C: Investigate the 2 Getty Images causing false positives
+            (17009652 and 21778090) - they may have similar appearance
+
+NEXT STEPS FOR 95%+ TARGET:
+1. Try POWER_TEXTURE=3.0 to add discrimination without hurting positive
+2. Investigate why Getty 17009652 and 21778090 match everything
+3. Consider per-fragment appearance variance thresholds
+4. Test ensemble approach with multiple penalty configurations
+================================================================================

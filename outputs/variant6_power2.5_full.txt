@@ -1,0 +1,112 @@
+
+====================================================================
+  RUNNING 45 TEST CASES  (WITH rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    + MATCH       28.6s  PASS
+  > [P] gettyimages-170096524-1024x1024                     + MATCH       34.5s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    + MATCH       37.0s  PASS
+  > [P] gettyimages-470816328-2048x2048                     + MATCH       40.9s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom    + MATCH       26.9s  PASS
+  > [P] scroll                                              + MATCH       28.9s  PASS
+  > [P] shard_01_british                                    + MATCH       26.1s  PASS
+  > [P] shard_02_cord_marked                                + MATCH       22.3s  PASS
+  > [P] Wall painting from Room H of the Villa of P. Fan    + MATCH       37.4s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-17009652     + MATCH       43.0s  FAIL
+  > [N] mixed_gettyimages-13116049_gettyimages-21778090     - NO_MATCH    0.4s  PASS
+  > [N] mixed_gettyimages-13116049_gettyimages-47081632     - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-13116049_high-res-antique-clo     + MATCH       40.2s  FAIL
+  > [N] mixed_gettyimages-13116049_scroll                   - NO_MATCH    0.5s  PASS
+  > [N] mixed_gettyimages-13116049_shard_01_british         - NO_MATCH    0.4s  PASS
+  > [N] mixed_gettyimages-13116049_shard_02_cord_marked     - NO_MATCH    0.4s  PASS
+  > [N] mixed_gettyimages-17009652_gettyimages-21778090     + MATCH       37.4s  FAIL
+  > [N] mixed_gettyimages-17009652_gettyimages-47081632     + MATCH       34.7s  FAIL
+  > [N] mixed_gettyimages-17009652_high-res-antique-clo     + MATCH       25.2s  FAIL
+  > [N] mixed_gettyimages-17009652_scroll                   + MATCH       26.3s  FAIL
+  > [N] mixed_gettyimages-17009652_shard_01_british         - NO_MATCH    0.2s  PASS
+  > [N] mixed_gettyimages-17009652_shard_02_cord_marked     + MATCH       23.9s  FAIL
+  > [N] mixed_gettyimages-21778090_gettyimages-47081632     + MATCH       32.9s  FAIL
+  > [N] mixed_gettyimages-21778090_high-res-antique-clo     + MATCH       21.9s  FAIL
+  > [N] mixed_gettyimages-21778090_scroll                   + MATCH       29.4s  FAIL
+  > [N] mixed_gettyimages-21778090_shard_01_british         - NO_MATCH    25.5s  PASS
+  > [N] mixed_gettyimages-21778090_shard_02_cord_marked     - NO_MATCH    29.1s  PASS
+  > [N] mixed_gettyimages-47081632_high-res-antique-clo     - NO_MATCH    27.4s  PASS
+  > [N] mixed_gettyimages-47081632_scroll                   + MATCH       25.8s  FAIL
+  > [N] mixed_gettyimages-47081632_shard_01_british         + MATCH       25.1s  FAIL
+  > [N] mixed_gettyimages-47081632_shard_02_cord_marked     - NO_MATCH    26.0s  PASS
+  > [N] mixed_high-res-antique-clo_scroll                   - NO_MATCH    23.8s  PASS
+  > [N] mixed_high-res-antique-clo_shard_01_british         - NO_MATCH    18.0s  PASS
+  > [N] mixed_high-res-antique-clo_shard_02_cord_marked     - NO_MATCH    19.5s  PASS
+  > [N] mixed_scroll_shard_01_british                       + MATCH       24.1s  FAIL
+  > [N] mixed_scroll_shard_02_cord_marked                   + MATCH       23.1s  FAIL
+  > [N] mixed_shard_01_british_shard_02_cord_marked         + MATCH       21.5s  FAIL
+  > [N] mixed_Wall painting from R_gettyimages-13116049     + MATCH       52.7s  FAIL
+  > [N] mixed_Wall painting from R_gettyimages-17009652     - NO_MATCH    45.7s  PASS
+  > [N] mixed_Wall painting from R_gettyimages-21778090     - NO_MATCH    41.7s  PASS
+  > [N] mixed_Wall painting from R_gettyimages-47081632     - NO_MATCH    0.4s  PASS
+  > [N] mixed_Wall painting from R_high-res-antique-clo     - NO_MATCH    32.3s  PASS
+  > [N] mixed_Wall painting from R_scroll                   - NO_MATCH    33.5s  PASS
+  > [N] mixed_Wall painting from R_shard_01_british         - NO_MATCH    0.5s  PASS
+  > [N] mixed_Wall painting from R_shard_02_cord_marked     - NO_MATCH    0.5s  PASS
+
+====================================================================================================
+  RECONSTRUCTION TEST RESULTS  (WITH rotation)
+====================================================================================================
+  Test Case                                     Type    Frags    Verdict      Conf  Time(s)  Pass?
+  --------------------------------------------------------------------------------------------------
+  gettyimages-1311604917-1024x1024            positive    5      + MATCH      0.00     28.6  PASS 
+  gettyimages-170096524-1024x1024             positive    6      + MATCH      0.00     34.5  PASS 
+  gettyimages-2177809001-1024x1024            positive    6      + MATCH      0.00     37.0  PASS 
+  gettyimages-470816328-2048x2048             positive    6      + MATCH      0.00     40.9  PASS 
+  high-res-antique-close-up-earth-muted-tone  positive    6      + MATCH      0.00     26.9  PASS 
+  scroll                                      positive    6      + MATCH      0.00     28.9  PASS 
+  shard_01_british                            positive    6      + MATCH      0.00     26.1  PASS 
+  shard_02_cord_marked                        positive    6      + MATCH      0.00     22.3  PASS 
+  Wall painting from Room H of the Villa of   positive    6      + MATCH      0.00     37.4  PASS 
+  --------------------------------------------------------------------------------------------------
+  mixed_gettyimages-13116049_gettyimages-170  negative    6      + MATCH      0.00     43.0  FAIL 
+  mixed_gettyimages-13116049_gettyimages-217  negative    6    - NO_MATCH     0.00      0.4  PASS 
+  mixed_gettyimages-13116049_gettyimages-470  negative    6    - NO_MATCH     0.00      0.5  PASS 
+  mixed_gettyimages-13116049_high-res-antiqu  negative    6      + MATCH      0.00     40.2  FAIL 
+  mixed_gettyimages-13116049_scroll           negative    6    - NO_MATCH     0.00      0.5  PASS 
+  mixed_gettyimages-13116049_shard_01_britis  negative    6    - NO_MATCH     0.00      0.4  PASS 
+  mixed_gettyimages-13116049_shard_02_cord_m  negative    6    - NO_MATCH     0.00      0.4  PASS 
+  mixed_gettyimages-17009652_gettyimages-217  negative    6      + MATCH      0.00     37.4  FAIL 
+  mixed_gettyimages-17009652_gettyimages-470  negative    6      + MATCH      0.00     34.7  FAIL 
+  mixed_gettyimages-17009652_high-res-antiqu  negative    6      + MATCH      0.00     25.2  FAIL 
+  mixed_gettyimages-17009652_scroll           negative    6      + MATCH      0.00     26.3  FAIL 
+  mixed_gettyimages-17009652_shard_01_britis  negative    6    - NO_MATCH     0.00      0.2  PASS 
+  mixed_gettyimages-17009652_shard_02_cord_m  negative    6      + MATCH      0.00     23.9  FAIL 
+  mixed_gettyimages-21778090_gettyimages-470  negative    6      + MATCH      0.00     32.9  FAIL 
+  mixed_gettyimages-21778090_high-res-antiqu  negative    6      + MATCH      0.00     21.9  FAIL 
+  mixed_gettyimages-21778090_scroll           negative    6      + MATCH      0.00     29.4  FAIL 
+  mixed_gettyimages-21778090_shard_01_britis  negative    6    - NO_MATCH     0.00     25.5  PASS 
+  mixed_gettyimages-21778090_shard_02_cord_m  negative    6    - NO_MATCH     0.00     29.1  PASS 
+  mixed_gettyimages-47081632_high-res-antiqu  negative    6    - NO_MATCH     0.00     27.4  PASS 
+  mixed_gettyimages-47081632_scroll           negative    6      + MATCH      0.00     25.8  FAIL 
+  mixed_gettyimages-47081632_shard_01_britis  negative    6      + MATCH      0.00     25.1  FAIL 
+  mixed_gettyimages-47081632_shard_02_cord_m  negative    6    - NO_MATCH     0.00     26.0  PASS 
+  mixed_high-res-antique-clo_scroll           negative    6    - NO_MATCH     0.00     23.8  PASS 
+  mixed_high-res-antique-clo_shard_01_britis  negative    6    - NO_MATCH     0.00     18.0  PASS 
+  mixed_high-res-antique-clo_shard_02_cord_m  negative    6    - NO_MATCH     0.00     19.5  PASS 
+  mixed_scroll_shard_01_british               negative    6      + MATCH      0.00     24.1  FAIL 
+  mixed_scroll_shard_02_cord_marked           negative    6      + MATCH      0.00     23.1  FAIL 
+  mixed_shard_01_british_shard_02_cord_marke  negative    6      + MATCH      0.00     21.5  FAIL 
+  mixed_Wall painting from R_gettyimages-131  negative    6      + MATCH      0.00     52.7  FAIL 
+  mixed_Wall painting from R_gettyimages-170  negative    6    - NO_MATCH     0.00     45.7  PASS 
+  mixed_Wall painting from R_gettyimages-217  negative    6    - NO_MATCH     0.00     41.7  PASS 
+  mixed_Wall painting from R_gettyimages-470  negative    6    - NO_MATCH     0.00      0.4  PASS 
+  mixed_Wall painting from R_high-res-antiqu  negative    6    - NO_MATCH     0.00     32.3  PASS 
+  mixed_Wall painting from R_scroll           negative    6    - NO_MATCH     0.00     33.5  PASS 
+  mixed_Wall painting from R_shard_01_britis  negative    6    - NO_MATCH     0.00      0.5  PASS 
+  mixed_Wall painting from R_shard_02_cord_m  negative    6    - NO_MATCH     0.00      0.5  PASS 
+  --------------------------------------------------------------------------------------------------
+  TOTAL  29/45 pass  16 fail  0 error                                                             
+====================================================================================================
+
+  Final result : 29/45 PASS
+  Results saved to: C:\Users\I763940\icbv-fragment-reconstruction\outputs\test_results
+

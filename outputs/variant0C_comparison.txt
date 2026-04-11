@@ -1,0 +1,28 @@
+================================================================================
+VARIANT 0C vs. BASELINE COMPARISON
+================================================================================
+
+Metric                    Baseline (V0)    Variant 0C      Change
+--------------------------------------------------------------------------------
+Positive Accuracy         100.0% (9/9)     77.8% (7/9)     -22.2 pp
+Negative Accuracy           0.0% (0/36)    77.8% (28/36)   +77.8 pp
+Overall Accuracy           20.0% (9/45)    77.8% (35/45)   +57.8 pp
+--------------------------------------------------------------------------------
+
+False Positives (FP)            36               8          -28 (77.8% reduction)
+False Negatives (FN)             0               2          +2
+True Positives (TP)              9               7          -2
+True Negatives (TN)              0              28          +28
+--------------------------------------------------------------------------------
+
+Target Achievement:
+  Target: Negative accuracy ≥ 80%
+  Result: 77.8%
+  Status: Close (within 2.2 pp)
+
+Key Insight:
+  The gating mechanism successfully prevents most false positive upgrades by
+  requiring strong appearance evidence before accepting ensemble MATCH verdicts.
+  The tradeoff is rejecting 2 legitimate matches with marginal appearance.
+
+================================================================================

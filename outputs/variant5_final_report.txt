@@ -1,0 +1,126 @@
+================================================================================
+VARIANT 5 (Color^6) - EVOLUTIONARY OPTIMIZATION FINAL REPORT
+================================================================================
+Mission: Iterate until Variant 5 achieves 95%+ positive AND 95%+ negative accuracy
+Started: color^6 × texture^2 × gabor^2 × haralick^2, hard_disc=0.70/0.65
+
+ITERATION RESULTS:
+================================================================================
+Iter  Config                                 Positive      Negative      Overall
+----  -------------------------------------  ------------  ------------  -------
+1     color^6.0  tex^2  gab^2  har^2  0.70/0.65    5/9  (55.6%)   28/36 (77.8%)   73.3%
+2     color^5.5  tex^2  gab^2  har^2  0.70/0.65    4/8  (50.0%)   28/36 (77.8%)   72.7%
+3     color^6.0  tex^2  gab^2  har^2  0.65/0.60    4/8  (50.0%)   28/35 (80.0%)   74.4%
+4/5   color^5.0  tex^2  gab^2  har^2  0.65/0.60    6/9  (66.7%)   28/36 (77.8%)   75.6%  ← BEST
+6     color^5.0  tex^3  gab^2.5 har^2.5  0.65/0.60  5/9  (55.6%)   28/36 (77.8%)   73.3%
+
+BEST ACHIEVED CONFIGURATION:
+  POWER_COLOR = 5.0
+  POWER_TEXTURE = 2.0
+  POWER_GABOR = 2.0
+  POWER_HARALICK = 2.0
+  hard_disc thresholds = 0.65 / 0.60
+
+BEST PERFORMANCE:
+  Positive Accuracy:  6/9  = 66.7%  (target: 95%, deficit: -28.3%)
+  Negative Accuracy: 28/36 = 77.8%  (target: 95%, deficit: -17.2%)
+  Overall Accuracy:  34/45 = 75.6%
+
+TARGET STATUS: ❌ FAILED TO REACH 95%+ ON BOTH METRICS
+
+KEY FINDINGS:
+================================================================================
+1. FUNDAMENTAL TRADE-OFF:
+   - Higher color power → Better negative, worse positive
+   - Lower color power → Better positive, worse negative
+   - Cannot achieve 95%+ on both by adjusting color power alone
+
+2. CONSISTENT FAILURE PATTERNS:
+   
+   Positive failures (3/9 consistent):
+   • gettyimages-1311604917 (0.2-0.6s) - Fast early rejection
+   • gettyimages-2177809001 (23-32s) - Geometric mismatch after slow computation
+   • Wall painting (22-27s) - Geometric mismatch after slow computation
+   
+   Variable positive failures (1/9):
+   • scroll - PASS with color^5.0, FAIL with higher powers
+   
+   Negative failures (8/36 consistent):
+   • All cases involving Getty Images 17009652 or 21778090
+   • These fragments geometrically match with EVERYTHING
+   • Appearance penalty insufficient to block them
+
+3. ROOT CAUSE ANALYSIS:
+   
+   A. Getty Images 17009652 & 21778090:
+      - Have "generic" appearance (neutral colors, simple textures)
+      - Match many other fragments geometrically by chance
+      - Appearance penalties fail because they're not distinctive enough
+      - Cause 6 of 8 negative failures
+   
+   B. Positive failures:
+      - True fragments have MORE appearance variation than expected
+      - Within-artifact color variation defeats color^5 penalty
+      - Real archaeological fragments aren't uniformly colored
+   
+   C. Hard discriminators (0.65/0.60):
+      - Too relaxed: let negative false positives through
+      - Too strict: block true positive matches
+      - No sweet spot exists for this dataset
+
+4. WHAT WORKED:
+   - Relaxing hard_disc from 0.70/0.65 to 0.65/0.60 (+2.2% negative)
+   - Reducing color from 6.0 to 5.0 (+11.1% positive, scroll recovered)
+   - Overall improvement from 73.3% to 75.6% (+2.3%)
+
+5. WHAT FAILED:
+   - color^6.0 too aggressive (kills positive accuracy)
+   - Increasing texture/gabor/haralick powers (made it worse)
+   - Cannot solve fundamental trade-off with single-pass penalties
+
+CONCLUSION:
+================================================================================
+Variant 5 (color^6) CANNOT achieve 95%+ on both positive and negative accuracy
+with the current single-pass penalty approach.
+
+The issue is NOT the color exponent (tried 5.0, 5.5, 6.0, 7.0, 8.0).
+The issue is the APPROACH: appearance penalties alone cannot distinguish:
+  1. True fragments with high appearance variation (archaeological reality)
+  2. Different fragments with similar appearance (brown pottery syndrome)
+
+Best achievable: 66.7% positive / 77.8% negative (75.6% overall)
+Gap to target: -28.3% positive, -17.2% negative
+
+RECOMMENDED NEXT STEPS:
+================================================================================
+Option 1: ENSEMBLE APPROACH
+  Run multiple configurations (color^4, color^5, color^6) and vote
+  Accept match only if 2 of 3 agree
+  May improve negative accuracy without hurting positive
+
+Option 2: PER-FRAGMENT APPEARANCE VARIANCE
+  Measure color/texture variance within each fragment
+  Adjust penalties based on fragment "distinctiveness"
+  Generic fragments (Getty 17009652, 21778090) get stricter thresholds
+  Variable fragments (Wall painting) get relaxed thresholds
+
+Option 3: HYBRID DISCRIMINATOR
+  Use geometric similarity as primary signal
+  Use appearance as VETO only (block obvious mismatches)
+  Don't penalize appearance differences, only enforce appearance similarity
+  Threshold: BC_color > 0.80 AND BC_texture > 0.75 to proceed
+
+Option 4: INVESTIGATE PROBLEMATIC FRAGMENTS
+  Manually inspect Getty Images 17009652 and 21778090
+  Determine why they geometrically match everything
+  May need per-fragment geometric complexity filter
+
+RECOMMENDED ACTION:
+Try Option 3 (Hybrid Discriminator) first - it addresses the root cause:
+  - True positives have appearance variation → don't penalize
+  - False positives have appearance differences → block with VETO
+  - Asymmetric approach better matches the problem structure
+
+Current config (color^5, tex^2, gab^2, har^2, hard_disc 0.65/0.60) should be
+saved as "Variant 5 Best Effort" before moving to hybrid approach.
+================================================================================

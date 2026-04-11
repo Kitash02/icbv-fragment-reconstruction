@@ -1,0 +1,13 @@
+
+====================================================================
+  RUNNING 45 TEST CASES  (NO rotation)
+====================================================================
+  Positive (expect MATCH)    : 9
+  Negative (expect NO_MATCH) : 36
+====================================================================
+
+  > [P] gettyimages-1311604917-1024x1024                    + MATCH       30.6s  PASS
+  > [P] gettyimages-170096524-1024x1024                     + MATCH       30.9s  PASS
+  > [P] gettyimages-2177809001-1024x1024                    - NO_MATCH    31.3s  FAIL
+  > [P] gettyimages-470816328-2048x2048                     + MATCH       30.3s  PASS
+  > [P] high-res-antique-close-up-earth-muted-tones-geom  

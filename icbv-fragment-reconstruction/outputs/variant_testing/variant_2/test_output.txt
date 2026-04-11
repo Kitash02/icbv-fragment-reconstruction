@@ -1,0 +1,11 @@
+=== VARIANT 2 TEST OUTPUT ===
+
+STDOUT:
+
+
+STDERR:
+python: can't open file 'C:\\Users\\I763940\\icbv-fragment-reconstruction\\icbv-fragment-reconstruction\\run_variant2.py': [Errno 2] No such file or directory
+
+
+Return code: 2
+Elapsed time: 0.1s
