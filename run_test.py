@@ -37,7 +37,7 @@ import cv2
 import numpy as np
 
 ROOT = Path(__file__).parent
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT / "src" / "src"))
 
 import main as pipeline_main
 

@@ -3,3 +3,5 @@ numpy
 matplotlib
 Pillow
 pytest
+scipy
+pyyaml
