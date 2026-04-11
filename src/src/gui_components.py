@@ -2107,7 +2107,7 @@ class AboutPanel(ttk.Frame):
     def _open_readme(self):
         """Open README.md in default viewer."""
         import webbrowser
-        readme_path = os.path.join(os.path.dirname(__file__), "..", "docs", "README.md")
+        readme_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
 
         if os.path.exists(readme_path):
             webbrowser.open(f"file://{os.path.abspath(readme_path)}")

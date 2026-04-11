@@ -188,7 +188,7 @@ class FragmentReconstructionApp(tk.Tk):
     def _open_docs(self):
         """Open README.md in default viewer."""
         import webbrowser
-        readme_path = get_docs_file("docs/README.md")
+        readme_path = get_docs_file("README.md")
         if readme_path:
             webbrowser.open(f"file://{readme_path}")
         else:

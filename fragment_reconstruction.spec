@@ -17,7 +17,7 @@ a = Analysis(
     datas=[
         ('data/sample', 'data/sample'),
         ('config', 'config'),
-        ('docs/README.md', 'docs'),
+        ('README.md', '.'),
         ('docs/QUICK_START_GUI.md', 'docs'),
         ('docs/EXPERIMENT_DOCUMENTATION.md', 'docs'),
     ],

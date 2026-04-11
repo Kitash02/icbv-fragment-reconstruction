@@ -160,14 +160,14 @@ def get_docs_file(filename: str) -> Optional[Path]:
     Documentation files are read-only resources bundled with the application.
 
     Args:
-        filename: Name of the documentation file (e.g., "docs/README.md", "docs/EXPERIMENT_DOCUMENTATION.md")
+        filename: Name of the documentation file (e.g., "README.md", "docs/EXPERIMENT_DOCUMENTATION.md")
 
     Returns:
         Path: Absolute path to the documentation file if it exists, None otherwise
 
     Example:
-        >>> get_docs_file("docs/README.md")
-        Path("C:/Users/.../icbv-fragment-reconstruction/docs/README.md")
+        >>> get_docs_file("README.md")
+        Path("C:/Users/.../icbv-fragment-reconstruction/README.md")
     """
     doc_path = get_resource_path(filename)
     return doc_path if doc_path.exists() else None
