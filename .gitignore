@@ -150,9 +150,6 @@ src_backup_*/
 src_rollback_*/
 rollback_to_backup.*
 
-# Scripts directory (37 files)
-scripts/
-
 # Build/test logs
 *.log
 *_output.txt
@@ -205,8 +202,7 @@ src/src/ensemble_voting.py.backup_variant1_optimizer
 # Nested src directory (if exists)
 icbv-fragment-reconstruction/
 
-# Example/logs/temp directories
-examples/
+# Logs/temp directories
 logs/
 output/
 temp/
