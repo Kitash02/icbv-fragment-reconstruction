@@ -1,0 +1,166 @@
+================================================================================
+IMAGE RENAME LOG
+Generated: 2026-04-12T23:31:18.631800
+================================================================================
+
+
+================================================================================
+SET: .
+================================================================================
+Total images: 7
+
+gettyimages-1311604917-1024x1024.jpg                                   -> r1_pic1.jpg
+gettyimages-170096524-1024x1024.jpg                                    -> r1_pic2.jpg
+gettyimages-2177809001-1024x1024.jpg                                   -> r1_pic3.jpg
+gettyimages-470816328-2048x2048.jpg                                    -> r1_pic4.jpg
+scroll.jpg                                                             -> r1_pic5.jpg
+shard_01_british.jpg                                                   -> r1_pic6.jpg
+shard_02_cord_marked.jpg                                               -> r1_pic7.jpg
+
+================================================================================
+SET: real_fragments\met
+================================================================================
+Total images: 20
+
+met_194191_Clock_watch_with_astronomical_dial_and_sundial.jpg          -> r2_pic1.jpg
+met_207157_Dwarf_one_of_a_pair.jpg                                     -> r2_pic2.jpg
+met_237451_Dwarf_one_of_a_pair.jpg                                     -> r2_pic3.jpg
+met_435621_Joan_of_Arc.jpg                                             -> r2_pic4.jpg
+met_435844_The_Musicians.jpg                                           -> r2_pic5.jpg
+met_435997_The_Storm.jpg                                               -> r2_pic6.jpg
+met_436099_The_Nativity_with_Donors_and_Saints_Jerome_and_Leo.jpg      -> r2_pic7.jpg
+met_436105_The_Death_of_Socrates.jpg                                   -> r2_pic8.jpg
+met_436529_LArlesienne_Madame_Joseph-Michel_Ginoux_Marie_Juli.jpg      -> r2_pic9.jpg
+met_437173_Don_Andres_de_Andrade_y_la_Cal.jpg                          -> r2_pic10.jpg
+met_437261_The_Penitence_of_Saint_Jerome.jpg                           -> r2_pic11.jpg
+met_437508_Self-Portrait.jpg                                           -> r2_pic12.jpg
+met_438821_Ia_Orana_Maria_Hail_Mary.jpg                                -> r2_pic13.jpg
+met_448280_Bizhan_Slaughters_the_Wild_Boars_of_Irman_Folio_fr.jpg      -> r2_pic14.jpg
+met_448959_Head_from_a_Figure_with_a_Beaded_Headdress.jpg              -> r2_pic15.jpg
+met_451725_The_Concourse_of_the_Birds_Folio_11r_from_a_Mantiq.jpg      -> r2_pic16.jpg
+met_452032_Pierced_Bowl_Signed_by_Hasan_al-Qashani.jpg                 -> r2_pic17.jpg
+met_453385_Anthology_of_Persian_Poetry_in_Oblong_Format_Safin.jpg      -> r2_pic18.jpg
+met_626692_The_Jabach_Family.jpg                                       -> r2_pic19.jpg
+met_816189_Abiding_nowhere_the_awakened_mind_arises.jpg                -> r2_pic20.jpg
+
+================================================================================
+SET: real_fragments\wikimedia
+================================================================================
+Total images: 8
+
+14_scherven_-_O36ZFL_-_60015859_-_RCE.jpg                              -> r3_pic1.jpg
+201005151429_NE_CSM_Diverse_Glasscherben_1._Jh.jpg                     -> r3_pic2.jpg
+2015_Kerch_Historical_Archaeological_Museum_008.jpg                    -> r3_pic3.jpg
+2015_Kerch_Historical_Archaeological_Museum_032.jpg                    -> r3_pic4.jpg
+2015_Kerch_Historical_Archaeological_Museum_078.jpg                    -> r3_pic5.jpg
+2015_Kerch_Historical_Archaeological_Museum_091.jpg                    -> r3_pic6.jpg
+2015_Kerch_Historical_Archaeological_Museum_102.jpg                    -> r3_pic7.jpg
+buikscherf_van_prehistorisch_aardewerk_-_O36ZFL_-_60015994_-_RCE.jpg   -> r3_pic8.jpg
+
+================================================================================
+SET: real_fragments_validated\british_museum
+================================================================================
+Total images: 1
+
+fragment_001_File020240849Identifyingpotterysherdsjpg.jpg              -> r4_pic1.jpg
+
+================================================================================
+SET: real_fragments_validated\british_museum\wikimedia
+================================================================================
+Total images: 1
+
+buikscherf_van_prehistorisch_aardewerk_-_O36ZFL_-_60015994_-_RCE.jpg   -> r5_pic1.jpg
+
+================================================================================
+SET: real_fragments_validated\wikimedia
+================================================================================
+Total images: 20
+
+candidate_10_Pottery_sherd_-_YDEA_-_91293.jpg                          -> r6_pic1.jpg
+candidate_11_Pottery_sherd_-_YDEA_-_91292.jpg                          -> r6_pic2.jpg
+candidate_12_Pottery_sherd_-_YDEA_-_91299.jpg                          -> r6_pic3.jpg
+candidate_13_Pottery_sherd_-_YDEA_-_91290.jpg                          -> r6_pic4.jpg
+candidate_14_Pottery_sherd_-_YDEA_-_91306.jpg                          -> r6_pic5.jpg
+candidate_15_Pottery_sherd_-_YDEA_-_91303.jpg                          -> r6_pic6.jpg
+candidate_16_02024_0849_Identifying_pottery_sherds.jpg                 -> r6_pic7.jpg
+candidate_17_02024_0861_Identifying_pottery_sherds.jpg                 -> r6_pic8.jpg
+candidate_18_02024_0867_Identifying_pottery_sherds.jpg                 -> r6_pic9.jpg
+candidate_19_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368025114_.jpg -> r6_pic10.jpg
+candidate_1_Sherd_-_YDEA_-_95805.jpg                                   -> r6_pic11.jpg
+candidate_20_Pottery_Sherd__Never_remove_artifacts-_replace_all_objects_exactly_where_you_discovered_them.___14368922545_.jpg -> r6_pic12.jpg
+candidate_2_Pottery_sherd_-_YDEA_-_91294.jpg                           -> r6_pic13.jpg
+candidate_3_Pottery_sherd_-_YDEA_-_91288.jpg                           -> r6_pic14.jpg
+candidate_4_Pottery_sherd_-_YDEA_-_91304.jpg                           -> r6_pic15.jpg
+candidate_5_Pottery_sherd_-_YDEA_-_91301.jpg                           -> r6_pic16.jpg
+candidate_6_Pottery_sherd_-_YDEA_-_91302.jpg                           -> r6_pic17.jpg
+candidate_7_Pottery_sherd_-_YDEA_-_91286.jpg                           -> r6_pic18.jpg
+candidate_8_Pottery_sherd_-_YDEA_-_91308.jpg                           -> r6_pic19.jpg
+candidate_9_Pottery_sherd_-_YDEA_-_91307.jpg                           -> r6_pic20.jpg
+
+================================================================================
+SET: real_fragments_validated\wikimedia_processed
+================================================================================
+Total images: 26
+
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001.jpg                 -> r7_pic1.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg                 -> r7_pic2.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg                 -> r7_pic3.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004.jpg                 -> r7_pic4.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005.jpg                 -> r7_pic5.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006.jpg                 -> r7_pic6.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007.jpg                 -> r7_pic7.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008.jpg                 -> r7_pic8.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009.jpg                 -> r7_pic9.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010.jpg                 -> r7_pic10.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011.jpg                 -> r7_pic11.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012.jpg                 -> r7_pic12.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013.jpg                 -> r7_pic13.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014.jpg                 -> r7_pic14.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015.jpg                 -> r7_pic15.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016.jpg                 -> r7_pic16.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017.jpg                 -> r7_pic17.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018.jpg                 -> r7_pic18.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019.jpg                 -> r7_pic19.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020.jpg                 -> r7_pic20.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021.jpg                 -> r7_pic21.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022.jpg                 -> r7_pic22.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023.jpg                 -> r7_pic23.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024.jpg                 -> r7_pic24.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025.jpg                 -> r7_pic25.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026.jpg                 -> r7_pic26.jpg
+
+================================================================================
+SET: real_fragments_validated\wikimedia_processed\example1_auto
+================================================================================
+Total images: 26
+
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_001.jpg                 -> r8_pic1.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_002.jpg                 -> r8_pic2.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_003.jpg                 -> r8_pic3.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_004.jpg                 -> r8_pic4.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_005.jpg                 -> r8_pic5.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_006.jpg                 -> r8_pic6.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_007.jpg                 -> r8_pic7.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_008.jpg                 -> r8_pic8.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_009.jpg                 -> r8_pic9.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_010.jpg                 -> r8_pic10.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_011.jpg                 -> r8_pic11.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_012.jpg                 -> r8_pic12.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_013.jpg                 -> r8_pic13.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_014.jpg                 -> r8_pic14.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_015.jpg                 -> r8_pic15.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_016.jpg                 -> r8_pic16.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_017.jpg                 -> r8_pic17.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_018.jpg                 -> r8_pic18.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_019.jpg                 -> r8_pic19.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_020.jpg                 -> r8_pic20.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_021.jpg                 -> r8_pic21.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_022.jpg                 -> r8_pic22.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_023.jpg                 -> r8_pic23.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_024.jpg                 -> r8_pic24.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_025.jpg                 -> r8_pic25.jpg
+14_scherven_-_O36ZFL_-_60015859_-_RCE_fragment_026.jpg                 -> r8_pic26.jpg
+
+================================================================================
+SUMMARY: Renamed 109 images across 8 sets
+================================================================================

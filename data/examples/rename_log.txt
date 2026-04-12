@@ -1,0 +1,505 @@
+================================================================================
+IMAGE RENAME LOG
+Timestamp: 2026-04-12 23:30:36
+================================================================================
+
+
+SET: negative\mixed_gettyimages-13116049_gettyimages-17009652
+PREFIX: a
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> a_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> a_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> a_pic3.png
+  B_03_gettyimages-170096524-1024x1024_frag_00.png -> a_pic4.png
+  B_04_gettyimages-170096524-1024x1024_frag_01.png -> a_pic5.png
+  B_05_gettyimages-170096524-1024x1024_frag_03.png -> a_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_gettyimages-21778090
+PREFIX: b
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> b_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> b_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> b_pic3.png
+  B_03_gettyimages-2177809001-1024x1024_frag_00.png -> b_pic4.png
+  B_04_gettyimages-2177809001-1024x1024_frag_01.png -> b_pic5.png
+  B_05_gettyimages-2177809001-1024x1024_frag_02.png -> b_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_gettyimages-47081632
+PREFIX: c
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> c_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> c_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> c_pic3.png
+  B_03_gettyimages-470816328-2048x2048_frag_00.png -> c_pic4.png
+  B_04_gettyimages-470816328-2048x2048_frag_01.png -> c_pic5.png
+  B_05_gettyimages-470816328-2048x2048_frag_02.png -> c_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_high-res-antique-clo
+PREFIX: d
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> d_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> d_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> d_pic3.png
+  B_03_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> d_pic4.png
+  B_04_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> d_pic5.png
+  B_05_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> d_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_scroll
+PREFIX: e
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> e_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> e_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> e_pic3.png
+  B_03_scroll_frag_00.png -> e_pic4.png
+  B_04_scroll_frag_01.png -> e_pic5.png
+  B_05_scroll_frag_02.png -> e_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_shard_01_british
+PREFIX: f
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> f_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> f_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> f_pic3.png
+  B_03_shard_01_british_frag_00.png -> f_pic4.png
+  B_04_shard_01_british_frag_01.png -> f_pic5.png
+  B_05_shard_01_british_frag_02.png -> f_pic6.png
+
+SET: negative\mixed_gettyimages-13116049_shard_02_cord_marked
+PREFIX: g
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-1311604917-1024x1024_frag_00.png -> g_pic1.png
+  A_01_gettyimages-1311604917-1024x1024_frag_01.png -> g_pic2.png
+  A_02_gettyimages-1311604917-1024x1024_frag_02.png -> g_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> g_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> g_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> g_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_gettyimages-21778090
+PREFIX: h
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> h_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> h_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> h_pic3.png
+  B_03_gettyimages-2177809001-1024x1024_frag_00.png -> h_pic4.png
+  B_04_gettyimages-2177809001-1024x1024_frag_01.png -> h_pic5.png
+  B_05_gettyimages-2177809001-1024x1024_frag_02.png -> h_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_gettyimages-47081632
+PREFIX: i
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> i_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> i_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> i_pic3.png
+  B_03_gettyimages-470816328-2048x2048_frag_00.png -> i_pic4.png
+  B_04_gettyimages-470816328-2048x2048_frag_01.png -> i_pic5.png
+  B_05_gettyimages-470816328-2048x2048_frag_02.png -> i_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_high-res-antique-clo
+PREFIX: j
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> j_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> j_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> j_pic3.png
+  B_03_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> j_pic4.png
+  B_04_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> j_pic5.png
+  B_05_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> j_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_scroll
+PREFIX: k
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> k_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> k_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> k_pic3.png
+  B_03_scroll_frag_00.png -> k_pic4.png
+  B_04_scroll_frag_01.png -> k_pic5.png
+  B_05_scroll_frag_02.png -> k_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_shard_01_british
+PREFIX: l
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> l_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> l_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> l_pic3.png
+  B_03_shard_01_british_frag_00.png -> l_pic4.png
+  B_04_shard_01_british_frag_01.png -> l_pic5.png
+  B_05_shard_01_british_frag_02.png -> l_pic6.png
+
+SET: negative\mixed_gettyimages-17009652_shard_02_cord_marked
+PREFIX: m
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-170096524-1024x1024_frag_00.png -> m_pic1.png
+  A_01_gettyimages-170096524-1024x1024_frag_01.png -> m_pic2.png
+  A_02_gettyimages-170096524-1024x1024_frag_02.png -> m_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> m_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> m_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> m_pic6.png
+
+SET: negative\mixed_gettyimages-21778090_gettyimages-47081632
+PREFIX: n
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-2177809001-1024x1024_frag_00.png -> n_pic1.png
+  A_01_gettyimages-2177809001-1024x1024_frag_01.png -> n_pic2.png
+  A_02_gettyimages-2177809001-1024x1024_frag_02.png -> n_pic3.png
+  B_03_gettyimages-470816328-2048x2048_frag_00.png -> n_pic4.png
+  B_04_gettyimages-470816328-2048x2048_frag_01.png -> n_pic5.png
+  B_05_gettyimages-470816328-2048x2048_frag_02.png -> n_pic6.png
+
+SET: negative\mixed_gettyimages-21778090_high-res-antique-clo
+PREFIX: o
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-2177809001-1024x1024_frag_00.png -> o_pic1.png
+  A_01_gettyimages-2177809001-1024x1024_frag_01.png -> o_pic2.png
+  A_02_gettyimages-2177809001-1024x1024_frag_02.png -> o_pic3.png
+  B_03_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> o_pic4.png
+  B_04_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> o_pic5.png
+  B_05_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> o_pic6.png
+
+SET: negative\mixed_gettyimages-21778090_scroll
+PREFIX: p
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-2177809001-1024x1024_frag_00.png -> p_pic1.png
+  A_01_gettyimages-2177809001-1024x1024_frag_01.png -> p_pic2.png
+  A_02_gettyimages-2177809001-1024x1024_frag_02.png -> p_pic3.png
+  B_03_scroll_frag_00.png -> p_pic4.png
+  B_04_scroll_frag_01.png -> p_pic5.png
+  B_05_scroll_frag_02.png -> p_pic6.png
+
+SET: negative\mixed_gettyimages-21778090_shard_01_british
+PREFIX: q
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-2177809001-1024x1024_frag_00.png -> q_pic1.png
+  A_01_gettyimages-2177809001-1024x1024_frag_01.png -> q_pic2.png
+  A_02_gettyimages-2177809001-1024x1024_frag_02.png -> q_pic3.png
+  B_03_shard_01_british_frag_00.png -> q_pic4.png
+  B_04_shard_01_british_frag_01.png -> q_pic5.png
+  B_05_shard_01_british_frag_02.png -> q_pic6.png
+
+SET: negative\mixed_gettyimages-21778090_shard_02_cord_marked
+PREFIX: r
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-2177809001-1024x1024_frag_01.png -> r_pic1.png
+  A_01_gettyimages-2177809001-1024x1024_frag_02.png -> r_pic2.png
+  A_02_gettyimages-2177809001-1024x1024_frag_03.png -> r_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> r_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> r_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> r_pic6.png
+
+SET: negative\mixed_gettyimages-47081632_high-res-antique-clo
+PREFIX: s
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-470816328-2048x2048_frag_00.png -> s_pic1.png
+  A_01_gettyimages-470816328-2048x2048_frag_01.png -> s_pic2.png
+  A_02_gettyimages-470816328-2048x2048_frag_02.png -> s_pic3.png
+  B_03_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> s_pic4.png
+  B_04_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> s_pic5.png
+  B_05_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> s_pic6.png
+
+SET: negative\mixed_gettyimages-47081632_scroll
+PREFIX: t
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-470816328-2048x2048_frag_00.png -> t_pic1.png
+  A_01_gettyimages-470816328-2048x2048_frag_01.png -> t_pic2.png
+  A_02_gettyimages-470816328-2048x2048_frag_02.png -> t_pic3.png
+  B_03_scroll_frag_00.png -> t_pic4.png
+  B_04_scroll_frag_01.png -> t_pic5.png
+  B_05_scroll_frag_02.png -> t_pic6.png
+
+SET: negative\mixed_gettyimages-47081632_shard_01_british
+PREFIX: u
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-470816328-2048x2048_frag_00.png -> u_pic1.png
+  A_01_gettyimages-470816328-2048x2048_frag_01.png -> u_pic2.png
+  A_02_gettyimages-470816328-2048x2048_frag_02.png -> u_pic3.png
+  B_03_shard_01_british_frag_00.png -> u_pic4.png
+  B_04_shard_01_british_frag_01.png -> u_pic5.png
+  B_05_shard_01_british_frag_02.png -> u_pic6.png
+
+SET: negative\mixed_gettyimages-47081632_shard_02_cord_marked
+PREFIX: v
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_gettyimages-470816328-2048x2048_frag_00.png -> v_pic1.png
+  A_01_gettyimages-470816328-2048x2048_frag_01.png -> v_pic2.png
+  A_02_gettyimages-470816328-2048x2048_frag_02.png -> v_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> v_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> v_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> v_pic6.png
+
+SET: negative\mixed_high-res-antique-clo_scroll
+PREFIX: w
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> w_pic1.png
+  A_01_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> w_pic2.png
+  A_02_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> w_pic3.png
+  B_03_scroll_frag_00.png -> w_pic4.png
+  B_04_scroll_frag_01.png -> w_pic5.png
+  B_05_scroll_frag_02.png -> w_pic6.png
+
+SET: negative\mixed_high-res-antique-clo_shard_01_british
+PREFIX: x
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> x_pic1.png
+  A_01_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> x_pic2.png
+  A_02_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> x_pic3.png
+  B_03_shard_01_british_frag_00.png -> x_pic4.png
+  B_04_shard_01_british_frag_01.png -> x_pic5.png
+  B_05_shard_01_british_frag_02.png -> x_pic6.png
+
+SET: negative\mixed_high-res-antique-clo_shard_02_cord_marked
+PREFIX: y
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> y_pic1.png
+  A_01_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> y_pic2.png
+  A_02_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> y_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> y_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> y_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> y_pic6.png
+
+SET: negative\mixed_scroll_shard_01_british
+PREFIX: z
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_scroll_frag_00.png -> z_pic1.png
+  A_01_scroll_frag_01.png -> z_pic2.png
+  A_02_scroll_frag_02.png -> z_pic3.png
+  B_03_shard_01_british_frag_00.png -> z_pic4.png
+  B_04_shard_01_british_frag_01.png -> z_pic5.png
+  B_05_shard_01_british_frag_02.png -> z_pic6.png
+
+SET: negative\mixed_scroll_shard_02_cord_marked
+PREFIX: aa
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_scroll_frag_00.png -> aa_pic1.png
+  A_01_scroll_frag_01.png -> aa_pic2.png
+  A_02_scroll_frag_02.png -> aa_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> aa_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> aa_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> aa_pic6.png
+
+SET: negative\mixed_shard_01_british_shard_02_cord_marked
+PREFIX: ab
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_shard_01_british_frag_00.png -> ab_pic1.png
+  A_01_shard_01_british_frag_01.png -> ab_pic2.png
+  A_02_shard_01_british_frag_02.png -> ab_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> ab_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> ab_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> ab_pic6.png
+
+SET: negative\mixed_Wall painting from R_gettyimages-13116049
+PREFIX: ac
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ac_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ac_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ac_pic3.png
+  B_03_gettyimages-1311604917-1024x1024_frag_00.png -> ac_pic4.png
+  B_04_gettyimages-1311604917-1024x1024_frag_01.png -> ac_pic5.png
+  B_05_gettyimages-1311604917-1024x1024_frag_02.png -> ac_pic6.png
+
+SET: negative\mixed_Wall painting from R_gettyimages-17009652
+PREFIX: ad
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ad_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ad_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ad_pic3.png
+  B_03_gettyimages-170096524-1024x1024_frag_00.png -> ad_pic4.png
+  B_04_gettyimages-170096524-1024x1024_frag_01.png -> ad_pic5.png
+  B_05_gettyimages-170096524-1024x1024_frag_02.png -> ad_pic6.png
+
+SET: negative\mixed_Wall painting from R_gettyimages-21778090
+PREFIX: ae
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ae_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ae_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ae_pic3.png
+  B_03_gettyimages-2177809001-1024x1024_frag_00.png -> ae_pic4.png
+  B_04_gettyimages-2177809001-1024x1024_frag_01.png -> ae_pic5.png
+  B_05_gettyimages-2177809001-1024x1024_frag_02.png -> ae_pic6.png
+
+SET: negative\mixed_Wall painting from R_gettyimages-47081632
+PREFIX: af
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> af_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> af_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> af_pic3.png
+  B_03_gettyimages-470816328-2048x2048_frag_01.png -> af_pic4.png
+  B_04_gettyimages-470816328-2048x2048_frag_02.png -> af_pic5.png
+  B_05_gettyimages-470816328-2048x2048_frag_03.png -> af_pic6.png
+
+SET: negative\mixed_Wall painting from R_high-res-antique-clo
+PREFIX: ag
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ag_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ag_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ag_pic3.png
+  B_03_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> ag_pic4.png
+  B_04_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> ag_pic5.png
+  B_05_high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> ag_pic6.png
+
+SET: negative\mixed_Wall painting from R_scroll
+PREFIX: ah
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ah_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ah_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ah_pic3.png
+  B_03_scroll_frag_00.png -> ah_pic4.png
+  B_04_scroll_frag_01.png -> ah_pic5.png
+  B_05_scroll_frag_02.png -> ah_pic6.png
+
+SET: negative\mixed_Wall painting from R_shard_01_british
+PREFIX: ai
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> ai_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> ai_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> ai_pic3.png
+  B_03_shard_01_british_frag_00.png -> ai_pic4.png
+  B_04_shard_01_british_frag_01.png -> ai_pic5.png
+  B_05_shard_01_british_frag_02.png -> ai_pic6.png
+
+SET: negative\mixed_Wall painting from R_shard_02_cord_marked
+PREFIX: aj
+COUNT: 6
+--------------------------------------------------------------------------------
+  A_00_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> aj_pic1.png
+  A_01_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> aj_pic2.png
+  A_02_Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> aj_pic3.png
+  B_03_shard_02_cord_marked_frag_00.png -> aj_pic4.png
+  B_04_shard_02_cord_marked_frag_01.png -> aj_pic5.png
+  B_05_shard_02_cord_marked_frag_02.png -> aj_pic6.png
+
+SET: positive\gettyimages-1311604917-1024x1024
+PREFIX: ak
+COUNT: 5
+--------------------------------------------------------------------------------
+  gettyimages-1311604917-1024x1024_frag_01.png -> ak_pic1.png
+  gettyimages-1311604917-1024x1024_frag_02.png -> ak_pic2.png
+  gettyimages-1311604917-1024x1024_frag_03.png -> ak_pic3.png
+  gettyimages-1311604917-1024x1024_frag_04.png -> ak_pic4.png
+  gettyimages-1311604917-1024x1024_frag_06.png -> ak_pic5.png
+
+SET: positive\gettyimages-170096524-1024x1024
+PREFIX: al
+COUNT: 6
+--------------------------------------------------------------------------------
+  gettyimages-170096524-1024x1024_frag_00.png -> al_pic1.png
+  gettyimages-170096524-1024x1024_frag_01.png -> al_pic2.png
+  gettyimages-170096524-1024x1024_frag_02.png -> al_pic3.png
+  gettyimages-170096524-1024x1024_frag_03.png -> al_pic4.png
+  gettyimages-170096524-1024x1024_frag_04.png -> al_pic5.png
+  gettyimages-170096524-1024x1024_frag_05.png -> al_pic6.png
+
+SET: positive\gettyimages-2177809001-1024x1024
+PREFIX: am
+COUNT: 6
+--------------------------------------------------------------------------------
+  gettyimages-2177809001-1024x1024_frag_00.png -> am_pic1.png
+  gettyimages-2177809001-1024x1024_frag_01.png -> am_pic2.png
+  gettyimages-2177809001-1024x1024_frag_02.png -> am_pic3.png
+  gettyimages-2177809001-1024x1024_frag_03.png -> am_pic4.png
+  gettyimages-2177809001-1024x1024_frag_04.png -> am_pic5.png
+  gettyimages-2177809001-1024x1024_frag_06.png -> am_pic6.png
+
+SET: positive\gettyimages-470816328-2048x2048
+PREFIX: an
+COUNT: 6
+--------------------------------------------------------------------------------
+  gettyimages-470816328-2048x2048_frag_00.png -> an_pic1.png
+  gettyimages-470816328-2048x2048_frag_01.png -> an_pic2.png
+  gettyimages-470816328-2048x2048_frag_03.png -> an_pic3.png
+  gettyimages-470816328-2048x2048_frag_04.png -> an_pic4.png
+  gettyimages-470816328-2048x2048_frag_05.png -> an_pic5.png
+  gettyimages-470816328-2048x2048_frag_06.png -> an_pic6.png
+
+SET: positive\mosaic-floor-338430220
+PREFIX: ao
+COUNT: 6
+--------------------------------------------------------------------------------
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_00.png -> ao_pic1.png
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_01.png -> ao_pic2.png
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_02.png -> ao_pic3.png
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_04.png -> ao_pic4.png
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_05.png -> ao_pic5.png
+  high-res-antique-close-up-earth-muted-tones-geometrically-patterned-mosaic-floor-background-italian-church-338430220_frag_06.png -> ao_pic6.png
+
+SET: positive\scroll
+PREFIX: ap
+COUNT: 6
+--------------------------------------------------------------------------------
+  scroll_frag_00.png -> ap_pic1.png
+  scroll_frag_01.png -> ap_pic2.png
+  scroll_frag_02.png -> ap_pic3.png
+  scroll_frag_03.png -> ap_pic4.png
+  scroll_frag_04.png -> ap_pic5.png
+  scroll_frag_05.png -> ap_pic6.png
+
+SET: positive\shard_01_british
+PREFIX: aq
+COUNT: 6
+--------------------------------------------------------------------------------
+  shard_01_british_frag_00.png -> aq_pic1.png
+  shard_01_british_frag_01.png -> aq_pic2.png
+  shard_01_british_frag_02.png -> aq_pic3.png
+  shard_01_british_frag_03.png -> aq_pic4.png
+  shard_01_british_frag_04.png -> aq_pic5.png
+  shard_01_british_frag_06.png -> aq_pic6.png
+
+SET: positive\shard_02_cord_marked
+PREFIX: ar
+COUNT: 6
+--------------------------------------------------------------------------------
+  shard_02_cord_marked_frag_00.png -> ar_pic1.png
+  shard_02_cord_marked_frag_01.png -> ar_pic2.png
+  shard_02_cord_marked_frag_02.png -> ar_pic3.png
+  shard_02_cord_marked_frag_04.png -> ar_pic4.png
+  shard_02_cord_marked_frag_05.png -> ar_pic5.png
+  shard_02_cord_marked_frag_06.png -> ar_pic6.png
+
+SET: positive\Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale
+PREFIX: as
+COUNT: 6
+--------------------------------------------------------------------------------
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_00.png -> as_pic1.png
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_01.png -> as_pic2.png
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_02.png -> as_pic3.png
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_04.png -> as_pic4.png
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_05.png -> as_pic5.png
+  Wall painting from Room H of the Villa of P. Fannius Synistor at Boscoreale_frag_06.png -> as_pic6.png
+
+================================================================================
+SUMMARY
+Total successful renames: 269
+Total errors: 0
+================================================================================
