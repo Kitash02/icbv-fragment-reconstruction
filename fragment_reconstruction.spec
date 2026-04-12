@@ -17,6 +17,8 @@ a = Analysis(
     datas=[
         ('data/sample', 'data/sample'),
         ('config', 'config'),
+        ('src/config', 'src/config'),
+        ('src/src', 'src/src'),
         ('README.md', '.'),
         ('docs/QUICK_START_GUI.md', 'docs'),
         ('docs/EXPERIMENT_DOCUMENTATION.md', 'docs'),
@@ -86,7 +88,7 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     target_arch=None,
     codesign_identity=None,
